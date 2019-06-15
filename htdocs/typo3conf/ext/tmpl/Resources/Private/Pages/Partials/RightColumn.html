@@ -1,5 +1,6 @@
 <!-- right column -->
-<td valign="top" width="251" style="background-image: url('/fileadmin/img/fluger.png'); background-position: right bottom; background-repeat: no-repeat;">
+<td valign="top" width="251" style="background-image: url('{f:cObject(typoscriptObjectPath: 'lib.fluger')}');
+background-position: right bottom; background-repeat: no-repeat;">
     <table cellpadding="0" cellspacing="0" border="0" align="left">
         <tr><td height="10"></td></tr>
         <tr>
@@ -7,8 +8,13 @@
         </tr>
         <tr>
             <td valign="top" width="257" height="350">
-                <div align="left" style="padding-bottom: 14px;"><img src="/fileadmin/img/marker.gif" alt=""></div>
-                <div align="left" style="padding-bottom: 17px;"><span style="text-align:left; text-transform:uppercase; font-family: Arial, Tahoma, Verdana, Helvetica, sans-serif; font-weight: bold; color: #666666; font-size: 16px;">Контакты</span></div>
+                <div align="left" style="padding-bottom: 14px;">
+                    <f:cObject typoscriptObjectPath="lib.marker" />
+                </div>
+                <div align="left" style="padding-bottom: 17px;">
+                    <span style="text-align:left; text-transform:uppercase; font-family: Arial, Tahoma, Verdana, Helvetica, sans-serif; font-weight: bold; color: #666666; font-size: 16px;">
+                        {f:translate(key:'page.contacts', extensionName: 'tmpl')}</span>
+                </div>
                 <div align="left" style="padding-bottom: 5px;">
                     <f:cObject typoscriptObjectPath="lib.copyright" />
                     <f:cObject typoscriptObjectPath="lib.address" />

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2019-06-15T19:23:17Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+			<trans-unit id="page.contacts" approved="yes">
+				<source><![CDATA[Contacts]]></source>
+				<target><![CDATA[Контакты]]></target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

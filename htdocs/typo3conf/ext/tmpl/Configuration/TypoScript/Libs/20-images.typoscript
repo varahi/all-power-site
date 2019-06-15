@@ -18,9 +18,20 @@ lib.banner {
     }
 }
 
-
 lib.topMenuBg >
 lib.topMenuBg = IMG_RESOURCE
 lib.topMenuBg {
     file = EXT:tmpl/Resources/Public/img/plashka.jpg
+}
+
+lib.fluger >
+lib.fluger = IMG_RESOURCE
+lib.fluger {
+    file = EXT:tmpl/Resources/Public/img/fluger.png
+}
+
+lib.marker >
+lib.marker = IMAGE
+lib.marker {
+    file = EXT:tmpl/Resources/Public/img/marker.gif
 }
