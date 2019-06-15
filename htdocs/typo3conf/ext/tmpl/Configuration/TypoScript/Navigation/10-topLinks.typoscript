@@ -1,0 +1,67 @@
+lib.topLink1 = COA
+lib.topLink1 {
+    10 = IMAGE
+    10 {
+        wrap = <span class="spacious1">|</span>
+        file = EXT:tmpl/Resources/Public/img/icon_home.gif
+        altText = {$config.navigation.topLinks.homeTitle}
+        file.height = 10
+    }
+    20 = TEXT
+    20 {
+        value = {$config.navigation.topLinks.homeTitle}
+        wrap = <span class="spacious1">|</span>
+        stdWrap.typolink.parameter =  {$config.navigation.rootPid}
+        stdWrap.typolink.ATagParams = class="blink small white"
+    }
+    30 = IMAGE
+    30 {
+        wrap = <span class="spacious2">|</span>
+        file = EXT:tmpl/Resources/Public/img/icon_separator.gif
+        file.height = 12
+        file.width = 1
+    }
+}
+
+lib.topLink2 = COA
+lib.topLink2 {
+    10 = IMAGE
+    10 {
+        wrap = <span class="spacious1">|</span>
+        file = EXT:tmpl/Resources/Public/img/icon_fav.gif
+        altText = {$config.navigation.topLinks.addToFavorites}
+        file.height = 10
+    }
+    20 = TEXT
+    20 {
+        value (
+            <a class="blink small white" href="#" onClick="window.bookmark(); return false;" onMouseOver="window.status='Добавить сайт в «Избранное»';
+            return true" onMouseOut="window.status=' '">добавить в избранное</a>
+        )
+        wrap = <span class="spacious1">|</span>
+    }
+    30 = IMAGE
+    30 {
+        wrap = <span class="spacious2">|</span>
+        file = EXT:tmpl/Resources/Public/img/icon_separator.gif
+        file.height = 12
+        file.width = 1
+    }
+}
+
+lib.topLink3 = COA
+lib.topLink3 {
+    10 = IMAGE
+    10 {
+        wrap = <span class="spacious1">|</span>
+        file = EXT:tmpl/Resources/Public/img/icon_letter.gif
+        altText = {$config.navigation.topLinks.writeLetter}
+        file.height = 10
+    }
+    20 = TEXT
+    20 {
+        value = {$config.navigation.topLinks.writeLetter}
+        wrap = <span class="spacious1">|</span>
+        stdWrap.typolink.parameter =  {$config.navigation.topLinks.mailTo}
+        stdWrap.typolink.ATagParams = class="blink small white"
+    }

@@ -1,6 +1,7 @@
 # manually inserted CSS files
 page.includeCSS {
     10_style = EXT:tmpl/Resources/Public/css/style.css
+    20_style = EXT:tmpl/Resources/Public/css/custom.css
 }
 
 # JS libs that need to be inserted (can be used for internal and external libs)

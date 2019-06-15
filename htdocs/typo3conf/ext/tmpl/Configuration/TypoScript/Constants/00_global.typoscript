@@ -11,10 +11,19 @@ config {
 
     navigation {
         rootPid = 1
+
+        topLinks {
+            homeTitle = Домой
+            addToFavorites = Добавить в избранное
+            writeLetter = Написать письмо
+            mailTo = mailto:info@typo3.org - - "Send a mail to main TYPO3 contact"
+        }
     }
 
     header {
-        logoTitle =
+        logoTitle = Гвардия
+        logoSmallTitle = www.all-power.ru
+        bannerTitle = Энергия солнца и ветра
     }
 
 }

@@ -1,0 +1,36 @@
+lib.logo >
+lib.logo = COA
+lib.logo {
+    wrap = <div style="padding: 65px 0px 0px 51px;">|</div>
+    10 = IMAGE
+    10 {
+        file = EXT:tmpl/Resources/Public/img/logo.gif
+        altText = {$config.header.logoTitle}
+        titleText = {$config.header.logoTitle}
+        file.width = 216
+        file.height = 39
+        stdWrap.typolink.parameter =  {$config.navigation.rootPid}
+
+        #stdWrap.typolink.ATagParams = class=""
+        #params = id="logo"
+        #stdWrap.wrap = |
+        #stdWrap.typolink.title = {$config.header.logoTitle}
+    }
+}
+
+
+lib.logoSmall >
+lib.logoSmall = COA
+lib.logoSmall {
+    wrap = <td align="right" valign="top"><div style="margin-top:8px;">|</td>
+    10 = IMAGE
+    10 {
+        file = EXT:tmpl/Resources/Public/img/address.gif
+        altText = {$config.header.logoSmallTitle}
+        titleText = {$config.header.logoSmallTitle}
+        file.width = 105
+        file.height = 13
+        stdWrap.typolink.parameter =  {$config.navigation.rootPid}
+
+    }
+}
