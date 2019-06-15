@@ -42,7 +42,7 @@ div.pad0 {
 }
 
 h1 {
-	background-image: url('/fileadmin/img/h1_marker.gif');
+	background-image: url('../img/h1_marker.gif');
 	background-repeat: no-repeat;
 	padding: 10px 0px 8px 15px;
 	margin: 0px 0px 0px 0px;
@@ -60,7 +60,7 @@ h2 {
 }
 
 h3 {
-	background-image: url('/fileadmin/img/h2_marker.gif');
+	background-image: url('../img/h2_marker.gif');
 	background-repeat: no-repeat;
 	padding: 10px 0px 5px 15px;
 	margin: 0px 0px 0px 0px;
@@ -121,7 +121,7 @@ span.spacious2 {
 }
 
 td.menu-item {
-	background-image: url('/fileadmin/img/menu_marker.gif');
+	background-image: url('../img/menu_marker.gif');
 	background-repeat: no-repeat;
 	background-position: 33px 6px;
 	padding-left: 56px;
@@ -129,7 +129,7 @@ td.menu-item {
 }
 
 td.menu-item2 {
-	background-image: url('/fileadmin/img/menu_marker1.gif');
+	background-image: url('../img/menu_marker1.gif');
 	background-repeat: no-repeat;
 	background-position: 57px 7px;
 	padding-left: 80px;
@@ -161,7 +161,7 @@ a.white {
 UL.menu_small {
 	margin: 12px 0px 25px 0px;
 	padding: 0px 0px 0px 20px;
-	list-style-image: url('/fileadmin/img/menu_marker2.gif');
+	list-style-image: url('../img/menu_marker2.gif');
 	line-height: 20px;
 }
 
@@ -172,7 +172,7 @@ UL {
 	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;	
 	margin: 0px 0px 15px 0px;
 	padding: 0px 0px 0px 0px;
-	list-style-image: url('/fileadmin/img/menu_marker2.gif');
+	list-style-image: url('../img/menu_marker2.gif');
 	line-height: 18px;
 }
 

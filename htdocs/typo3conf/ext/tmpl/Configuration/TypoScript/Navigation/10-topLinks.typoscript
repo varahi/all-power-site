@@ -58,6 +58,8 @@ lib.topLink3 {
         altText = {$config.navigation.topLinks.writeLetter}
         file.height = 10
     }
+
+
     20 = TEXT
     20 {
         value = {$config.navigation.topLinks.writeLetter}
@@ -65,3 +67,4 @@ lib.topLink3 {
         stdWrap.typolink.parameter =  {$config.navigation.topLinks.mailTo}
         stdWrap.typolink.ATagParams = class="blink small white"
     }
+}

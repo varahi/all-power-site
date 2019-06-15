@@ -1,0 +1,40 @@
+lib.sideMenu = COA
+lib.sideMenu {
+    wrap = <td align="left" valign="top" height="236">|</td>
+
+    10 = HMENU
+    10 {
+        #entryLevel = 1
+        wrap = <table cellpadding="0" cellspacing="0" border="0" align="top">|</table>
+        1 = TMENU
+        1.expAll = 1
+        1 {
+
+            NO = 1
+            NO {
+                stdWrap.htmlSpecialChars = 1
+                wrapItemAndSub = <tr><td valign="top" class="menu-item">|</tr><tr><td height="4"></td></tr>
+                #linkWrap = <span>|</span>
+                #ATagBeforeWrap = 1
+                ATagParams = class="blink"
+            }
+
+
+            #ACT < .NO
+            #ACT.wrapItemAndSub = <li class="act">|</li>
+
+            #CUR < .ACT
+            #CUR.wrapItemAndSub = <li class="cur">|</li>
+
+        }
+
+        2 < .1
+        2.wrap = <tr>|</tr>
+        2.NO.wrapItemAndSub = <tr><td valign="top" class="menu-item2">|</tr><tr><td height="4"></td></tr>
+        2.NO.expAll = 0
+        #2.ACT.after.cObject < temp.navisub
+        #2.CUR.after.cObject < temp.navisub
+
+    }
+
+}
