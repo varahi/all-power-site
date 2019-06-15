@@ -1,6 +1,31 @@
 mod.web_layout.BackendLayouts {
 
     1 {
+        title = Main Page
+        icon = tmpl-backend-layout
+        config {
+            backend_layout {
+                colCount = 2
+                rowCount = 1
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Left Column
+                                colPos = 0
+                            }
+                            2 {
+                                name = Right Column
+                                colPos = 2
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    2 {
         title = Standard Page
         icon = tmpl-backend-layout
         config {

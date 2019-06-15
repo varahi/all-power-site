@@ -1,6 +1,6 @@
 # manually inserted CSS files
 page.includeCSS {
-
+    10_style = EXT:tmpl/Resources/Public/css/style.css
 }
 
 # JS libs that need to be inserted (can be used for internal and external libs)
@@ -10,10 +10,7 @@ page.includeJSlibs {
 
 # manually inserted JavaScript files
 page.includeJS {
-
-
-
-
+    10_js = EXT:tmpl/Resources/Public/scripts/services.js
 }
 
 # Maybe include some JS stuff rather in footer than in header

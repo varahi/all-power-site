@@ -28,7 +28,7 @@ page {
     bodyTag >
     bodyTagCObject = TEXT
     bodyTagCObject.field = uid
-    bodyTagCObject.wrap = <body id="pageid-|" data-spy="scroll" data-target="#navisub">
+    bodyTagCObject.wrap = <body id="pageid-|">
 
     # ********************************************************************************************
     # Layout
@@ -49,6 +49,9 @@ page {
 
                     pagets__1 = TEXT
                     pagets__1.value = Main
+
+                    pagets__2 = TEXT
+                    pagets__2.value = Standard
 
                     default = TEXT
                     default.value =
@@ -79,6 +82,12 @@ page {
             content < styles.content.get
             content {
                 #stdWrap.wrap = <!--TYPO3SEARCH_begin-->|<!--TYPO3SEARCH_end-->
+                stdWrap.required = 1
+            }
+
+            content_right < styles.content.get
+            content_right {
+                select.where = colPos=2
                 stdWrap.required = 1
             }
         }

@@ -19,7 +19,7 @@ config {
     # new TYPO3 v9 PageTitle Handling
     pageTitleProviders {
         tx_tmpl_pagetitle {
-            provider = CAG\Tmpl\Provider\PageTitleProvider
+            provider = T3Dev\Tmpl\Provider\PageTitleProvider
             before = record
         }
     }
@@ -34,12 +34,12 @@ config {
     setJS_openPic = 0
 
     # CSS handling
-    compressCss = 1
-    concatenateCss = 1
+    #compressCss = 1
+    #concatenateCss = 1
 
     # JS handling
-    compressJs = 1
-    concatenateJs = 1
+    #compressJs = 1
+    #concatenateJs = 1
 
     # for browsers and proxies
     sendCacheHeaders = 1
