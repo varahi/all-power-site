@@ -1,0 +1,27 @@
+rootPageId: 1
+base: 'http://all-power.ru/'
+baseVariants:
+  -
+    base: 'http://all-power.localhost'
+    condition: 'getenv("HOST_ENV") == "localdev"'
+  -
+    base: 'http://dev.all-power.ru'
+    condition: 'getenv("HOST_ENV") == "serverdev"'
+
+languages:
+  -
+    title: Russian
+    enabled: true
+    languageId: '0'
+    base: /
+    typo3Language: ru
+    locale: ru_RU.UTF-8
+    iso-639-1: de
+    navigationTitle: Russian
+    hreflang: ru-Ru
+    direction: ltr
+    fallbackType: fallback
+    fallbacks: '0'
+    flag: ru
+
+routes: {  }
