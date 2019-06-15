@@ -26,6 +26,12 @@ config {
         bannerTitle = Энергия солнца и ветра
     }
 
+    footer {
+        developerLink = http://newstandard.ru/
+        made = Сделано
+        developer = Новый Стандарт
+    }
+
     page {
         copyright = &copy; 2008 - 2019 ООО «Гвардия», ООО «фирма«Охранные системы»
         address = Тел. г. Москва:<p class="bodytext big">(495) 969-17-30

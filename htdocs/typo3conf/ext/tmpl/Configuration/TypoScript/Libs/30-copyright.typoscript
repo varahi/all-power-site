@@ -1,6 +1,6 @@
 lib.copyright = TEXT
 lib.copyright {
-    wrap = <p class="bodytext small">|</p>
+    #wrap = <p class="bodytext small">|</p>
     value = {$config.page.copyright}
 }
 
