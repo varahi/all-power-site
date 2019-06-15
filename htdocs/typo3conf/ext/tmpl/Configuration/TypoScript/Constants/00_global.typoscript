@@ -8,6 +8,7 @@ config {
     language = ru
     locale = ru_RU.UTF-8
     sys_language_uid = 0
+    locale_all = ru_RU
 
     navigation {
         rootPid = 1
