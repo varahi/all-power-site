@@ -21,14 +21,26 @@ lib.developer {
         }
     }
 
+    15 = TEXT
+    15 {
+        wrap = <td>|
+        value =
+    }
     20 = IMAGE
     20 {
-        wrap = <td>|</td>
+        //wrap = <td>|</td>
         file = EXT:tmpl/Resources/Public/img/ns.gif
         altText = {$config.footer.developer}
         file.height = 13
         file.width = 13
         stdWrap.typolink.parameter = {$config.footer.developerLink}
+        //stdWrap.typolink.ATagBeforeWrap = 0
+    }
+
+    25 = TEXT
+    25 {
+        wrap = |</td>
+        value =
     }
 
     30 = TEXT

@@ -23,18 +23,14 @@
                                                     <div align="left" style="padding-bottom: 12px;">
                                                         <f:cObject typoscriptObjectPath="lib.marker" />
                                                     </div>
-
-                                                    <!-- Header will be here -->
-                                                    <div align="left" style="padding-bottom: 22px;">
-                                                        <span style="text-align:left; text-transform:uppercase; font-family: Arial, Tahoma, Verdana, Helvetica, sans-serif; font-weight: bold; color: #666666; font-size: 16px;">О предприятии</span>
-                                                    </div>
+                                                    <f:cObject typoscriptObjectPath="lib.pageTitle" />
                                                 </td>
                                             </tr>
 
                                             <td valign="top" width="10"></td>
                                             <td valign="top" width="600">
-
-                                            <f:render section="content" />
+                                                <!-- Content -->
+                                                <f:render section="content" />
 
                                             </td>
                                             </tr>
