@@ -14,3 +14,7 @@ p.bodytext, p.align-left, p.align-center, p.align-right,
     line-height: 16px;
 
 }
+
+.top-links-bg {
+    background: transparent url(../img/plashka.jpg) 0 0 no-repeat;
+}
