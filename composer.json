@@ -64,7 +64,8 @@
 		"typo3/cms-t3editor": "^9.5",
 		"typo3/cms-tstemplate": "^9.5",
 		"typo3/cms-viewpage": "^9.5",
-		"typo3/minimal": "^9.5"
+		"typo3/minimal": "^9.5",
+		"typo3-ter/fancyboxcontent": "^9.4"
 	},
 	"require-dev": {
 		"friendsofphp/php-cs-fixer": "2.14.0",
