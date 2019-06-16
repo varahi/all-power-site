@@ -1,40 +1,62 @@
+lib.sideMenu >
 lib.sideMenu = COA
 lib.sideMenu {
     wrap = <td align="left" valign="top" height="236">|</td>
 
     10 = HMENU
     10 {
-        #entryLevel = 1
-        wrap = <table cellpadding="0" cellspacing="0" border="0" align="top">|</table>
+        wrap = <table cellpadding="0" cellspacing="0" border="0" align="top"><tbody>|</tbody></table>
+        entryLevel = 0
         1 = TMENU
-        1.expAll = 1
         1 {
-
-            NO = 1
+            wrap = |<tr><td height="4"></td></tr>
+            target = _top
             NO {
-                stdWrap.htmlSpecialChars = 1
-                wrapItemAndSub = <tr><td valign="top" class="menu-item">|</tr><tr><td height="4"></td></tr>
-                #linkWrap = <span>|</span>
-                #ATagBeforeWrap = 1
+                wrapItemAndSub = <tr><td valign="top" class="menu-item">|</tr>
                 ATagParams = class="blink"
             }
-
-
             #ACT < .NO
-            #ACT.wrapItemAndSub = <li class="act">|</li>
-
-            #CUR < .ACT
-            #CUR.wrapItemAndSub = <li class="cur">|</li>
-
+            #ACT = 1
+            #CUR < .NO
+            #CUR = 1
+            #CUR {
+                //allWrap = <div class="menu_act">|</div>
+            #}
+        }
+        2 = TMENU
+        2 {
+            expAll = 0
+            wrap = |<tr><td height="4"></td></tr>
+            target = _top
+            NO {
+                wrapItemAndSub = <tr><td valign="top" class="menu-item2">|</tr>
+                ATagParams = class="blink"
+            }
+            #ACT < .NO
+            #ACT = 1
+            #CUR < .NO
+            #CUR = 1
+            #CUR {
+                //allWrap = <div class="menu_act">|</div>
+            #}
+        }
+        3 = TMENU
+        3 {
+            expAll = 1
+            wrap = <div class="menu_3"><ul>|</ul></div>
+            target = _top
+            NO {
+                wrapItemAndSub = <li>|</li>
+            }
+            ACT < .NO
+            ACT = 1
+            CUR < .NO
+            CUR = 1
+            CUR {
+                allWrap = <div class="menu_act">|</div>
+            }
         }
 
-        2 < .1
-        2.wrap = <tr>|</tr>
-        2.NO.wrapItemAndSub = <tr><td valign="top" class="menu-item2">|</tr><tr><td height="4"></td></tr>
-        2.NO.expAll = 0
-        #2.ACT.after.cObject < temp.navisub
-        #2.CUR.after.cObject < temp.navisub
-
+        3 >
     }
-
 }

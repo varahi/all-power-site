@@ -3,7 +3,8 @@ span.spacious1 a.small {
 }
 
 p.bodytext, p.align-left, p.align-center, p.align-right,
-.ce-bodytext p {
+.ce-bodytext p,
+.content p {
     padding: 0px 0px 10px 0px;
     margin: 0px 0px 0px 0px;
     font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
