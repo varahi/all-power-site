@@ -1,0 +1,11 @@
+lib.copyright = TEXT
+lib.copyright {
+    #wrap = <p class="bodytext small">|</p>
+    value = {$config.page.copyright}
+}
+
+lib.address = TEXT
+lib.address {
+    wrap = <p class="bodytext">|</p><br /></p><br /></p>
+    value = {$config.page.address}
+}

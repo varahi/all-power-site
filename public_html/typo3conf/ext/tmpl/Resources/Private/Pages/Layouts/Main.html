@@ -1,0 +1,61 @@
+<div align="center" class="pad0">
+    <table width="911" height="100%" cellpadding="0" cellspacing="0" border="0">
+        <f:render partial="Header" arguments="{_all}" />
+
+        <tr> <!-- center begin -->
+            <td valign="top">
+                <table cellpadding="0" cellspacing="0" border="0" align="top">
+                    <tr> <!-- left column -->
+                        <td valign="top" width="660">
+                            <table cellpadding="0" cellspacing="0" border="0" align="top">
+                                <tr> <!-- collage -->
+                                    <f:cObject typoscriptObjectPath="lib.banner" />
+                                </tr>
+                                <tr> <!-- ident -->
+                                    <td height="26"></td>
+                                </tr>
+                                <tr> <!-- content -->
+                                    <td align="left" valign="top">
+                                        <table height="100" cellpadding="0" cellspacing="0" border="0" valign="top">
+                                            <tr>
+                                                <td valign="top" width="10"></td>
+                                                <td valign="top" width="277">
+                                                    <div align="left" style="padding-bottom: 12px;">
+                                                        <f:cObject typoscriptObjectPath="lib.marker" />
+                                                    </div>
+                                                    <div align="left" style="padding-bottom: 22px;"><span style="text-align:left; text-transform:uppercase; font-family: Arial, Tahoma, Verdana, Helvetica, sans-serif; font-weight: bold; color: #666666; font-size: 16px;">
+                                                        <f:translate key="page.content.about_company" extensionName="tmpl" /></span>
+                                                    </div>
+
+                                                    <f:render section="content" />
+
+                                                </td>
+                                                <td width="45"></td>
+                                                <td valign="top" width="277">
+                                                    <div align="left" style="padding-bottom: 12px;">
+                                                        <f:cObject typoscriptObjectPath="lib.marker" />
+                                                    </div>
+                                                    <div align="left" style="padding-bottom: 22px;"><span style="text-align:left; text-transform:uppercase; font-family: Arial, Tahoma, Verdana, Helvetica, sans-serif; font-weight: bold; color: #666666; font-size: 16px;">
+                                                        <f:translate key="page.content.services" extensionName="tmpl" /></span>
+                                                    </div>
+
+                                                    <f:render section="content_right" />
+
+                                                </td>
+                                            </tr>
+                                            <tr><td height="25"></td></tr>
+                                        </table>
+                                    </td>
+                                </tr> <!-- content end -->
+                            </table>
+                        </td>
+                        <f:render partial="RightColumn" arguments="{_all}" />
+                    </tr>
+                </table>
+            </td>
+        </tr> <!-- center end -->
+    </table>
+
+    <f:render partial="Footer" arguments="{_all}" />
+
+</div>

@@ -1,0 +1,57 @@
+lib.developer = COA
+lib.developer {
+    wrap = <tr>|</tr>
+    5 = IMAGE
+    5 {
+        wrap = <td>|</td>
+        file = EXT:tmpl/Resources/Public/img/spacer.gif
+        file.height = 27
+        file.width = 1
+    }
+    5 >
+
+    10 = TEXT
+    10 {
+        wrap = <td>|</td>
+        value = {$config.footer.made}
+        typolink {
+            parameter = {$config.footer.developerLink}
+            ATagParams = class="ns"
+            extTarget = _blank
+        }
+    }
+
+    15 = TEXT
+    15 {
+        wrap = <td>|
+        value =
+    }
+    20 = IMAGE
+    20 {
+        //wrap = <td>|</td>
+        file = EXT:tmpl/Resources/Public/img/ns.gif
+        altText = {$config.footer.developer}
+        file.height = 13
+        file.width = 13
+        stdWrap.typolink.parameter = {$config.footer.developerLink}
+        //stdWrap.typolink.ATagBeforeWrap = 0
+    }
+
+    25 = TEXT
+    25 {
+        wrap = |</td>
+        value =
+    }
+
+    30 = TEXT
+    30 {
+        wrap = <td>|</td>
+        value = {$config.footer.developer}
+        typolink {
+            parameter = {$config.footer.developerLink}
+            ATagParams = class="ns"
+            extTarget = _blank
+        }
+    }
+
+}

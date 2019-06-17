@@ -1,0 +1,80 @@
+#
+# Defining some general constants
+#
+
+# basic config options
+config {
+
+    language = ru
+    locale = ru_RU.UTF-8
+    sys_language_uid = 0
+    locale_all = ru_RU
+
+    navigation {
+        rootPid = 1
+
+        topLinks {
+            homeTitle = Домой
+            addToFavorites = Добавить в избранное
+            writeLetter = Написать письмо
+            mailTo = mailto:info@typo3.org - - "Send a mail to main TYPO3 contact"
+        }
+    }
+
+    header {
+        logoTitle = Гвардия
+        logoSmallTitle = www.all-power.ru
+        bannerTitle = Энергия солнца и ветра
+    }
+
+    footer {
+        developerLink = http://newstandard.ru/
+        made = Сделано
+        developer = Новый Стандарт
+    }
+
+    page {
+        copyright = &copy; 2008 - 2019 ООО «Гвардия», ООО «фирма«Охранные системы»
+        address = Тел. г. Москва:<p class="bodytext big">(495) 969-17-30
+    }
+
+}
+
+# some options for the page object, meta data, etc.
+page {
+
+    meta {
+
+        # cat=EXT:tmpl: basic/120/100; type=string; label=Description: Enter a short description of the page. It will be displayed in the result lists of most search engines.
+        description =
+        # cat=EXT:tmpl: basic/120/110; type=string; label=Author: Enter the page author's name.
+        author =
+        # cat=EXT:tmpl: basic/120/120; type=string; label=Keywords: Enter keywords for the page separated by commas. You may also use short phrases.
+        keywords =
+        # cat=EXT:tmpl: advanced/120/100; type=string; label=viewport
+        viewport = width=device-width, initial-scale=1, shrink-to-fit=no
+        # cat=EXT:tmpl: advanced/120/120; type=string; label=apple-mobile-web-app-capable
+        apple-mobile-web-app-capable = no
+        # cat=EXT:tmpl: advanced/120/130; type=string; label=compatible
+        compatible = ie=edge
+        # cat=EXT:tmpl: advanced/120/140; type=string; label=google
+        google = notranslate
+
+    }
+}
+
+tmpl {
+
+    defaultPageTitle =
+
+    pids {
+
+        pages {
+            startpage = 1
+        }
+
+        models {
+
+        }
+    }
+}

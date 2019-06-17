@@ -1,0 +1,20 @@
+span.spacious1 a.small {
+    text-transform: lowercase;
+}
+
+p.bodytext, p.align-left, p.align-center, p.align-right,
+.ce-bodytext p,
+.content p {
+    padding: 0px 0px 10px 0px;
+    margin: 0px 0px 0px 0px;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: justify;
+    color: #000000;
+    line-height: 16px;
+
+}
+
+.top-links-bg {
+    background: transparent url(../img/plashka.jpg) 0 0 no-repeat;
+}

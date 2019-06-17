@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-06-14T13:53:16Z" product-name="tmpl">
+		<header/>
+		<body>
+			<trans-unit id="tx_tmpl_tmpl.name">
+				<source>Tmpl</source>
+			</trans-unit>
+			<trans-unit id="tx_tmpl_tmpl.description">
+				<source>Site template</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
