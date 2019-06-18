@@ -12,7 +12,7 @@ page.includeJSlibs {
 # manually inserted JavaScript files
 page.includeJS {
     10_jquery = EXT:tmpl/Resources/Public/Js/jquery-3.3.1.min.js
-    20_fancybox = EXT:tmpl/Resources/Public/Js/fancyboxcontent.js
+    //20_fancybox = EXT:tmpl/Resources/Public/Js/fancyboxcontent.js
     100_js = EXT:tmpl/Resources/Public/scripts/services.js
 }
 
