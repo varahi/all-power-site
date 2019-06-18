@@ -17,12 +17,14 @@ config {
     pageTitleSeparator.noTrimWrap = | | |
 
     # new TYPO3 v9 PageTitle Handling
+    /*
     pageTitleProviders {
         tx_tmpl_pagetitle {
             provider = T3Dev\Tmpl\Provider\PageTitleProvider
             before = record
         }
     }
+    */
 
     # URL setup
     absRefPrefix = auto
