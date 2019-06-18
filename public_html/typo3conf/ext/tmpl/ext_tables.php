@@ -20,21 +20,4 @@ defined('TYPO3_MODE') || die('Access denied.');
 /**
  * Add rte_ckeditor custom config
  */
-//$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['custom'] = 'EXT:tmpl/Configuration/RTE/Custom.yaml';
-
-/*
-call_user_func(
-    function()
-    {
-
-        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-            'T3Dev.Tmpl',
-            'Tmpl',
-            'Tmpl'
-        );
-
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('tmpl', 'Configuration/TypoScript', 'Tmpl');
-
-    }
-);
-*/
+$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['custom'] = 'EXT:tmpl/Configuration/RTE/Custom.yaml';
