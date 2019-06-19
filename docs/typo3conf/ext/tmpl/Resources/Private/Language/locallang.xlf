@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-06-15T20:54:10Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+			<trans-unit id="page.contacts">
+				<source><![CDATA[]]></source>
+			</trans-unit>
+			<trans-unit id="page.content.about_company">
+				<source><![CDATA[About company]]></source>
+			</trans-unit>
+			<trans-unit id="page.content.contacts">
+				<source><![CDATA[Contacts]]></source>
+			</trans-unit>
+			<trans-unit id="page.content.services">
+				<source><![CDATA[Services]]></source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

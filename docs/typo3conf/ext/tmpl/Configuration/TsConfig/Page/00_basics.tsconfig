@@ -1,0 +1,5 @@
+# label and flag for default language
+mod.SHARED {
+    defaultLanguageLabel = Russian
+    defaultLanguageFlag = ru
+}
