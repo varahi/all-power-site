@@ -17,7 +17,7 @@ config {
             homeTitle = Домой
             addToFavorites = Добавить в избранное
             writeLetter = Написать письмо
-            mailTo = mailto:info@typo3.org - - "Send a mail to main TYPO3 contact"
+            mailTo = mailto:info@all-power.ru - - "Сообщение с сайта all-power.ru"
         }
     }
 
