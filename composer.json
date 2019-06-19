@@ -77,7 +77,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"T3Dev\\Tmpl\\" : "public_html/typo3conf/ext/tmpl/Classes"
+			"T3Dev\\Tmpl\\" : "docs/typo3conf/ext/tmpl/Classes"
 		}
 	},
 	"scripts": {
@@ -92,7 +92,7 @@
 	"extra": {
 		"typo3/cms": {
 			"cms-package-dir": "{$vendor-dir}/typo3/cms",
-			"web-dir": "public_html"
+			"web-dir": "docs"
 		},
 		"helhum/typo3-console": {
 			"install-extension-dummy": false
