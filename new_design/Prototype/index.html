@@ -6,24 +6,591 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="Css/bootstrap.css">
-    <link rel="stylesheet" href="Css/custom.css">
+    <link rel="stylesheet" href="Styles/_bootstrap.css">
+    <!-- Menu -->
+    <link rel="stylesheet" href="Styles/sm-core-css.css">
+    <link rel="stylesheet" href="Styles/sm-clean/sm-clean.css">
+    <link rel="stylesheet" href="Styles/jquery.mmenu.all.css">
+    <link rel="stylesheet" href="Styles/custom.css">
+    <link rel="stylesheet" href="Styles/jquery.smartmenus.bootstrap.css">
+    <link rel="stylesheet" href="Styles/mmenu.css">
+    <link rel="stylesheet" href="Styles/_media_queries.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <script src="Javascript/jquery.smartmenus.min.js"></script>
+    <script src="Javascript/jquery.smartmenus.bootstrap.min.js"></script>
+    <script src="Javascript/jquery.matchHeight.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/_popper.min.js"></script>
+    <script src="Javascript/_bootstrap.js"></script>
+
 </head>
 <body>
 
 <!-- https://lpbattery.ru/ -->
-<header>
-    Header
-    <nav>
-        Navigation
-    </nav>
-    <div class="search">
-        Search box
-    </div>
-    <div class="feedback">
-        Modal feedback form
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="logo col padding-top-10">
+                <a href="#"><img src="Images/logo.gif" alt="All power" title="All power" /></a>
+            </div>
+            <div class="input-group mb-3 col search-box padding-top-10">
+                <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button">Button</button>
+                </div>
+            </div>
+            <div class="col padding-top-10 feedback-button">
+                <button type="button" class="btn btn-info">Feedback</button>
+            </div>
+        </div>
     </div>
 </header>
+
+
+<nav class="navbar navbar-default navbar-fixed-top" >
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="dropdown active"><a href="crimea/" class="dropdown-toggle" role="button" data-toggle="dropdown" data-target="#">Крым<b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="zapadnyi-krym/">Западный Крым</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="zapadnyi-krym/olenevka/">Оленевка</a></li>
+                                <li><a href="zapadnyi-krym/peschanoye/">Песчаное</a></li>
+                                <li><a href="zapadnyi-krym/evpatorija/">Евпатория</a></li>
+                                <li><a href="zapadnyi-krym/saki/">Саки</a></li>
+                                <li><a href="zapadnyi-krym/nikolaevka/">Николаевка</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sevastopol/">Севастополь</a></li>
+                        <li><a href="bolshaja-jalta/">Большая Ялта</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="bolshaja-jalta/foros/">Форос</a></li>
+                                <li><a href="bolshaja-jalta/simeiz/">Симеиз</a></li>
+                                <li><a href="bolshaja-jalta/alupka/">Алупка</a></li>
+                                <li><a href="bolshaja-jalta/miskhor/">Мисхор</a></li>
+                                <li><a href="bolshaja-jalta/livadija/">Ливадия</a></li>
+                                <li><a href="bolshaja-jalta/jalta/">Ялта</a></li>
+                                <li><a href="bolshaja-jalta/massandra/">Массандра</a></li>
+                                <li><a href="bolshaja-jalta/gurzuf/">Гурзуф</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="bolshaja-alushta/">Большая Алушта</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="bolshaja-alushta/partenit/">Партенит</a></li>
+                                <li><a href="bolshaja-alushta/lazurnoe/">Лазурное</a></li>
+                                <li><a href="bolshaja-alushta/alushta/">Алушта</a></li>
+                                <li><a href="bolshaja-alushta/solnechnogorskoe/">Солнечногорское</a></li>
+                                <li><a href="bolshaja-alushta/malorechenskoe/">Малореченское</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="vostochnyi-krym/">Восточный Крым</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="vostochnyi-krym/sudak/">Судак</a></li>
+                                <li><a href="vostochnyi-krym/feodosija/">Феодосия</a></li>
+                                <li><a href="vostochnyi-krym/kerch/">Керчь</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="sochi/" class="dropdown-toggle" role="button" data-toggle="dropdown" data-target="#">Сочи<b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="lazarevskoe/">Лазаревское</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="lazarevskoe/lazarevskoe-hotels/">Гостиницы Лазаревского</a></li>
+                                <li><a href="lazarevskoe/lazarevskoe-photo/">Фото Лазаревское</a></li>
+                                <li><a href="lazarevskoe/lazarevskoe-map/">Карта Лазаревсого</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="loo/">Лоо</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="loo/loo-hotels/">Гостиницы Лоо</a></li>
+                                <li><a href="loo/loo-map/">Лоо карта</a></li>
+                                <li><a href="loo/loo-photo/">Фото Лоо</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="dagomys/">Дагомыс</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="dagomys/dagomys-hotels/">Гостиницы Дагомыса</a></li>
+                                <li><a href="dagomys/dagomys-map/">Карта Дагомыса</a></li>
+                                <li><a href="dagomys/dagomys-photo/">Фото Дагомыса</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="matsesta/">Мацеста</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="matsesta/matsesta-map/">Карта Мацесты</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="khosta/">Хоста</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="khosta/khosta-map/">Карта Хосты</a></li>
+                                <li><a href="khosta/khosta-photo/">Фото Хосты</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="adler/">Адлер</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="adler/adler-map/">Карта Адлера</a></li>
+                                <li><a href="adler/adler-photo/">Фото Адлера</a></li>
+                                <li><a href="adler/adler-dostoprimechatelnosti/">Достопримечательности</a></li>
+                                <li><a href="adler/adler-hotels/">Гостиницы Адлера</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="anapa/" class="dropdown-toggle" role="button" data-toggle="dropdown" data-target="#">Анапа<b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="anapa-hotels/">Гостиницы Анапы</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="anapa-hotels/rivera-hotel-spa-anapa/">Ривьера-клуб Отель&SPA</a></li>
+                                <li><a href="anapa-hotels/hotel-albatros-anapa/">Гостиница Альбатрос</a></li>
+                                <li><a href="anapa-hotels/hotel-evropa-anapa/">Отель Европа</a></li>
+                                <li><a href="anapa-hotels/hotel-mirabel-anapa/">Гостиница Мирабель</a></li>
+                                <li><a href="anapa-hotels/grand-hotel-valentina/">Гранд Отель Валентина</a></li>
+                                <li><a href="anapa-hotels/pansionat-ural/">Пансионат Урал</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="blagoveshchenskaya/">Благовещенская</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="blagoveshchenskaya/blagoveshchenskaya-photo/">Фото Благовещенской</a></li>
+                                <li><a href="blagoveshchenskaya/blagoveshchenskaya-map/">Карта Благовещенской</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="vityazevo/">Витязево</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="vityazevo/vityazevo-history/">История Витязево</a></li>
+                                <li><a href="vityazevo/vityazevo-hotels/">Гостиницы Витязево</a></li>
+                                <li><a href="vityazevo/vityazevo-map/">Карта Витязево</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="dzhemete/">Джемете</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="dzhemete/dzhemete-hotels/">Гостиницы Джемете</a></li>
+                                <li><a href="dzhemete/dzhemete-history/">История Джемете</a></li>
+                                <li><a href="dzhemete/dzhemete-map/">Карта Джемете</a></li>
+                                <li><a href="dzhemete/dzhemete-photo/">Фото Джемете</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sukko/">Сукко</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="sukko/sukko-history/">История Сукко</a></li>
+                                <li><a href="sukko/sukko-map/">Карта Сукко</a></li>
+                                <li><a href="sukko/sukko-photo/">Фото Сукко</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="bolshoy-utrish/">Большой Утриш</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="bolshoy-utrish/bolshoy-utrish-photo/">Фото Большого Утриша</a></li>
+                                <li><a href="bolshoy-utrish/utrish-delfinariy/">Утришский дельфинарий</a></li>
+                                <li><a href="bolshoy-utrish/bolshoy-utrish-map/">Карта Большого Утриша</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="gelendzhik/" class="dropdown-toggle" role="button" data-toggle="dropdown" data-target="#">Геленджик<b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="kabardinka/">Кабардинка</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="kabardinka/kabardinka-hotels/">Гостиницы Кабардинки</a></li>
+                                <li><a href="kabardinka/kabardinka-photo/">Фото Кабардинки</a></li>
+                                <li><a href="kabardinka/kabardinka-map/">Карта Кабардинки</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="divnomorskoye/">Дивноморское</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="divnomorskoye/divnomorskoe-hotels/">Гостиницы Дивноморского</a></li>
+                                <li><a href="divnomorskoye/divnomorskoye-map/">Карта Дивноморского</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="dzhankhot/">Джанхот</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="dzhankhot/dzhankhot-hotels/">Гостиницы Джанхота</a></li>
+                                <li><a href="dzhankhot/dzhankhot-map/">Карта Джанхота</a></li>
+                                <li><a href="dzhankhot/dzhankhot-photo/">Фото Джанхота</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="krinitsa/">Криница</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="krinitsa/krinitsa-map/">Карта Криницы</a></li>
+                                <li><a href="krinitsa/krinitsa-photo/">Фото Криницы</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="betta/">Бетта</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="betta/betta-map/">Карта Бетты</a></li>
+                                <li><a href="betta/betta-photo/">Фото Бетты</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="arkhipo-osipovka/">Архипо-Осиповка</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="arkhipo-osipovka/arkhipo-osipovka-map/">Карта Архипо-Осиповки</a></li>
+                                <li><a href="arkhipo-osipovka/arkhipo-osipovka-photo/">Фото Архипо-Осиповки</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="praskoveevka/">Прасковеевка</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="praskoveevka/praskoveevka-photo/">Фото Прасковеевки</a></li>
+                                <li><a href="praskoveevka/praskoveevka-map/">Карта Прасковеевки</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="tuapse/" class="dropdown-toggle" role="button" data-toggle="dropdown" data-target="#">Туапсе<b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="dzhubga/">Джубга</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="dzhubga/dzhubga-map/">Карта Джубги</a></li>
+                                <li><a href="dzhubga/dzhubga-photo/">Фото Джубги</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="lermontovo/">Лермонтово</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="lermontovo/lermontovo-map/">Карта Лермонтово</a></li>
+                                <li><a href="lermontovo/lermontovo-photo/">Фото Лермонтово</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="novomikhaylovskiy/">Новомихайловский</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="novomikhaylovskiy/novomikhaylovskiy-map/">Карта Новомихайловского</a></li>
+                                <li><a href="novomikhaylovskiy/novomikhaylovskiy-photo/">Фото Новомихайловского</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="olginka/">Ольгинка</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="olginka/olginka-map/">Карта Ольгинки</a></li>
+                                <li><a href="olginka/olginka-photo/">Фото Ольгинки</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="nebug/">Небуг</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="nebug/nebug-photo/">Фото Небуга</a></li>
+                                <li><a href="nebug/nebug-map/">Карта Небуга</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="agoy/">Агой</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="agoy/agoy-photo/">Фото Агоя</a></li>
+                                <li><a href="agoy/agoy-map/">Карта Агоя</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="dederkoy/">Дедеркой</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="dederkoy/dederkoy-photo/">Фото Дедеркоя</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="shepsi/">Шепси</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="shepsi/shepsi-map/">Карта Шепси</a></li>
+                                <li><a href="shepsi/shepsi-photo/">Фото Шепси</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="novorossiysk/" class="dropdown-toggle" role="button" data-toggle="dropdown" data-target="#">Новороссийск<b class="caret"></b></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="novorossiysk/abrau-dyurso/">Абрау-Дюрсо</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="novorossiysk/abrau-dyurso/">Пляж Дюрсо</a></li>
+                                <li><a href="novorossiysk/abrau-dyurso/abrau-dyurso-map/">Карта Абрау-Дюрсо</a></li>
+                                <li><a href="novorossiysk/abrau-dyurso/abrau-dyurso-photo/">Фото Абрау-Дюрсо</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="novorossiysk/shirokaya-balka/">Широкая Балка</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="novorossiysk/shirokaya-balka/shirokaya-balka-map/">Карта Широкой Балки</a></li>
+                                <li><a href="novorossiysk/shirokaya-balka/shirokaya-balka-photo/">Фото Широкой Балки</a></li>
+                                <li><a href="novorossiysk/shirokaya-balka/shirokaya-balka-panorama/">Панорама Широкой Балки</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="novorossiysk/myskhako/">Мысхако</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="novorossiysk/myskhako/agrofirma-myskhako/">ЗАО Агрофирма Мысхако</a></li>
+                                <li><a href="novorossiysk/myskhako/myskhako-map/">Карта Мысхако</a></li>
+                                <li><a href="novorossiysk/myskhako/myskhako-panorama/">Панорама Мысхако</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="mmenu-link" id="sticky"> <a id="nav-icon" href="#menu"> <span></span> <span></span> <span></span> </a>
+            <nav id="menu">
+                <ul>
+                    <li class="Selected mm-selected"><a href="crimea/">Крым</a>
+                        <ul>
+                            <li><a href="zapadnyi-krym/">Западный Крым</a>
+                                <ul>
+                                    <li><a href="zapadnyi-krym/olenevka/">Оленевка</a></li>
+                                    <li><a href="zapadnyi-krym/peschanoye/">Песчаное</a></li>
+                                    <li><a href="zapadnyi-krym/evpatorija/">Евпатория</a></li>
+                                    <li><a href="zapadnyi-krym/saki/">Саки</a></li>
+                                    <li><a href="zapadnyi-krym/nikolaevka/">Николаевка</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="sevastopol/">Севастополь</a></li>
+                            <li><a href="bolshaja-jalta/">Большая Ялта</a>
+                                <ul>
+                                    <li><a href="bolshaja-jalta/foros/">Форос</a></li>
+                                    <li><a href="bolshaja-jalta/simeiz/">Симеиз</a></li>
+                                    <li><a href="bolshaja-jalta/alupka/">Алупка</a></li>
+                                    <li><a href="bolshaja-jalta/miskhor/">Мисхор</a></li>
+                                    <li><a href="bolshaja-jalta/livadija/">Ливадия</a></li>
+                                    <li><a href="bolshaja-jalta/jalta/">Ялта</a></li>
+                                    <li><a href="bolshaja-jalta/massandra/">Массандра</a></li>
+                                    <li><a href="bolshaja-jalta/gurzuf/">Гурзуф</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="bolshaja-alushta/">Большая Алушта</a>
+                                <ul>
+                                    <li><a href="bolshaja-alushta/partenit/">Партенит</a></li>
+                                    <li><a href="bolshaja-alushta/lazurnoe/">Лазурное</a></li>
+                                    <li><a href="bolshaja-alushta/alushta/">Алушта</a></li>
+                                    <li><a href="bolshaja-alushta/solnechnogorskoe/">Солнечногорское</a></li>
+                                    <li><a href="bolshaja-alushta/malorechenskoe/">Малореченское</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="vostochnyi-krym/">Восточный Крым</a>
+                                <ul>
+                                    <li><a href="vostochnyi-krym/sudak/">Судак</a></li>
+                                    <li><a href="vostochnyi-krym/feodosija/">Феодосия</a></li>
+                                    <li><a href="vostochnyi-krym/kerch/">Керчь</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="sochi/">Сочи</a>
+                        <ul>
+                            <li><a href="lazarevskoe/">Лазаревское</a>
+                                <ul>
+                                    <li><a href="lazarevskoe/lazarevskoe-hotels/">Гостиницы Лазаревского</a></li>
+                                    <li><a href="lazarevskoe/lazarevskoe-photo/">Фото Лазаревское</a></li>
+                                    <li><a href="lazarevskoe/lazarevskoe-map/">Карта Лазаревсого</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="loo/">Лоо</a>
+                                <ul>
+                                    <li><a href="loo/loo-hotels/">Гостиницы Лоо</a></li>
+                                    <li><a href="loo/loo-map/">Лоо карта</a></li>
+                                    <li><a href="loo/loo-photo/">Фото Лоо</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="dagomys/">Дагомыс</a>
+                                <ul>
+                                    <li><a href="dagomys/dagomys-hotels/">Гостиницы Дагомыса</a></li>
+                                    <li><a href="dagomys/dagomys-map/">Карта Дагомыса</a></li>
+                                    <li><a href="dagomys/dagomys-photo/">Фото Дагомыса</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="matsesta/">Мацеста</a>
+                                <ul>
+                                    <li><a href="matsesta/matsesta-map/">Карта Мацесты</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="khosta/">Хоста</a>
+                                <ul>
+                                    <li><a href="khosta/khosta-map/">Карта Хосты</a></li>
+                                    <li><a href="khosta/khosta-photo/">Фото Хосты</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="adler/">Адлер</a>
+                                <ul>
+                                    <li><a href="adler/adler-map/">Карта Адлера</a></li>
+                                    <li><a href="adler/adler-photo/">Фото Адлера</a></li>
+                                    <li><a href="adler/adler-dostoprimechatelnosti/">Достопримечательности</a></li>
+                                    <li><a href="adler/adler-hotels/">Гостиницы Адлера</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="anapa/">Анапа</a>
+                        <ul>
+                            <li><a href="anapa-hotels/">Гостиницы Анапы</a>
+                                <ul>
+                                    <li><a href="anapa-hotels/rivera-hotel-spa-anapa/">Ривьера-клуб Отель&SPA</a></li>
+                                    <li><a href="anapa-hotels/hotel-albatros-anapa/">Гостиница Альбатрос</a></li>
+                                    <li><a href="anapa-hotels/hotel-evropa-anapa/">Отель Европа</a></li>
+                                    <li><a href="anapa-hotels/hotel-mirabel-anapa/">Гостиница Мирабель</a></li>
+                                    <li><a href="anapa-hotels/grand-hotel-valentina/">Гранд Отель Валентина</a></li>
+                                    <li><a href="anapa-hotels/pansionat-ural/">Пансионат Урал</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="blagoveshchenskaya/">Благовещенская</a>
+                                <ul>
+                                    <li><a href="blagoveshchenskaya/blagoveshchenskaya-photo/">Фото Благовещенской</a></li>
+                                    <li><a href="blagoveshchenskaya/blagoveshchenskaya-map/">Карта Благовещенской</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="vityazevo/">Витязево</a>
+                                <ul>
+                                    <li><a href="vityazevo/vityazevo-history/">История Витязево</a></li>
+                                    <li><a href="vityazevo/vityazevo-hotels/">Гостиницы Витязево</a></li>
+                                    <li><a href="vityazevo/vityazevo-map/">Карта Витязево</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="dzhemete/">Джемете</a>
+                                <ul>
+                                    <li><a href="dzhemete/dzhemete-hotels/">Гостиницы Джемете</a></li>
+                                    <li><a href="dzhemete/dzhemete-history/">История Джемете</a></li>
+                                    <li><a href="dzhemete/dzhemete-map/">Карта Джемете</a></li>
+                                    <li><a href="dzhemete/dzhemete-photo/">Фото Джемете</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="sukko/">Сукко</a>
+                                <ul>
+                                    <li><a href="sukko/sukko-history/">История Сукко</a></li>
+                                    <li><a href="sukko/sukko-map/">Карта Сукко</a></li>
+                                    <li><a href="sukko/sukko-photo/">Фото Сукко</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="bolshoy-utrish/">Большой Утриш</a>
+                                <ul>
+                                    <li><a href="bolshoy-utrish/bolshoy-utrish-photo/">Фото Большого Утриша</a></li>
+                                    <li><a href="bolshoy-utrish/utrish-delfinariy/">Утришский дельфинарий</a></li>
+                                    <li><a href="bolshoy-utrish/bolshoy-utrish-map/">Карта Большого Утриша</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="gelendzhik/">Геленджик</a>
+                        <ul>
+                            <li><a href="kabardinka/">Кабардинка</a>
+                                <ul>
+                                    <li><a href="kabardinka/kabardinka-hotels/">Гостиницы Кабардинки</a></li>
+                                    <li><a href="kabardinka/kabardinka-photo/">Фото Кабардинки</a></li>
+                                    <li><a href="kabardinka/kabardinka-map/">Карта Кабардинки</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="divnomorskoye/">Дивноморское</a>
+                                <ul>
+                                    <li><a href="divnomorskoye/divnomorskoe-hotels/">Гостиницы Дивноморского</a></li>
+                                    <li><a href="divnomorskoye/divnomorskoye-map/">Карта Дивноморского</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="dzhankhot/">Джанхот</a>
+                                <ul>
+                                    <li><a href="dzhankhot/dzhankhot-hotels/">Гостиницы Джанхота</a></li>
+                                    <li><a href="dzhankhot/dzhankhot-map/">Карта Джанхота</a></li>
+                                    <li><a href="dzhankhot/dzhankhot-photo/">Фото Джанхота</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="krinitsa/">Криница</a>
+                                <ul>
+                                    <li><a href="krinitsa/krinitsa-map/">Карта Криницы</a></li>
+                                    <li><a href="krinitsa/krinitsa-photo/">Фото Криницы</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="betta/">Бетта</a>
+                                <ul>
+                                    <li><a href="betta/betta-map/">Карта Бетты</a></li>
+                                    <li><a href="betta/betta-photo/">Фото Бетты</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="arkhipo-osipovka/">Архипо-Осиповка</a>
+                                <ul>
+                                    <li><a href="arkhipo-osipovka/arkhipo-osipovka-map/">Карта Архипо-Осиповки</a></li>
+                                    <li><a href="arkhipo-osipovka/arkhipo-osipovka-photo/">Фото Архипо-Осиповки</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="praskoveevka/">Прасковеевка</a>
+                                <ul>
+                                    <li><a href="praskoveevka/praskoveevka-photo/">Фото Прасковеевки</a></li>
+                                    <li><a href="praskoveevka/praskoveevka-map/">Карта Прасковеевки</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="tuapse/">Туапсе</a>
+                        <ul>
+                            <li><a href="dzhubga/">Джубга</a>
+                                <ul>
+                                    <li><a href="dzhubga/dzhubga-map/">Карта Джубги</a></li>
+                                    <li><a href="dzhubga/dzhubga-photo/">Фото Джубги</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="lermontovo/">Лермонтово</a>
+                                <ul>
+                                    <li><a href="lermontovo/lermontovo-map/">Карта Лермонтово</a></li>
+                                    <li><a href="lermontovo/lermontovo-photo/">Фото Лермонтово</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="novomikhaylovskiy/">Новомихайловский</a>
+                                <ul>
+                                    <li><a href="novomikhaylovskiy/novomikhaylovskiy-map/">Карта Новомихайловского</a></li>
+                                    <li><a href="novomikhaylovskiy/novomikhaylovskiy-photo/">Фото Новомихайловского</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="olginka/">Ольгинка</a>
+                                <ul>
+                                    <li><a href="olginka/olginka-map/">Карта Ольгинки</a></li>
+                                    <li><a href="olginka/olginka-photo/">Фото Ольгинки</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="nebug/">Небуг</a>
+                                <ul>
+                                    <li><a href="nebug/nebug-photo/">Фото Небуга</a></li>
+                                    <li><a href="nebug/nebug-map/">Карта Небуга</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="agoy/">Агой</a>
+                                <ul>
+                                    <li><a href="agoy/agoy-photo/">Фото Агоя</a></li>
+                                    <li><a href="agoy/agoy-map/">Карта Агоя</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="dederkoy/">Дедеркой</a>
+                                <ul>
+                                    <li><a href="dederkoy/dederkoy-photo/">Фото Дедеркоя</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="shepsi/">Шепси</a>
+                                <ul>
+                                    <li><a href="shepsi/shepsi-map/">Карта Шепси</a></li>
+                                    <li><a href="shepsi/shepsi-photo/">Фото Шепси</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="novorossiysk/">Новороссийск</a>
+                        <ul>
+                            <li><a href="novorossiysk/abrau-dyurso/">Абрау-Дюрсо</a>
+                                <ul>
+                                    <li><a href="novorossiysk/abrau-dyurso/">Пляж Дюрсо</a></li>
+                                    <li><a href="novorossiysk/abrau-dyurso/abrau-dyurso-map/">Карта Абрау-Дюрсо</a></li>
+                                    <li><a href="novorossiysk/abrau-dyurso/abrau-dyurso-photo/">Фото Абрау-Дюрсо</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="novorossiysk/shirokaya-balka/">Широкая Балка</a>
+                                <ul>
+                                    <li><a href="novorossiysk/shirokaya-balka/shirokaya-balka-map/">Карта Широкой Балки</a></li>
+                                    <li><a href="novorossiysk/shirokaya-balka/shirokaya-balka-photo/">Фото Широкой Балки</a></li>
+                                    <li><a href="novorossiysk/shirokaya-balka/shirokaya-balka-panorama/">Панорама Широкой Балки</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="novorossiysk/myskhako/">Мысхако</a>
+                                <ul>
+                                    <li><a href="novorossiysk/myskhako/agrofirma-myskhako/">ЗАО Агрофирма Мысхако</a></li>
+                                    <li><a href="novorossiysk/myskhako/myskhako-map/">Карта Мысхако</a></li>
+                                    <li><a href="novorossiysk/myskhako/myskhako-panorama/">Панорама Мысхако</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</nav>
+
 
 <section class="slider">
     Slider
@@ -51,10 +618,15 @@
     Footer
 </footer>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="Javascript/bootstrap.js"></script>
+<!-- partial:index.partial.html -->
+<!--
+<div id="home_wave"></div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/88/three.min.js'></script>
+<script  src="Javascript/script.js"></script> -->
+
+<script src="Javascript/jquery.mmenu.all.min.js"></script>
+<script src="Javascript/mmenu.js"></script>
+<script src="Javascript/main.js"></script>
+
 </body>
 </html>
