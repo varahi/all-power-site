@@ -7,6 +7,14 @@ canvas {
     z-index: 1;
 }
 */
+
+/* Override bootstrap */
+.btn-info:hover {
+    color: #fff;
+    background-color: #177E89;
+    border-color: #177E89;
+}
+
 .container {
     max-width: 1200px;
 }
@@ -23,3 +31,35 @@ header .logo {
     text-align: right;
 }
 
+/* Carousel */
+.slider {
+    margin-bottom: 20px;
+}
+.owl-carousel .owl-stage-outer {
+    min-height: 200px;
+    max-height: 500px;
+    border: 1px solid #e2e3e5;
+}
+.owl-nav {
+    display: none;
+}
+.slider__teaser a {
+    display: inline-block;
+    /*border: 1px solid #e2e3e5;*/
+    border-bottom: 1px solid #177E89;
+    color: #177E89;
+    /*max-width: 200px;
+    min-width: 100px;*/
+    width: auto;
+    padding: 5px 10px;
+    height: 65px;
+    margin-right: 10px;
+}
+.slider__teaser a:hover {
+    text-decoration: none;
+}
+.slide__description {
+    position: absolute;
+    top: 20%;
+    left: 30px;
+}
