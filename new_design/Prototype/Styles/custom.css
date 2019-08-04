@@ -14,7 +14,10 @@ canvas {
     background-color: #177E89;
     border-color: #177E89;
 }
-
+body {
+    color: rgb(51, 51, 51);
+    font-size: 0.95rem;
+}
 .container {
     max-width: 1200px;
 }
@@ -54,6 +57,7 @@ header .logo {
     padding: 5px 10px;
     height: 65px;
     margin-right: 10px;
+    text-align: center;
 }
 .slider__teaser a:hover {
     text-decoration: none;
@@ -63,3 +67,60 @@ header .logo {
     top: 20%;
     left: 30px;
 }
+
+/* Content */
+.header-h1 h2 {
+    position: relative;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #00838f;
+}
+.header-h1 h2::before {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #00838f;
+    bottom: .25rem;
+    left: 50%;
+    width: 30%;
+    transform: translateX(-50%);
+}
+.header-h1 h2::after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #00838f;
+    bottom: 0;
+    left: 50%;
+    width: 15%;
+    transform: translateX(-50%);
+}
+.header-h1-left h2 {
+    text-align: left;
+}
+.header-h1-left h2::before,
+.header-h1-left h2::after {
+    left: 0;
+    transform: translateX(0);
+}
+.header-h1-right h2 {
+    text-align: right;
+}
+.header-h1-right h2::before,
+.header-h1-right h2::after {
+    left: unset;
+    right: 0;
+    transform: translateX(0);
+}
+
+
+.parallax-window {
+    padding-top: 30px;
+    min-height: 400px;
+    background: transparent;
+    color: #fff;
+}
+.parallax-window h2 {
+    color: #fff;
+}
+
