@@ -20,6 +20,12 @@
     <!-- Custom -->
     <link rel="stylesheet" href="Styles/custom.css">
     <link rel="stylesheet" href="Styles/media_queries.css">
+    <!-- Webfonts -->
+    <link rel="stylesheet" href="Styles/fonts/css/_fontawesome.min.css">
+    <link rel="stylesheet" href="Styles/fonts/css/_brands.min.css">
+    <link rel="stylesheet" href="Styles/fonts/css/_solid.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Js -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -42,6 +48,8 @@
 <body>
 
 <!-- https://lpbattery.ru/ -->
+<!-- ToDo: on top -->
+
 <header class="header">
     <div class="container">
         <div class="row">
@@ -334,25 +342,119 @@
 </section>
 
 
+<section id="un-footer" class="section">
+    <div class="container">
+        <div class="header-h1 header-h1-left">
+            <h2>Выберите готовое решение</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card teaser-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="Images/lifepo4.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">ЛИТИЙ-ЖЕЛЕЗО-ФОСФАТНЫЕ АККУМУЛЯТОРНЫЕ БАТАРЕИ ( LiFePo4 )</h5>
+                                <p class="card-text">Лучшие из ХИТ, что есть на сегодня. Этот тип аккумуляторов имеет большой ряд преимуществ по сравнению с прочими.</p>
+                                <a href="#" class="card-link">Подробнее...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card teaser-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="Images/lion.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">ЛИТИЙ-ИОННЫЕ АККУМУЛЯТОРНЫЕ БАТАРЕИ (Li-ion)</h5>
+                                <p class="card-text">Этот тип батарей не имеет себе равных на сегодняшний день в следующих параметрах: наибольшая удельная ёмкость; небольшой вес и габаритные размеры</p>
+                                <a href="#" class="card-link">Подробнее...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card teaser-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="Images/lto.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">ЛИТИЙ-ТИТАНАТНЫЕ АККУМУЛЯТОРНЫЕ БАТАРЕИ (LTO)</h5>
+                                <p class="card-text">Преимущества: рекордное количество циклов ( в 10 раз больше жизненных циклов , чем у литий-железо-фосфатных аккумуляторов)</p>
+                                <a href="#" class="card-link">Подробнее...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- <section class="feedback">
     Feedback section
 </section> -->
 <footer class="footer">
     <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                Phone
+        <div class="footer__address">
+            <div class="header-h1 header-h1-left">
+                <h2>Нужна консультация?</h2>
+                <p>Наши специалисты подберут аккумуляторы под Ваши конкретные требования и проконсультируют от этапа проектирования вплоть до истечения срока эксплуатации батареи.</p>
             </div>
-            <div class="col-md-4">
-                Email
-            </div>
-            <div class="col-md-4">
-                Address
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="fa fa-phone fa-5x" style="font-size:72px;color:#fff;"></i>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa fas fa-envelope fa-5x" style="font-size:72px;color:#fff;"></i>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa fa-address-card fa-5x" style="font-size:72px;color:#fff;"></i>
+                </div>
             </div>
         </div>
 
-        <div class="row">
-            Feedback form
+        <div class="powermail__container">
+            <div class="header-h1 header-h1-left">
+                <h2>Отправить сообщение</h2>
+            </div>
+            <form class="powermail">
+                <div class="form-row">
+                    <div class="form-group col-md-5">
+                        <label for="name">Ваше Имя</label>
+                        <input type="text" class="form-control" id="name" placeholder="Ваше Иимя">
+
+                        <label for="phone">Ваш Телефон</label>
+                        <input type="text" class="form-control" id="phone" placeholder="Ваш Телефон">
+
+                        <label for="email">Ваш E-mail</label>
+                        <input type="text" class="form-control" id="email" placeholder="Ваш E-mail">
+                    </div>
+                    <div class="form-group col-md-7">
+                        <label for="message">Ваше сообщение:</label>
+                        <textarea class="form-control" id="message"></textarea>
+                        <button class="btn btn-primary powermail__form_submit" type="submit">Submit form</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    &copy; 2008 - 2019 ООО «Гвардия», ООО «фирма«Охранные системы», info@all-power.ru
+                </div>
+            </div>
         </div>
     </div>
 </footer>

@@ -54,6 +54,7 @@ header .logo {
     /*max-width: 200px;
     min-width: 100px;*/
     width: auto;
+    min-width: 170px;
     padding: 5px 10px;
     height: 65px;
     margin-right: 10px;
@@ -120,13 +121,53 @@ header .logo {
 .section {
     padding: 20px 0;
 }
-
 h3 {
     font-size: 1.4rem;
 }
+.teaser-card {
+    margin-top: 20px;
+}
+.teaser-card img {
+    padding-top: 20px;
+}
+.powermail__container {
+    background: #fff;
+    padding: 20px;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+.powermail__container textarea {
+    min-height: 120px;
+}
+.powermail__form_submit {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
 
 
-/* Parallax */
+.footer__address {
+    padding: 20px;
+    color: #fff;
+}
+.footer__address h2 {
+    color: #fff;
+}
+.footer .header-h1 h2::before {
+    border-bottom: 2px solid #fff;
+}
+.footer .header-h1 h2::after {
+    border-bottom: 2px solid #fff;
+}
+.copyright {
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+ /* Parallax */
 .parallax-window {
     padding-top: 30px;
     min-height: 400px;
@@ -159,6 +200,10 @@ h3 {
     height: 2px;
 }
 
+
+#un-footer {
+    background: #e8f2f3;
+}
 
 footer.footer {
     min-height: 300px;
