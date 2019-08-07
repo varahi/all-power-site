@@ -9,10 +9,16 @@
     <link rel="stylesheet" href="Styles/bootstrap.css">
     <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
+    <!-- Webfonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- SmartMenus core CSS (required) -->
     <link href="Styles/sm-core-css.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="Styles/sm-blue/sm-blue.css">
     <link href="Styles/smartmenu.css" rel="stylesheet" type="text/css" />
+
+    <!-- Animate -->
+    <link rel="stylesheet" href="Styles/animate.css">
 
     <!-- Owl carousel css -->
     <link rel="stylesheet" href="Styles/carousel/owl.carousel.min.css">
@@ -20,12 +26,6 @@
     <!-- Custom -->
     <link rel="stylesheet" href="Styles/custom.css">
     <link rel="stylesheet" href="Styles/media_queries.css">
-    <!-- Webfonts -->
-    <link rel="stylesheet" href="Styles/fonts/css/_fontawesome.min.css">
-    <link rel="stylesheet" href="Styles/fonts/css/_brands.min.css">
-    <link rel="stylesheet" href="Styles/fonts/css/_solid.min.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Js -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -40,7 +40,7 @@
     <script src="Javascript/carousel/owl.carousel.min.js"></script>
     <!-- Parallax -->
     <script src="Javascript/parallax.min.js"></script>
-
+    <script src="Javascript/jquery.viewportchecker.min.js"></script>
     <!-- Pace -->
     <script src="Javascript/pace.min.js"></script>
 
@@ -50,6 +50,7 @@
 <!-- https://lpbattery.ru/ -->
 <!-- ToDo: on top -->
 
+<div id="toTop"></div>
 <header class="header">
     <div class="container">
         <div class="row">
@@ -331,11 +332,11 @@
             <p>Вся продукция компании Li-Pol Systems имеет сертификаты соответствия Федерального агентства по техническому регулированию и метрологии.</p>
             <div class="col-md-6">
                 <h3>УСН ООО "фирма "Охранные системы"</h3>
-                <img src="Images/Uproshchenka_GVARDIJA.jpg" alt="" class="img-thumbnail" />
+                <img src="Images/Uproshchenka_GVARDIJA.jpg" alt="" class="img-thumbnail ce-textpic" />
             </div>
             <div class="col-md-6">
                 <h3>УСН ООО "Гвардия"</h3>
-                <img src="Images/Uproshchenka_OS.jpg" alt="" class="img-thumbnail" />
+                <img src="Images/Uproshchenka_OS.jpg" alt="" class="img-thumbnail ce-textpic" />
             </div>
         </div>
     </div>
@@ -406,19 +407,22 @@
 <footer class="footer">
     <div class="container">
         <div class="footer__address">
-            <div class="header-h1 header-h1-left">
+            <div class="header-h1 header-h1-left white">
                 <h2>Нужна консультация?</h2>
-                <p>Наши специалисты подберут аккумуляторы под Ваши конкретные требования и проконсультируют от этапа проектирования вплоть до истечения срока эксплуатации батареи.</p>
+                <p>Специалист подберёт для Вас аккумуляторы под Ваши конкретные требования. Также Вы можете получить консультацию по любым техническим вопросам относительно проектирования батареи, её изготовления и эксплуатации.</p>
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 font-big">
                     <i class="fa fa-phone fa-5x" style="font-size:72px;color:#fff;"></i>
+                    <p>(495) 969-17-30</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 font-big">
                     <i class="fa fas fa-envelope fa-5x" style="font-size:72px;color:#fff;"></i>
+                    <p>info@all-power.ru</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 font-big">
                     <i class="fa fa-address-card fa-5x" style="font-size:72px;color:#fff;"></i>
+                    <p>Тел. г. Москва: </p>
                 </div>
             </div>
         </div>
@@ -431,18 +435,18 @@
                 <div class="form-row">
                     <div class="form-group col-md-5">
                         <label for="name">Ваше Имя</label>
-                        <input type="text" class="form-control" id="name" placeholder="Ваше Иимя">
+                        <input type="text" class="form-control" id="name" placeholder="Ваше Иимя" required>
 
                         <label for="phone">Ваш Телефон</label>
                         <input type="text" class="form-control" id="phone" placeholder="Ваш Телефон">
 
                         <label for="email">Ваш E-mail</label>
-                        <input type="text" class="form-control" id="email" placeholder="Ваш E-mail">
+                        <input type="text" class="form-control" id="email" placeholder="Ваш E-mail" required>
                     </div>
                     <div class="form-group col-md-7">
                         <label for="message">Ваше сообщение:</label>
                         <textarea class="form-control" id="message"></textarea>
-                        <button class="btn btn-primary powermail__form_submit" type="submit">Submit form</button>
+                        <button class="btn btn-primary powermail__form_submit" type="submit">Отправить сообщение</button>
                     </div>
                 </div>
             </form>

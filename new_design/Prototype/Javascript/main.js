@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	// Carousel
 	$('.owl-carousel').owlCarousel({
 		loop: true,
 		margin: 10,
@@ -22,7 +23,7 @@ $(document).ready(function() {
 		}
 	});
 
-
+	// Parallax
 	$('section[data-type="background"]').each(function(){
 		var $bgobj = $(this); // создаем объект
 		$(window).scroll(function() {
@@ -34,38 +35,28 @@ $(document).ready(function() {
 		});
 	});
 
-});
+	// Diasble right click menu
+	//$(this).bind("contextmenu", function(e) {
+	//	e.preventDefault();
+	//});
 
-
-//Parallax
-/*
-$(document).ready(function(){
-	$window = $(window);
-	$('section[data-type="background"]').each(function(){
-		var $bgobj = $(this); // Назначаем объект
-		$(window).scroll(function() {
-			var yPos = -($window.scrollTop() / $bgobj.data('speed'));
-			var coords = '50% '+ yPos + 'px';
-			$bgobj.css({ backgroundPosition: coords });
-		});
+	// To Top
+	$(window).scroll(function() {
+		if($(this).scrollTop() != 0) {
+			$('#toTop').fadeIn();
+		} else {
+			$('#toTop').fadeOut();
+		}
 	});
-});
 
-document.createElement("article");
-document.createElement("section");
- */
-
-/*
-$(document).ready(function(){
-	$('section[data-type="background"]').each(function(){
-		var $bgobj = $(this); // создаем объект
-		$(window).scroll(function() {
-			var yPos = -($window.scrollTop() / $bgobj.data('speed')); // вычисляем коэффициент
-			// Присваиваем значение background-position
-			var coords = 'center '+ yPos + 'px';
-			// Создаем эффект Parallax Scrolling
-			$bgobj.css({ backgroundPosition: coords });
-		});
+	$('#toTop').click(function() {
+		$('body,html').animate({scrollTop:0},800);
 	});
-})
-*/
+
+	// Animate
+	jQuery('.ce-textpic, .tx-escortcities, .model-detail__img-wrap, .animate').addClass("visible").viewportChecker ({
+		classToAdd: 'visible animated zoomIn',
+		offset: 250
+	});
+
+});

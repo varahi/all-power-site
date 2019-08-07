@@ -146,19 +146,33 @@ h3 {
     right: 0;
     bottom: 0;
 }
-
+.powermail__container label {
+    margin-top: 10px;
+    display: none;
+}
+.powermail__container input[type="text"] {
+/*    margin: 10px 0;*/
+    margin-bottom: 20px;
+}
+.powermail__container form {
+    padding-top: 20px;
+}
 
 .footer__address {
     padding: 20px;
     color: #fff;
 }
-.footer__address h2 {
+.font-big p {
+    font-size: 18px;
+}
+
+.white h2 {
     color: #fff;
 }
-.footer .header-h1 h2::before {
+.white h2::before {
     border-bottom: 2px solid #fff;
 }
-.footer .header-h1 h2::after {
+.white h2::after {
     border-bottom: 2px solid #fff;
 }
 .copyright {
@@ -209,3 +223,14 @@ footer.footer {
     min-height: 300px;
     background: #694442;
 }
+#toTop {
+    background: url(../Images/to-top.png) 50% 50% no-repeat;
+    width: 69px;
+    height: 69px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+    color: #333;
+    z-index: 99999; }
