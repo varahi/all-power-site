@@ -21,3 +21,8 @@ defined('TYPO3_MODE') || die('Access denied.');
  * Add rte_ckeditor custom config
  */
 $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['custom'] = 'EXT:tmpl/Configuration/RTE/Custom.yaml';
+
+/**
+ *  Configuration ce for tables
+ */
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_tmplcemainslider_item');
