@@ -104,6 +104,9 @@ return [
         'fancybox' => [
             'packagePath' => 'typo3conf/ext/fancybox/',
         ],
+        'gridelements' => [
+            'packagePath' => 'typo3conf/ext/gridelements/',
+        ],
         'lfeditor' => [
             'packagePath' => 'typo3conf/ext/lfeditor/',
         ],

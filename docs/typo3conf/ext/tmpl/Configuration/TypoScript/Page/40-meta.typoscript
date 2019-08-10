@@ -23,8 +23,8 @@ page.meta {
     language            = {$config.language}
     //robots              = index,follow
     robots               = noindex,nofollow
-    viewport = width=device-width
-    #viewport             = width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes
+    #sviewport = width=device-width
+    viewport             = width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes
     #MSSmartTagsPreventParsing = true
     #SKYPE_TOOLBAR = SKYPE_TOOLBAR_PARSER_COMPATIBLE
 

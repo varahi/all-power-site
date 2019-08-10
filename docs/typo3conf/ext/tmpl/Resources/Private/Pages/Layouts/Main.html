@@ -1,61 +1,177 @@
-<div align="center" class="pad0">
-    <table width="911" height="100%" cellpadding="0" cellspacing="0" border="0">
-        <f:render partial="Header" arguments="{_all}" />
+<f:render partial="Header" arguments="{_all}" />
+<f:render partial="Navigation" arguments="{_all}" />
 
-        <tr> <!-- center begin -->
-            <td valign="top">
-                <table cellpadding="0" cellspacing="0" border="0" align="top">
-                    <tr> <!-- left column -->
-                        <td valign="top" width="660">
-                            <table cellpadding="0" cellspacing="0" border="0" align="top">
-                                <tr> <!-- collage -->
-                                    <f:cObject typoscriptObjectPath="lib.banner" />
-                                </tr>
-                                <tr> <!-- ident -->
-                                    <td height="26"></td>
-                                </tr>
-                                <tr> <!-- content -->
-                                    <td align="left" valign="top">
-                                        <table height="100" cellpadding="0" cellspacing="0" border="0" valign="top">
-                                            <tr>
-                                                <td valign="top" width="10"></td>
-                                                <td valign="top" width="277">
-                                                    <div align="left" style="padding-bottom: 12px;">
-                                                        <f:cObject typoscriptObjectPath="lib.marker" />
-                                                    </div>
-                                                    <div align="left" style="padding-bottom: 22px;"><span style="text-align:left; text-transform:uppercase; font-family: Arial, Tahoma, Verdana, Helvetica, sans-serif; font-weight: bold; color: #666666; font-size: 16px;">
-                                                        <f:translate key="page.content.about_company" extensionName="tmpl" /></span>
-                                                    </div>
+<!-- Slider -->
+<section class="slider">
+    <f:render section="content_slider" />
+</section>
+<section class="teaser">
+    <div class="container">
+        <f:render section="content_teaser" />
+    </div>
+</section>
 
-                                                    <f:render section="content" />
+<section class="parallax-window" data-parallax="scroll" data-image-src="typo3conf/ext/tmpl/Resources/Public/Images/opl-parallax-universe.jpg">
+    <div class="container">
+        <f:render section="content_parallax" />
 
-                                                </td>
-                                                <td width="45"></td>
-                                                <td valign="top" width="277">
-                                                    <div align="left" style="padding-bottom: 12px;">
-                                                        <f:cObject typoscriptObjectPath="lib.marker" />
-                                                    </div>
-                                                    <div align="left" style="padding-bottom: 22px;"><span style="text-align:left; text-transform:uppercase; font-family: Arial, Tahoma, Verdana, Helvetica, sans-serif; font-weight: bold; color: #666666; font-size: 16px;">
-                                                        <f:translate key="page.content.services" extensionName="tmpl" /></span>
-                                                    </div>
+        <!-- <div class="row">
+            <div class="col-md-6">
+                <div class="header-h1 header-h1-left">
+                    <h2>В продаже ЛИТИЙ- ЖЕЛЕЗО-ФОСФАТНЫЕ АККУМУЛЯТОРЫ и АККУМУЛЯТОРНЫЕ БАТАРЕИ</h2>
+                </div>
+                <p>Лучшие из ХИТ, что есть на сегодня. Этот тип аккумуляторов имеет большой ряд преимуществ по сравнению с прочими. В частности: рекордное количество циклов, высокий КПД, быстрый заряд- возможность заряда большими токами , отсутствие эффекта памяти после многочисленных циклов зарядки и разрядки, они не портятся в разряженном состоянии. А также ,- широкий температурный диапазон эксплуатации. Эти возможности позволяют использовать их в качестве высокоэффективного накопителя энергии.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="header-h1 header-h1-left">
+                    <h2>В продаже ЛИТИЙ-ТИТАНАТНЫЕ АККУМУЛЯТОРЫ </h2>
+                </div>
+                <p>Преимущества:рекордное количество циклов ( в 10 раз больше жизненных циклов , чем у литий-железо-фосфатных аккумуляторов- при разумных условиях эксплуатации - 20 000 циклов), высокий КПД, быстрый заряд- возможность заряда большими токами , отсутствие эффекта памяти после многочисленных циклов зарядки и разрядки, они не портятся в разряженном состоянии. А также ,- широкий температурный диапазон эксплуатации (заряд-разряд при - 40 С), высокая степень безопасности. Эти возможности позволяют использовать их в качестве высокоэффективного накопителя энергии в стационарных системах аккумулирования энергии для солнечной и ветровой энергетики.</p>
+            </div>
+        </div> -->
+    </div>
+</section>
 
-                                                    <f:render section="content_right" />
+<section id="certification" class="section">
+    <div class="container">
+        <f:render section="content_certification" />
 
-                                                </td>
-                                            </tr>
-                                            <tr><td height="25"></td></tr>
-                                        </table>
-                                    </td>
-                                </tr> <!-- content end -->
-                            </table>
-                        </td>
-                        <f:render partial="RightColumn" arguments="{_all}" />
-                    </tr>
-                </table>
-            </td>
-        </tr> <!-- center end -->
-    </table>
+        <!-- <div class="row">
+            <div class="header-h1 header-h1-left">
+                <h2>Сертификаты</h2>
+            </div>
+            <p>Вся продукция компании Li-Pol Systems имеет сертификаты соответствия Федерального агентства по техническому регулированию и метрологии.</p>
+            <div class="col-md-6">
+                <h3>УСН ООО "фирма "Охранные системы"</h3>
+                <img src="Images/Uproshchenka_GVARDIJA.jpg" alt="" class="img-thumbnail ce-textpic" />
+            </div>
+            <div class="col-md-6">
+                <h3>УСН ООО "Гвардия"</h3>
+                <img src="Images/Uproshchenka_OS.jpg" alt="" class="img-thumbnail ce-textpic" />
+            </div>
+        </div> -->
+    </div>
+</section>
 
-    <f:render partial="Footer" arguments="{_all}" />
 
-</div>
+<section id="un-footer" class="section">
+    <f:render section="content_unfooter" />
+
+    <div class="container">
+        <div class="header-h1 header-h1-left">
+            <h2>Выберите готовое решение</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card teaser-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="Images/lifepo4.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">ЛИТИЙ-ЖЕЛЕЗО-ФОСФАТНЫЕ АККУМУЛЯТОРНЫЕ БАТАРЕИ ( LiFePo4 )</h5>
+                                <p class="card-text">Лучшие из ХИТ, что есть на сегодня. Этот тип аккумуляторов имеет большой ряд преимуществ по сравнению с прочими.</p>
+                                <a href="#" class="card-link">Подробнее...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card teaser-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="Images/lion.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">ЛИТИЙ-ИОННЫЕ АККУМУЛЯТОРНЫЕ БАТАРЕИ (Li-ion)</h5>
+                                <p class="card-text">Этот тип батарей не имеет себе равных на сегодняшний день в следующих параметрах: наибольшая удельная ёмкость; небольшой вес и габаритные размеры</p>
+                                <a href="#" class="card-link">Подробнее...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card teaser-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="Images/lto.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">ЛИТИЙ-ТИТАНАТНЫЕ АККУМУЛЯТОРНЫЕ БАТАРЕИ (LTO)</h5>
+                                <p class="card-text">Преимущества: рекордное количество циклов ( в 10 раз больше жизненных циклов , чем у литий-железо-фосфатных аккумуляторов)</p>
+                                <a href="#" class="card-link">Подробнее...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <section class="feedback">
+    Feedback section
+</section> -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__address">
+            <div class="header-h1 header-h1-left white">
+                <h2>Нужна консультация?</h2>
+                <p>Специалист подберёт для Вас аккумуляторы под Ваши конкретные требования. Также Вы можете получить консультацию по любым техническим вопросам относительно проектирования батареи, её изготовления и эксплуатации.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 font-big">
+                    <i class="fa fa-phone fa-5x" style="font-size:72px;color:#fff;"></i>
+                    <p>(495) 969-17-30</p>
+                </div>
+                <div class="col-md-4 font-big">
+                    <i class="fa fas fa-envelope fa-5x" style="font-size:72px;color:#fff;"></i>
+                    <p>info@all-power.ru</p>
+                </div>
+                <div class="col-md-4 font-big">
+                    <i class="fa fa-address-card fa-5x" style="font-size:72px;color:#fff;"></i>
+                    <p>Тел. г. Москва: </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="powermail__container">
+            <div class="header-h1 header-h1-left">
+                <h2>Отправить сообщение</h2>
+            </div>
+            <form class="powermail">
+                <div class="form-row">
+                    <div class="form-group col-md-5">
+                        <label for="name">Ваше Имя</label>
+                        <input type="text" class="form-control" id="name" placeholder="Ваше Иимя" required>
+
+                        <label for="phone">Ваш Телефон</label>
+                        <input type="text" class="form-control" id="phone" placeholder="Ваш Телефон">
+
+                        <label for="email">Ваш E-mail</label>
+                        <input type="text" class="form-control" id="email" placeholder="Ваш E-mail" required>
+                    </div>
+                    <div class="form-group col-md-7">
+                        <label for="message">Ваше сообщение:</label>
+                        <textarea class="form-control" id="message"></textarea>
+                        <button class="btn btn-primary powermail__form_submit" type="submit">Отправить сообщение</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    &copy; 2008 - 2019 ООО «Гвардия», ООО «фирма«Охранные системы», info@all-power.ru
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

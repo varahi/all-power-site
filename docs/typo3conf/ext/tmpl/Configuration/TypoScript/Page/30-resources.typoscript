@@ -1,8 +1,16 @@
 # manually inserted CSS files
 page.includeCSS {
-    10_style = EXT:tmpl/Resources/Public/css/style.css
-    20_style = EXT:tmpl/Resources/Public/css/custom.css
+    10_bootstrap = EXT:tmpl/Resources/Public/Styles/bootstrap.css
+    20_fonts = https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+    30_smcore = EXT:tmpl/Resources/Public/Styles/sm-core-css.css
+    40_smblue = EXT:tmpl/Resources/Public/Styles/sm-blue/sm-blue.css
+    50_smartmenu = EXT:tmpl/Resources/Public/Styles/smartmenu.css
+    60_animate = EXT:tmpl/Resources/Public/Styles/animate.css
+    70_carousel = EXT:tmpl/Resources/Public/Styles/carousel/owl.carousel.min.css
+    80_custom = EXT:tmpl/Resources/Public/Styles/custom.css
+    90_media_queries = EXT:tmpl/Resources/Public/Styles/media_queries.css
 }
+
 
 # JS libs that need to be inserted (can be used for internal and external libs)
 page.includeJSlibs {
@@ -11,9 +19,16 @@ page.includeJSlibs {
 
 # manually inserted JavaScript files
 page.includeJS {
-    10_jquery = EXT:tmpl/Resources/Public/Js/jquery-3.3.1.min.js
-    //20_fancybox = EXT:tmpl/Resources/Public/Js/fancyboxcontent.js
-    100_js = EXT:tmpl/Resources/Public/scripts/services.js
+    10_jquery = EXT:tmpl/Resources/Public/Javascript/jquery-3.3.1.min.js
+    20_bootstrap = EXT:tmpl/Resources/Public/Javascript/bootstrap.js
+    30_smartmenus = EXT:tmpl/Resources/Public/Javascript/jquery.smartmenus.min.js
+    40_smartmenu = EXT:tmpl/Resources/Public/Javascript/smartmenu.js
+    50_carousel = EXT:tmpl/Resources/Public/Javascript/carousel/owl.carousel.min.js
+    40_smartmenu = EXT:tmpl/Resources/Public/Javascript/smartmenu.js
+    50_carousel = EXT:tmpl/Resources/Public/Javascript/carousel/owl.carousel.min.js
+    50_parallax = EXT:tmpl/Resources/Public/Javascript/parallax.min.js
+    60_viewportchecker = EXT:tmpl/Resources/Public/Javascript/jquery.viewportchecker.min.js
+    70_pace = EXT:tmpl/Resources/Public/Javascript/pace.min.js
 }
 
 # Maybe include some JS stuff rather in footer than in header
@@ -22,7 +37,9 @@ page.includeJSFooterlibs {
 }
 
 page.includeJSFooter {
-
+    10_jquery_mmenu = EXT:tmpl/Resources/Public/Javascript/jquery.mmenu.all.min.js
+    20_mmenu = EXT:tmpl/Resources/Public/Javascript/mmenu.js
+    30_mmenu = EXT:tmpl/Resources/Public/Javascript/main.js
     //file0 = EXT:tmpl/Resources/Public/js/bootstrap.min.js
     //file3.media = all
 

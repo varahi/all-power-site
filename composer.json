@@ -25,6 +25,7 @@
 		"consolidation/robo": "^1",
 		"cweagans/composer-patches": "^1.6",
 		"deployer/deployer": "^6",
+		"gridelementsteam/gridelements": "^9.2",
 		"helhum/config-loader": "0.9",
 		"helhum/dotenv-connector": "^2.1",
 		"helhum/typo3-console": "^5.5",

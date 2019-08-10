@@ -85,11 +85,30 @@ page {
                 stdWrap.required = 1
             }
 
-            content_right < styles.content.get
-            content_right {
+            content_teaser < styles.content.get
+            content_teaser {
+                select.where = colPos=1
+                stdWrap.required = 1
+            }
+
+            content_parallax < styles.content.get
+            content_parallax {
                 select.where = colPos=2
                 stdWrap.required = 1
             }
+
+            content_certification < styles.content.get
+            content_certification {
+                select.where = colPos=3
+                stdWrap.required = 1
+            }
+
+            content_unfooter < styles.content.get
+            content_unfooter {
+                select.where = colPos=4
+                stdWrap.required = 1
+            }
+
         }
 
         /*

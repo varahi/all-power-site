@@ -9,17 +9,17 @@ call_user_func(
             'T3Dev.Tmpl',
             'Tmpl',
             [
-                
+
             ],
             // non-cacheable actions
             [
-                
+
             ]
         );
 
-    // wizards
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
-        'mod {
+        // wizards
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
+            'mod {
             wizards.newContentElement.wizardItems.plugins {
                 elements {
                     tmpl {
@@ -35,14 +35,14 @@ call_user_func(
                 show = *
             }
        }'
-    );
-		$iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
-		
-			$iconRegistry->registerIcon(
-				'tmpl-plugin-tmpl',
-				\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-				['source' => 'EXT:tmpl/Resources/Public/Icons/user_plugin_tmpl.svg']
-			);
-		
+        );
+        $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
+
+        $iconRegistry->registerIcon(
+            'tmpl-plugin-tmpl',
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:tmpl/Resources/Public/Icons/user_plugin_tmpl.svg']
+        );
+
     }
 );

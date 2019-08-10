@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="Styles/bootstrap.css">
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    <!-- Webfonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- SmartMenus core CSS (required) -->
+    <link href="Styles/sm-core-css.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="Styles/sm-blue/sm-blue.css">
+    <link href="Styles/smartmenu.css" rel="stylesheet" type="text/css" />
+
+    <!-- Animate -->
+    <link rel="stylesheet" href="Styles/animate.css">
+
+    <!-- Owl carousel css -->
+    <link rel="stylesheet" href="Styles/carousel/owl.carousel.min.css">
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="Styles/custom.css">
+    <link rel="stylesheet" href="Styles/media_queries.css">
+
+    <!-- Js -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="Javascript/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/-popper.min.js"></script>
+    <script src="Javascript/bootstrap.js"></script>
+
+    <!-- Smart menu -->
+    <script src="Javascript/jquery.smartmenus.min.js"></script>
+    <script src="Javascript/smartmenu.js"></script>
+    <!-- Owl carousel js -->
+    <script src="Javascript/carousel/owl.carousel.min.js"></script>
+    <!-- Parallax -->
+    <script src="Javascript/parallax.min.js"></script>
+    <script src="Javascript/jquery.viewportchecker.min.js"></script>
+    <!-- Pace -->
+    <script src="Javascript/pace.min.js"></script>
+
+</head>
+<body>
+
+<!-- https://lpbattery.ru/ -->
+<!-- ToDo: on top -->
+
+<div id="toTop"></div>
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="logo col padding-top-10">
+                <a href="#"><img src="Images/logo.gif" alt="All power" title="All power" /></a>
+            </div>
+            <div class="input-group mb-3 col search-box padding-top-10">
+                <input type="text" class="form-control" placeholder="Поиск по сайту" aria-label="Поиск по сайту" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button">Искать</button>
+                </div>
+            </div>
+            <div class="col padding-top-10 feedback-button">
+                <button type="button" class="btn btn-info">Сообщение</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<nav class="main-nav" role="navigation">
+
+    <!-- Mobile menu toggle button (hamburger/x icon) -->
+    <input id="main-menu-state" type="checkbox" />
+    <label class="main-menu-btn" for="main-menu-state">
+        <span class="main-menu-btn-icon"></span> Toggle main menu visibility
+    </label>
+
+    <h2 class="nav-brand"><a href="#">Главная</a></h2>
+
+    <!-- Sample menu definition -->
+    <ul id="main-menu" class="sm sm-blue">
+        <li><a href="http://www.smartmenus.org/">О Компании</a></li>
+        <li><a href="http://www.smartmenus.org/about/">Проекты</a>
+            <ul>
+                <li><a href="http://www.smartmenus.org/about/introduction-to-smartmenus-jquery/">Introduction to SmartMenus jQuery</a></li>
+                <li><a href="http://www.smartmenus.org/about/themes/">Demos + themes</a></li>
+                <li><a href="http://vadikom.com/about/#vasil-dinkov">The author</a></li>
+                <li><a href="http://www.smartmenus.org/about/vadikom/">Литий-Железо фосфатные аккумуляторные батареи</a>
+                    <ul>
+                        <li><a href="http://vadikom.com/about/">Литий-Железо фосфатные аккумуляторные батареи 3.2 вольта</a></li>
+                        <li><a href="http://vadikom.com/projects/">Литий-Железо фосфатные аккумуляторные батареи 6 вольт</a></li>
+                        <li><a href="http://vadikom.com/services/">Литий-Железо фосфатные аккумуляторные батареи 9 вольт</a></li>
+                        <li><a href="http://www.smartmenus.org/about/vadikom/privacy-policy/">Литий-Железо фосфатные аккумуляторные батареи 12 вольт</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="http://www.smartmenus.org/download/">Готовые решения</a></li>
+        <li><a href="http://www.smartmenus.org/support/">Элементы питания</a>
+            <ul>
+                <li><a href="http://www.smartmenus.org/support/premium-support/">Premium support</a></li>
+                <li><a href="http://www.smartmenus.org/support/forums/">Forums</a></li>
+            </ul>
+        </li>
+        <li><a href="http://www.smartmenus.org/docs/">Дополнительное оборудование</a></li>
+        <li><a href="#">Зарядные устройства</a>
+            <ul>
+                <li><a href="#">Dummy item</a></li>
+                <li><a href="#">Dummy item</a></li>
+                <li><a href="#" class="disabled">Disabled menu item</a></li>
+                <li><a href="#">Dummy item</a></li>
+                <li><a href="#">more...</a>
+                    <ul>
+                        <li><a href="#">A pretty long text to test the default subMenusMaxWidth:20em setting for the sub menus</a></li>
+                        <li><a href="#">Dummy item</a></li>
+                        <li><a href="#">Dummy item</a></li>
+                        <li><a href="#">Dummy item</a></li>
+                        <li><a href="#">Dummy item</a></li>
+                        <li><a href="#">Dummy item</a></li>
+                        <li><a href="#">more...</a>
+                            <ul>
+                                <li><a href="#">Dummy item</a></li>
+                                <li><a href="#" class="current">A 'current' class item</a></li>
+                                <li><a href="#">Dummy item</a></li>
+                                <li><a href="#">more...</a>
+                                    <ul>
+                                        <li><a href="#">subMenusMinWidth</a></li>
+                                        <li><a href="#">10em</a></li>
+                                        <li><a href="#">forced.</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Dummy item</a></li>
+                                <li><a href="#">Dummy item</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Dummy item</a></li>
+                        <li><a href="#">Dummy item</a></li>
+                        <li><a href="#">Dummy item</a></li>
+                        <li><a href="#">Dummy item</a></li>
+                        <li><a href="#">A pretty long text to test the default subMenusMaxWidth:20em setting for the sub menus</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">Нелеквиды</a></li>
+        <li><a href="#">Оформление заказа</a></li>
+        <li><a href="#">Контакты</a></li>
+    </ul>
+</nav>
+
+<!-- Slider -->
+<section class="slider">
+
+    <div class="container slider-slides">
+    <div class="owl-carousel owl-theme">
+        <div class="item" data-hash="slide-1">
+            <div class="slide__description">
+                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                    <div class="card-header">(LiFePO4) 3.2</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Литий-железо-фосфатные аккумуляторы (LiFePO4) 3.2</h5>
+                        <p class="card-text">Обладают рядом уникальных преимуществ по сравнению с прочими.</p>
+                        <div class="slide__description_link">
+                            <a href="#" class="btn btn-secondary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide__image">
+                <img src="Images/Slides/slide_1.jpg" alt="" title="Литий-железо-фосфатные аккумуляторы (LiFePO4) 3.2 В">
+            </div>
+        </div>
+        <div class="item" data-hash="slide-2">
+            <div class="slide__description">
+                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                    <div class="card-header">(LiFePO4)</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Системы управления заряд/разрядным процессом аккумуляторной батареи (LiFePO4)</h5>
+                        <p class="card-text">
+                            BMS (Battery Manegement System)<br />
+                            Capacity BMS</p>
+                        <div class="slide__description_link">
+                            <a href="#" class="btn btn-secondary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide__image">
+                <img src="Images/Slides/slide_1.jpg" alt="" title="Литий-железо-фосфатные аккумуляторы (LiFePO4) 3.2 В">
+            </div>
+        </div>
+        <div class="item" data-hash="slide-3">
+            <div class="slide__description">
+                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                    <div class="card-header">(LiFePO4)</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Системы управления заряд/разрядным процессом аккумуляторной батареи (LiFePO4)</h5>
+                        <p class="card-text">
+                            BMS (Battery Manegement System)<br />
+                            Capacity BMS</p>
+                        <div class="slide__description_link">
+                            <a href="#" class="btn btn-secondary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide__image">
+                <img src="Images/Slides/slide_1.jpg" alt="" title="Литий-железо-фосфатные аккумуляторы (LiFePO4) 3.2 В">
+            </div>
+        </div>
+        <div class="item" data-hash="slide-4">
+            <div class="slide__description">
+                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                    <div class="card-header">(LiFePO4)</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Системы управления заряд/разрядным процессом аккумуляторной батареи (LiFePO4)</h5>
+                        <p class="card-text">
+                            BMS (Battery Manegement System)<br />
+                            Capacity BMS</p>
+                        <div class="slide__description_link">
+                            <a href="#" class="btn btn-secondary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide__image">
+                <img src="Images/Slides/slide_1.jpg" alt="" title="Литий-железо-фосфатные аккумуляторы (LiFePO4) 3.2 В">
+            </div>
+        </div>
+        <div class="item" data-hash="slide-5">
+            <div class="slide__description">
+                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                    <div class="card-header">(LiFePO4)</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Системы управления заряд/разрядным процессом аккумуляторной батареи (LiFePO4)</h5>
+                        <p class="card-text">
+                            BMS (Battery Manegement System)<br />
+                            Capacity BMS</p>
+                        <div class="slide__description_link">
+                            <a href="#" class="btn btn-secondary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide__image">
+                <img src="Images/Slides/slide_1.jpg" alt="" title="Литий-железо-фосфатные аккумуляторы (LiFePO4) 3.2 В">
+            </div>
+        </div>
+        <div class="item" data-hash="slide-6">
+            <div class="slide__description">
+                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                    <div class="card-header">(LiFePO4)</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Системы управления заряд/разрядным процессом аккумуляторной батареи (LiFePO4)</h5>
+                        <p class="card-text">
+                            BMS (Battery Manegement System)<br />
+                            Capacity BMS</p>
+                        <div class="slide__description_link">
+                            <a href="#" class="btn btn-secondary">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide__image">
+                <img src="Images/Slides/slide_1.jpg" alt="" title="Литий-железо-фосфатные аккумуляторы (LiFePO4) 3.2 В">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container slider__teaser">
+        <a class="button secondary url" href="#slide-1">Литий-полимерные <br />аккумуляторы (Li-Pol) </a>
+        <a class="button secondary url" href="#slide-2">Литий-ионные <br />аккумуляторы (Li-Ion) </a>
+        <a class="button secondary url" href="#slide-3">Литий-железо-фосфатные <br />аккумуляторы (LiFePO4) </a>
+        <a class="button secondary url" href="#slide-4">Литий-титанатные <br />аккумуляторы (LTO) </a>
+        <a class="button secondary url" href="#slide-5">Готовые <br />решения </a>
+        <a class="button secondary url" href="#slide-6">Изготовление акб <br />по Вашему ТЗ </a>
+    </div>
+
+</section>
+<section class="teaser">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="header-h1 header-h1-left">
+                    <h2>О Компании</h2>
+                </div>
+                <p>С 2012 г. предприятие специализируется на разработке и изготовлении литий-железо-фосфатных и литий-титанатных аккумуляторных батарей, аккумуляторных станций, и прочих эксклюзивных изделий на основе данных аккумуляторных батарей по техническому заданию заказчика, поставкой и продажей аккумуляторов.</p>
+                <p>В целом, производственный комплекс имеет возможность разработки необходимых проектных решений, отвечающих индивидуальным требованиям заказчика;  изготовления экспериментальных и опытных образцов всевозможных источников питания, а также обеспечивает серийное производство разработанных предприятием изделий.</p>
+                <a href="#" class="btn btn-link">Подробнее</a>
+            </div>
+            <div class="col-md-6">
+                <div class="header-h1 header-h1-left">
+                    <h2>Услуги </h2>
+                </div>
+                <p>Осуществляем комплектацию аккумуляторных батарей необходимой для Вас емкости и напряжения из литий-железо-фосфатных, литий-титанатных аккумуляторов под заказ. </p>
+                <p>Стоимость изготовленной аккумуляторной батареи  включает в себя: стоимость элементов + стоимость платы БМС + работа по изготовлению аккумуляторной батареи: коммутация, работа по балансировке, тестированию батареи, включающая в себя стоимость расходных материалов.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="parallax-window" data-parallax="scroll" data-image-src="Images/opl-parallax-universe.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="header-h1 header-h1-left">
+                    <h2>В продаже ЛИТИЙ- ЖЕЛЕЗО-ФОСФАТНЫЕ АККУМУЛЯТОРЫ и АККУМУЛЯТОРНЫЕ БАТАРЕИ</h2>
+                </div>
+                <p>Лучшие из ХИТ, что есть на сегодня. Этот тип аккумуляторов имеет большой ряд преимуществ по сравнению с прочими. В частности: рекордное количество циклов, высокий КПД, быстрый заряд- возможность заряда большими токами , отсутствие эффекта памяти после многочисленных циклов зарядки и разрядки, они не портятся в разряженном состоянии. А также ,- широкий температурный диапазон эксплуатации. Эти возможности позволяют использовать их в качестве высокоэффективного накопителя энергии.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="header-h1 header-h1-left">
+                    <h2>В продаже ЛИТИЙ-ТИТАНАТНЫЕ АККУМУЛЯТОРЫ </h2>
+                </div>
+                <p>Преимущества:рекордное количество циклов ( в 10 раз больше жизненных циклов , чем у литий-железо-фосфатных аккумуляторов- при разумных условиях эксплуатации - 20 000 циклов), высокий КПД, быстрый заряд- возможность заряда большими токами , отсутствие эффекта памяти после многочисленных циклов зарядки и разрядки, они не портятся в разряженном состоянии. А также ,- широкий температурный диапазон эксплуатации (заряд-разряд при - 40 С), высокая степень безопасности. Эти возможности позволяют использовать их в качестве высокоэффективного накопителя энергии в стационарных системах аккумулирования энергии для солнечной и ветровой энергетики.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="certification" class="section">
+    <div class="container">
+        <div class="row">
+            <div class="header-h1 header-h1-left">
+                <h2>Сертификаты</h2>
+            </div>
+            <p>Вся продукция компании Li-Pol Systems имеет сертификаты соответствия Федерального агентства по техническому регулированию и метрологии.</p>
+            <div class="col-md-6">
+                <h3>УСН ООО "фирма "Охранные системы"</h3>
+                <img src="Images/Uproshchenka_GVARDIJA.jpg" alt="" class="img-thumbnail ce-textpic" />
+            </div>
+            <div class="col-md-6">
+                <h3>УСН ООО "Гвардия"</h3>
+                <img src="Images/Uproshchenka_OS.jpg" alt="" class="img-thumbnail ce-textpic" />
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="un-footer" class="section">
+    <div class="container">
+        <div class="header-h1 header-h1-left">
+            <h2>Выберите готовое решение</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card teaser-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="Images/lifepo4.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">ЛИТИЙ-ЖЕЛЕЗО-ФОСФАТНЫЕ АККУМУЛЯТОРНЫЕ БАТАРЕИ ( LiFePo4 )</h5>
+                                <p class="card-text">Лучшие из ХИТ, что есть на сегодня. Этот тип аккумуляторов имеет большой ряд преимуществ по сравнению с прочими.</p>
+                                <a href="#" class="card-link">Подробнее...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card teaser-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="Images/lion.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">ЛИТИЙ-ИОННЫЕ АККУМУЛЯТОРНЫЕ БАТАРЕИ (Li-ion)</h5>
+                                <p class="card-text">Этот тип батарей не имеет себе равных на сегодняшний день в следующих параметрах: наибольшая удельная ёмкость; небольшой вес и габаритные размеры</p>
+                                <a href="#" class="card-link">Подробнее...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card teaser-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="Images/lto.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">ЛИТИЙ-ТИТАНАТНЫЕ АККУМУЛЯТОРНЫЕ БАТАРЕИ (LTO)</h5>
+                                <p class="card-text">Преимущества: рекордное количество циклов ( в 10 раз больше жизненных циклов , чем у литий-железо-фосфатных аккумуляторов)</p>
+                                <a href="#" class="card-link">Подробнее...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <section class="feedback">
+    Feedback section
+</section> -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__address">
+            <div class="header-h1 header-h1-left white">
+                <h2>Нужна консультация?</h2>
+                <p>Специалист подберёт для Вас аккумуляторы под Ваши конкретные требования. Также Вы можете получить консультацию по любым техническим вопросам относительно проектирования батареи, её изготовления и эксплуатации.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 font-big">
+                    <i class="fa fa-phone fa-5x" style="font-size:72px;color:#fff;"></i>
+                    <p>(495) 969-17-30</p>
+                </div>
+                <div class="col-md-4 font-big">
+                    <i class="fa fas fa-envelope fa-5x" style="font-size:72px;color:#fff;"></i>
+                    <p>info@all-power.ru</p>
+                </div>
+                <div class="col-md-4 font-big">
+                    <i class="fa fa-address-card fa-5x" style="font-size:72px;color:#fff;"></i>
+                    <p>Тел. г. Москва: </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="powermail__container">
+            <div class="header-h1 header-h1-left">
+                <h2>Отправить сообщение</h2>
+            </div>
+            <form class="powermail">
+                <div class="form-row">
+                    <div class="form-group col-md-5">
+                        <label for="name">Ваше Имя</label>
+                        <input type="text" class="form-control" id="name" placeholder="Ваше Иимя" required>
+
+                        <label for="phone">Ваш Телефон</label>
+                        <input type="text" class="form-control" id="phone" placeholder="Ваш Телефон">
+
+                        <label for="email">Ваш E-mail</label>
+                        <input type="text" class="form-control" id="email" placeholder="Ваш E-mail" required>
+                    </div>
+                    <div class="form-group col-md-7">
+                        <label for="message">Ваше сообщение:</label>
+                        <textarea class="form-control" id="message"></textarea>
+                        <button class="btn btn-primary powermail__form_submit" type="submit">Отправить сообщение</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    &copy; 2008 - 2019 ООО «Гвардия», ООО «фирма«Охранные системы», info@all-power.ru
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- partial:index.partial.html -->
+<!--
+<div id="home_wave"></div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/88/three.min.js'></script>
+<script  src="Javascript/script.js"></script> -->
+
+<script src="Javascript/jquery.mmenu.all.min.js"></script>
+<script src="Javascript/mmenu.js"></script>
+<script src="Javascript/main.js"></script>
+
+</body>
+</html>
