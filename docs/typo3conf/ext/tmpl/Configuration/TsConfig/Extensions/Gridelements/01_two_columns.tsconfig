@@ -7,7 +7,7 @@ tx_gridelements.setup {
         title = Grid element - 2 columns
         description = Two Columns with configurations
         flexformDS = FILE:EXT:tmpl/Configuration/FlexForms/01_two_columns.xml
-        icon = EXT:tmpl/Resources/Icons/icon.gif
+        icon = EXT:tmpl/Resources/Public/Icons/icon.gif
         topLevelLayout = 1
         config {
             colCount = 2

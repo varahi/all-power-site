@@ -6,7 +6,7 @@ tx_gridelements.setup {
         title = Grid element - 3 columns
         description = Three Columns with configurations
         flexformDS = FILE:EXT:tmpl/Configuration/FlexForms/02_three_columns.xml
-        icon = EXT:tmpl/Resources/Icons/icon.gif
+        icon = EXT:tmpl/Resources/Public/Icons/icon.gif
         topLevelLayout = 1
         config {
             colCount = 3

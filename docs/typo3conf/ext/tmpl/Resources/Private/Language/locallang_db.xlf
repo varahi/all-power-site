@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-06-14T13:53:16Z" product-name="tmpl">
+		<header/>
+		<body>
+			<trans-unit id="tx_tmpl_tmpl.name">
+				<source>Tmpl</source>
+			</trans-unit>
+			<trans-unit id="tx_tmpl_tmpl.description">
+				<source>Site template</source>
+			</trans-unit>
+
+			<trans-unit id="flexform.ce_slider_arrows">
+				<source>Enable arrows (controls)</source>
+			</trans-unit>
+			<trans-unit id="flexform.ce_slider_autoplay">
+				<source>Autoplay</source>
+			</trans-unit>
+			<trans-unit id="flexform.ce_slider_autoplaySpeed">
+				<source>Autoplay Speed</source>
+			</trans-unit>
+			<trans-unit id="flexform.ce_slider_dots">
+				<source>Enable dots (controls)</source>
+			</trans-unit>
+			<trans-unit id="flexform.ce_slider_fade">
+				<source>Fade</source>
+			</trans-unit>
+			<trans-unit id="flexform.ce_slider_infinite">
+				<source>Infinite</source>
+			</trans-unit>
+			<trans-unit id="flexform.ce_slider_speed">
+				<source>Speed of Transition</source>
+			</trans-unit>
+			<trans-unit id="tca.tab.sliderElements">
+				<source>Slider Elements</source>
+			</trans-unit>
+			<trans-unit id="tt_content.slider_data_speed">
+				<source>Slider data speed</source>
+			</trans-unit>
+			<trans-unit id="tt_content.slider_data_autoplay_speed">
+				<source>Slider autoplay speed</source>
+			</trans-unit>
+			<trans-unit id="tx_tmplcemainslider_item">
+				<source>Mainpage Slider Item</source>
+			</trans-unit>
+			<trans-unit id="tx_tmplcemainslider_item.caption_title">
+				<source>Caption title</source>
+			</trans-unit>
+			<trans-unit id="tx_tmplcemainslider_item.caption_description">
+				<source>Caption description</source>
+			</trans-unit>
+			<trans-unit id="tx_tmplcemainslider_item.slide_teaser">
+				<source>Slide teaser</source>
+			</trans-unit>
+
+			<trans-unit id="tx_tmplcemainslider_item.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_tmplcemainslider_item.link">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="tx_tmplcemainslider_item.link_title">
+				<source>Text for link</source>
+			</trans-unit>
+			<trans-unit id="tx_tmplcemainslider_item.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="wizard.mainpage_slider_description">
+				<source>Mainpage Slider</source>
+			</trans-unit>
+			<trans-unit id="wizard.mainpage_slider_item">
+				<source>Mainpage slider item</source>
+			</trans-unit>
+			<trans-unit id="wizard.mainpage_slider_title">
+				<source>Mainpage Slider</source>
+			</trans-unit>
+			<trans-unit id="wizard.simple_slider_description">
+				<source>Slider for news and single</source>
+			</trans-unit>
+			<trans-unit id="wizard.simple_slider_title">
+				<source>Slider for news</source>
+			</trans-unit>
+
+			<trans-unit id="flexform.ce_slider_arrows">
+				<source>Enable arrows (controls)</source>
+			</trans-unit>
+			<trans-unit id="flexform.ce_slider_autoplay">
+				<source>Autoplay</source>
+			</trans-unit>
+			<trans-unit id="flexform.ce_slider_autoplaySpeed">
+				<source>Autoplay Speed</source>
+			</trans-unit>
+			<trans-unit id="flexform.ce_slider_dots">
+				<source>Enable dots (controls)</source>
+			</trans-unit>
+			<trans-unit id="flexform.ce_slider_fade">
+				<source>Fade</source>
+			</trans-unit>
+			<trans-unit id="flexform.ce_slider_infinite">
+				<source>Infinite</source>
+			</trans-unit>
+			<trans-unit id="flexform.ce_slider_speed">
+				<source>Speed of Transition</source>
+			</trans-unit>
+
+
+		</body>
+	</file>
+</xliff>

@@ -16,10 +16,12 @@ CREATE TABLE tx_tmplcemainslider_item (
 	tt_content int(11) unsigned DEFAULT '0' NOT NULL,
 
 	title varchar(255) DEFAULT '' NOT NULL,
-	caption text,
+	caption_title varchar(255) DEFAULT '' NOT NULL,
+	caption_description text,
+	slide_teaser text,
 	image int(11) unsigned NOT NULL default '0',
 	link varchar(255) DEFAULT '' NOT NULL,
-	link_title varchar(255) DEFAULT '' NOT NULL,
+	#link_title varchar(255) DEFAULT '' NOT NULL,
 
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,

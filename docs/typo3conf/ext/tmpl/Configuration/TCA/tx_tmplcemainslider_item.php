@@ -21,10 +21,11 @@ return [
         'iconfile' => 'EXT:tmpl/Resources/Public/Icons/tx_tmplcemainslider_item.gif'
     ],
     'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, caption, image, link, link_title',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, caption_title, caption_description, image, link, slide_teaser',
     ],
     'types' => [
-        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, caption, image, link, link_title, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
+        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, caption_title, caption_description, image, link, slide_teaser, 
+        --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -125,9 +126,18 @@ return [
                 'eval' => 'trim'
             ],
         ],
-        'caption' => [
+        'caption_title' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:tx_tmplcemainslider_item.caption',
+            'label' => 'LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:tx_tmplcemainslider_item.caption_title',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'trim'
+            ],
+        ],
+        'caption_description' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:tx_tmplcemainslider_item.caption_description',
             'config' => [
                 'type' => 'text',
                 'cols' => 40,
@@ -207,6 +217,7 @@ return [
                 'softref' => 'typolink'
             ]
         ],
+        /*
         'link_title' => [
             'exclude' => true,
             'label' => 'LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:tx_tmplcemainslider_item.link_title',
@@ -215,6 +226,17 @@ return [
                 'size' => 30,
                 'eval' => 'trim'
             ],
+        ],
+        */
+        'slide_teaser' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:tx_tmplcemainslider_item.slide_teaser',
+            'config' => [
+                'type' => 'text',
+                'cols' => 40,
+                'rows' => 5,
+                'eval' => 'trim'
+            ]
         ],
 
         /*'slider' => [
