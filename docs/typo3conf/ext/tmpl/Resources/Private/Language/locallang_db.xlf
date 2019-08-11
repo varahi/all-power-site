@@ -103,6 +103,22 @@
 				<source>Speed of Transition</source>
 			</trans-unit>
 
+			<trans-unit id="header.h2_left">
+				<source>h2 left with borders</source>
+			</trans-unit>
+			<trans-unit id="header.h2_center">
+				<source>h2 center with borders</source>
+			</trans-unit>
+			<trans-unit id="header.h2_right">
+				<source>h2 right with borders</source>
+			</trans-unit>
+
+			<trans-unit id="ce.teaser_card_title">
+				<source>Teaser card</source>
+			</trans-unit>
+			<trans-unit id="ce.teaser_card_description">
+				<source>Teaser card for gridelements</source>
+			</trans-unit>
 
 		</body>
 	</file>

@@ -4,3 +4,19 @@ mod.SHARED {
     defaultLanguageFlag = ru
     colPos_list = 0,1,2,3,4
 }
+
+# Add headers
+TCEFORM.tt_content.header_layout {
+    altLabels {
+        1 = h1
+        2 = h2
+        3 = h3
+        4 = h4
+        5 = h5
+    }
+    addItems {
+        10 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h2_left
+        11 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h2_center
+        12 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h2_right
+    }
+}

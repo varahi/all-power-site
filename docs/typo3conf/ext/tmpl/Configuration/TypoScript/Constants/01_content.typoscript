@@ -6,3 +6,22 @@ styles.content {
     }
     defaultHeaderType = 1
 }
+
+# Including EXT:fluid_styled_content's default constants
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript">
+
+# Overriding EXT:fluid_styled_content's constants for template paths
+styles {
+
+    content {
+        textmedia.maxW = 1200
+        textmedia.maxWInText = 1200
+        textmedia.linkWrap.lightboxEnabled = 1
+    }
+
+    templates {
+        templateRootPath = EXT:tmpl/Resources/Private/Content/Templates/
+        partialRootPath = EXT:tmpl/Resources/Private/Content/Partials/
+        layoutRootPath = EXT:tmpl/Resources/Private/Content/Layouts/
+    }
+}

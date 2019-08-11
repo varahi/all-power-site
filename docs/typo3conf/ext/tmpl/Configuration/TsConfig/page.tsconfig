@@ -7,3 +7,4 @@
 
 # Ce elements
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Ce/ce_mainpage_slider/Configuration/TSConfig/" extensions="ts">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Ce/ce_teaser_card/Configuration/TSConfig/" extensions="ts">
