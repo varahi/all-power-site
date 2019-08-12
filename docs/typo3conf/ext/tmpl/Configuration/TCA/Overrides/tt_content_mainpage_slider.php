@@ -51,7 +51,7 @@ $tmp_columns = [
 $GLOBALS['TCA']['tt_content']['types'][$_CEKEY] = [
     'showitem' => '
 		--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.general;general,
-		--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.header;header, slider_data_speed, slider_data_autoplay_speed,
+		--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.header;header,
 		tx_gridelements_container,tx_gridelements_columns,tx_slider_item,tx_tmplcemainslider_item'
 ];
 

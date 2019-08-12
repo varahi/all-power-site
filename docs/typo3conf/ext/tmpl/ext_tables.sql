@@ -3,6 +3,7 @@
 #
 CREATE TABLE tt_content (
 	tx_slider_item int(11) unsigned DEFAULT '0' NOT NULL,
+	teaser_link varchar(255) DEFAULT '' NOT NULL,
 );
 
 #
@@ -21,7 +22,6 @@ CREATE TABLE tx_tmplcemainslider_item (
 	slide_teaser text,
 	image int(11) unsigned NOT NULL default '0',
 	link varchar(255) DEFAULT '' NOT NULL,
-	#link_title varchar(255) DEFAULT '' NOT NULL,
 
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,

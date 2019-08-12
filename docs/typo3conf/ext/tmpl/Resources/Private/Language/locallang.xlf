@@ -20,6 +20,9 @@
 			<trans-unit id="slider.link_more">
 				<source><![CDATA[More]]></source>
 			</trans-unit>
+			<trans-unit id="ce.teaser_card.more">
+				<source><![CDATA[More]]></source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

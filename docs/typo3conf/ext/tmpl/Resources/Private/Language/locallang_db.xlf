@@ -81,26 +81,23 @@
 				<source>Slider for news</source>
 			</trans-unit>
 
-			<trans-unit id="flexform.ce_slider_arrows">
-				<source>Enable arrows (controls)</source>
+			<trans-unit id="ce.teaser_card_wizard_title">
+				<source>Teaser Card</source>
 			</trans-unit>
-			<trans-unit id="flexform.ce_slider_autoplay">
-				<source>Autoplay</source>
+			<trans-unit id="ce.teaser_card.div">
+				<source>Teaser card data</source>
 			</trans-unit>
-			<trans-unit id="flexform.ce_slider_autoplaySpeed">
-				<source>Autoplay Speed</source>
+			<trans-unit id="ce.teaser_card.image">
+				<source>Image</source>
 			</trans-unit>
-			<trans-unit id="flexform.ce_slider_dots">
-				<source>Enable dots (controls)</source>
+			<trans-unit id="ce.teaser_card.header">
+				<source>Title</source>
 			</trans-unit>
-			<trans-unit id="flexform.ce_slider_fade">
-				<source>Fade</source>
+			<trans-unit id="ce.teaser_card.bodytext">
+				<source>Bodytext</source>
 			</trans-unit>
-			<trans-unit id="flexform.ce_slider_infinite">
-				<source>Infinite</source>
-			</trans-unit>
-			<trans-unit id="flexform.ce_slider_speed">
-				<source>Speed of Transition</source>
+			<trans-unit id="ce.teaser_card.link">
+				<source>Link</source>
 			</trans-unit>
 
 			<trans-unit id="header.h2_left">
@@ -118,6 +115,9 @@
 			</trans-unit>
 			<trans-unit id="ce.teaser_card_description">
 				<source>Teaser card for gridelements</source>
+			</trans-unit>
+			<trans-unit id="tt_content.link">
+				<source>Link</source>
 			</trans-unit>
 
 		</body>

@@ -221,6 +221,9 @@ h3 {
     height: 2px;
 }
 
+.card-img {
+    height: auto;
+}
 
 #un-footer {
     background: #e8f2f3;
@@ -240,4 +243,5 @@ footer.footer {
     cursor: pointer;
     display: none;
     color: #333;
-    z-index: 99999; }
+    z-index: 99999;
+}
