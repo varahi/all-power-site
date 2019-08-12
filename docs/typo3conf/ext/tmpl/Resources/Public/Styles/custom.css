@@ -130,6 +130,22 @@ h3 {
 .teaser-card img {
     padding-top: 20px;
 }
+
+/* Powermail */
+/*
+.layout1 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+
+}
+.layout2 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+
+}
+*/
+
 .powermail__container {
     background: #fff;
     padding: 20px;
@@ -245,3 +261,4 @@ footer.footer {
     color: #333;
     z-index: 99999;
 }
+

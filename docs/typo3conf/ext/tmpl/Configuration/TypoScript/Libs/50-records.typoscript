@@ -1,0 +1,8 @@
+/*
+lib.footerForm = RECORDS
+lib.footerForm {
+    source = 10654
+    tables = tt_content
+    dontChekPid = 1
+}
+*/

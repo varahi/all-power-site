@@ -1,0 +1,15 @@
+lib.footerForm = COA
+lib.footerForm {
+    wrap = <div class="powermail__container">|</div>
+    10 = TEXT
+    10 {
+        wrap = <div class="header-h1 header-h1-left"><h2>|</h2></div>
+        value = Отправить сообщение
+    }
+    20 = RECORDS
+    20 {
+        source = 10654
+        tables = tt_content
+        dontChekPid = 1
+    }
+}
