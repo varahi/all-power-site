@@ -6,7 +6,7 @@ mod.web_layout.BackendLayouts {
         config {
             backend_layout {
                 colCount = 1
-                rowCount = 5
+                rowCount = 6
 
                 rows {
                     1 {
@@ -48,6 +48,14 @@ mod.web_layout.BackendLayouts {
                             1 {
                                 name = Unfooter
                                 colPos = 4
+                            }
+                        }
+                    }
+                    6 {
+                        columns {
+                            1 {
+                                name = Footer
+                                colPos = 5
                             }
                         }
                     }

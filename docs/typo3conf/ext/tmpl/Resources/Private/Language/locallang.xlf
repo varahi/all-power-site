@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2019-08-11T14:14:28Z">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-08-13T17:07:23Z">
 		<header>
 			<generator>LFEditor</generator>
 		</header>
 		<body>
+			<trans-unit id="ce.teaser_card.more">
+				<source><![CDATA[More]]></source>
+			</trans-unit>
 			<trans-unit id="page.contacts">
-				<source><![CDATA[]]></source>
+				<source><![CDATA[Contacts]]></source>
 			</trans-unit>
 			<trans-unit id="page.content.about_company">
 				<source><![CDATA[About company]]></source>
@@ -18,9 +21,6 @@
 				<source><![CDATA[Services]]></source>
 			</trans-unit>
 			<trans-unit id="slider.link_more">
-				<source><![CDATA[More]]></source>
-			</trans-unit>
-			<trans-unit id="ce.teaser_card.more">
 				<source><![CDATA[More]]></source>
 			</trans-unit>
 		</body>

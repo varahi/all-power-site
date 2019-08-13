@@ -109,6 +109,13 @@ page {
                 stdWrap.required = 1
             }
 
+            content_footer < styles.content.get
+            content_footer {
+                select.where = colPos=5
+                stdWrap.required = 1
+            }
+
+
         }
 
         /*

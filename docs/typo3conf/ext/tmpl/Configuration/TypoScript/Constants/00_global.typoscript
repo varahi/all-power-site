@@ -32,6 +32,10 @@ config {
         #developerLink = http://newstandard.ru/
         #made = Сделано
         #developer = Новый Стандарт
+        form {
+            title = Отправить сообщение
+            source = 10654
+        }
     }
 
     page {

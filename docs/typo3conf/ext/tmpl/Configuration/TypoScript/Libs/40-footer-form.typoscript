@@ -4,11 +4,11 @@ lib.footerForm {
     10 = TEXT
     10 {
         wrap = <div class="header-h1 header-h1-left"><h2>|</h2></div>
-        value = Отправить сообщение
+        value = {$config.footer.form.title}
     }
     20 = RECORDS
     20 {
-        source = 10654
+        source = {$config.footer.form.source}
         tables = tt_content
         dontChekPid = 1
     }

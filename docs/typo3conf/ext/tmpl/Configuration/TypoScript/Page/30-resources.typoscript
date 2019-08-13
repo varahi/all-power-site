@@ -37,9 +37,9 @@ page.includeJSFooterlibs {
 }
 
 page.includeJSFooter {
-    10_jquery_mmenu = EXT:tmpl/Resources/Public/Javascript/jquery.mmenu.all.min.js
-    20_mmenu = EXT:tmpl/Resources/Public/Javascript/mmenu.js
-    30_mmenu = EXT:tmpl/Resources/Public/Javascript/main.js
+    #10_jquery_mmenu = EXT:tmpl/Resources/Public/Javascript/jquery.mmenu.all.min.js
+    #20_mmenu = EXT:tmpl/Resources/Public/Javascript/mmenu.js
+    30_main = EXT:tmpl/Resources/Public/Javascript/main.js
     //file0 = EXT:tmpl/Resources/Public/js/bootstrap.min.js
     //file3.media = all
 

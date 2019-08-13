@@ -103,6 +103,9 @@
 			<trans-unit id="header.h2_left">
 				<source>h2 left with borders</source>
 			</trans-unit>
+			<trans-unit id="header.h2_left_white">
+				<source>h2 left with borders white color</source>
+			</trans-unit>
 			<trans-unit id="header.h2_center">
 				<source>h2 center with borders</source>
 			</trans-unit>

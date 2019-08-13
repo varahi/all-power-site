@@ -12,9 +12,22 @@ $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = [
 
 // make overrides for tt_content columns
 $GLOBALS['TCA']['tt_content']['types'][$_CEKEY]['columnsOverrides'] = [
+
+    //'bodytext' => [
+    //    'defaultExtras' => 'richtext:rte_transform[mode=ts_css]'
+    //],
+
     'bodytext' => [
-        'defaultExtras' => 'richtext:rte_transform[mode=ts_css]'
+        'exclude' => true,
+        'label' => 'LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:ce.teaser_card.bodytext',
+        'config' => [
+            'type' => 'text',
+            'cols' => 40,
+            'rows' => 5,
+            'eval' => 'trim'
+        ]
     ],
+
     'image' => [
         'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
             'image',

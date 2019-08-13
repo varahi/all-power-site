@@ -1,10 +1,10 @@
 styles.content {
     textmedia {
         linkWrap.lightboxEnabled = 1
-        linkWrap.lightboxCssClass = fancyboxcontent
-        linkWrap.lightboxRelAttribute = fancyboxcontent[{field:uid}]
+        linkWrap.lightboxCssClass = fancybox
+        linkWrap.lightboxRelAttribute = fancybox[{field:uid}]
     }
-    defaultHeaderType = 1
+    defaultHeaderType = 3
 }
 
 # Including EXT:fluid_styled_content's default constants
