@@ -6,3 +6,10 @@ lib.footerForm {
     dontChekPid = 1
 }
 */
+
+lib.footerConsultation = RECORDS
+lib.footerConsultation {
+    source = 11021, 11022
+    tables = tt_content
+    dontChekPid = 1
+}
