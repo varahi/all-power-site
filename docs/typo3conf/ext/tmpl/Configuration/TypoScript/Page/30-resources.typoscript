@@ -13,13 +13,17 @@ page.includeCSS {
 
 
 # JS libs that need to be inserted (can be used for internal and external libs)
-page.includeJSlibs {
-    #file3 = fileadmin/templates/js/jquery-2.0.3.min.js
-}
+#page.includeJSlibs {
+#    10_jquery = EXT:tmpl/Resources/Public/Javascript/jquery-3.3.1.min.js
+#}
 
-# manually inserted JavaScript files
 page.includeJS {
     10_jquery = EXT:tmpl/Resources/Public/Javascript/jquery-3.3.1.min.js
+}
+
+
+# manually inserted JavaScript files
+page.includeJSFooter {
     20_bootstrap = EXT:tmpl/Resources/Public/Javascript/bootstrap.js
     30_smartmenus = EXT:tmpl/Resources/Public/Javascript/jquery.smartmenus.min.js
     40_smartmenu = EXT:tmpl/Resources/Public/Javascript/smartmenu.js
