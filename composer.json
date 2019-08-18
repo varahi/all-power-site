@@ -65,6 +65,7 @@
 		"typo3/cms-t3editor": "^9.5",
 		"typo3/cms-tstemplate": "^9.5",
 		"typo3/cms-viewpage": "^9.5",
+		"typo3/cms-indexed-search": "^9.5",
 		"typo3/minimal": "^9.5"
 	},
 	"require-dev": {
