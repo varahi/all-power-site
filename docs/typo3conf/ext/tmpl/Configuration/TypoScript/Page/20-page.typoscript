@@ -81,7 +81,7 @@ page {
             // Render colpos sections
             content < styles.content.get
             content {
-                #stdWrap.wrap = <!--TYPO3SEARCH_begin-->|<!--TYPO3SEARCH_end-->
+                stdWrap.wrap = <!--TYPO3SEARCH_begin-->|<!--TYPO3SEARCH_end-->
                 stdWrap.required = 1
             }
 

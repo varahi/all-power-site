@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2019-08-13T17:07:23Z">
+	<file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2019-08-18T14:32:50Z">
 		<header>
 			<generator>LFEditor</generator>
 		</header>
@@ -24,6 +24,10 @@
 			<trans-unit id="page.content.services" approved="yes">
 				<source><![CDATA[Services]]></source>
 				<target><![CDATA[Услуги]]></target>
+			</trans-unit>
+			<trans-unit id="search.submit" approved="yes">
+				<source><![CDATA[Search]]></source>
+				<target><![CDATA[Искать]]></target>
 			</trans-unit>
 			<trans-unit id="slider.link_more" approved="yes">
 				<source><![CDATA[More]]></source>

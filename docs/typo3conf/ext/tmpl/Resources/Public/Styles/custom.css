@@ -122,6 +122,19 @@ header .logo {
     right: 0;
     transform: translateX(0);
 }
+
+.inner-page .header-h1 h2 {
+    padding-bottom: 30px;
+}
+.inner-page {
+    min-height: 300px;
+}
+
+.search-form {
+    width: 50%;
+}
+
+
 #certification img {
     overflow: hidden;
     width: 80%;
@@ -139,6 +152,24 @@ h3 {
 .teaser-card img {
     padding-top: 20px;
 }
+.breadcrumb {
+    background: #fff;
+}
+.breadcrumb a {
+    color: #00838f;
+}
+.breadcrumb-item.active {
+    /*color: #6c757d;*/
+    color: #000;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    color: #694442;
+    content: "/";
+
+}
+
 
 /* Powermail */
 /*
@@ -182,6 +213,15 @@ h3 {
 .powermail__container form {
     padding-top: 20px;
 }
+
+.powermail_fieldwrap_type_captcha label {
+    display: block;
+}
+.powermail_captcha {
+    margin: 10px 0 0 -30px;
+}
+
+
 
 .footer__address {
     padding: 20px;

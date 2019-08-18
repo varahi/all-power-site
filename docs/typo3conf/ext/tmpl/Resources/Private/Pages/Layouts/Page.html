@@ -2,7 +2,8 @@
 <f:render partial="Navigation" arguments="{_all}" />
 
 <section id="content" class="section">
-    <div class="container">
+    <div class="container inner-page">
+        <f:render partial="Breadcrumb" arguments="{_all}" />
         <f:render section="content" />
     </div>
 </section>
