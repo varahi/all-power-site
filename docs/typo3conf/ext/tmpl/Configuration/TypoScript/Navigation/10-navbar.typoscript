@@ -16,7 +16,7 @@ lib.navbar {
     20.wrap = <ul id="main-menu" class="sm sm-blue">|</ul>
     20 {
         entryLevel = 0
-        excludeUidList = 1315,1322
+        excludeUidList = {$config.navigation.excludeUidList}
         1 = TMENU
         1 {
             wrap = |

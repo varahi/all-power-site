@@ -19,6 +19,7 @@ config {
             writeLetter = Написать письмо
             mailTo = mailto:info@all-power.ru - - "Сообщение с сайта all-power.ru"
         }
+        excludeUidList =
     }
 
     header {
