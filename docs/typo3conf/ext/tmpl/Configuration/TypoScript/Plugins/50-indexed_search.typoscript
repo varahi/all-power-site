@@ -15,9 +15,9 @@ plugin.tx_indexedsearch {
     }
     view {
         partialRootPaths {
-            #0 = EXT:indexed_search/Resources/Private/Partials/
-            #10 = {$plugin.tx_indexedsearch.view.partialRootPath}
-            #20 = EXT:tmpl/Resources/Private/Extensions/indexed_search/Partials/
+            0 = EXT:indexed_search/Resources/Private/Partials/
+            10 = {$plugin.tx_indexedsearch.view.partialRootPath}
+            20 = EXT:tmpl/Resources/Private/Extensions/indexed_search/Partials/
         }
     }
 }
