@@ -69,25 +69,37 @@ header .logo {
     left: 30px;
 }
 
-/* Content */
 
+/* Content */
+.header-h1 h1 a,
 .header-h1 h2 a {
     color: #00838f;
     text-decoration: none;
 }
+.header-h1 h1 a:hover,
 .header-h1 h2 a:hover {
     color: #694442;
 }
-
+.header-h1 h1 {
+    font-size: 36px;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
 .header-h1 h2 {
+     font-size: 1.7rem;
+    /*font-size: 30px;*/
+    margin-bottom: 1.0rem;
+}
+.header-h1 h2,
+.header-h1 h1{
     position: relative;
     padding-bottom: .5rem;
-    font-size: 1.5rem;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     text-align: center;
     color: #00838f;
 }
-.header-h1 h2::before {
+.header-h1 h2::before,
+.header-h1 h1::before{
     content: "";
     position: absolute;
     border-bottom: 2px solid #00838f;
@@ -96,6 +108,7 @@ header .logo {
     width: 30%;
     transform: translateX(-50%);
 }
+.header-h1 h1::after,
 .header-h1 h2::after {
     content: "";
     position: absolute;
@@ -105,17 +118,23 @@ header .logo {
     width: 15%;
     transform: translateX(-50%);
 }
+.header-h1-left h1,
 .header-h1-left h2 {
     text-align: left;
 }
+.header-h1-left h1::before,
+.header-h1-left h1::after,
 .header-h1-left h2::before,
 .header-h1-left h2::after {
     left: 0;
     transform: translateX(0);
 }
+.header-h1-right h1,
 .header-h1-right h2 {
     text-align: right;
 }
+.header-h1-right h1::before,
+.header-h1-right h1::after,
 .header-h1-right h2::before,
 .header-h1-right h2::after {
     left: unset;

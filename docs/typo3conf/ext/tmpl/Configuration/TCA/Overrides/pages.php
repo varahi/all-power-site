@@ -15,8 +15,22 @@ $GLOBALS['TCA']['pages']['columns'] += array(
         )
     ),
 
+    'hide_pagetitle' => array(
+        'label' => 'LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:page.hide_pagetitle',
+        'exclude' => 1,
+        'config' => array (
+            'type' => 'check',
+            'items' => array(
+                array('', '')
+            )
+        )
+    ),
+
 );
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes (
     'pages', 'hide_breadcrumb', '1', 'after:title'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes (
+    'pages', 'hide_pagetitle', '1', 'after:hide_breadcrumb'
 );

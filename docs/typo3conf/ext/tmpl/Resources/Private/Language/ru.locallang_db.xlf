@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2019-08-18T14:54:44Z">
+	<file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2019-08-19T14:48:39Z">
 		<header>
 			<generator>LFEditor</generator>
 		</header>
@@ -8,6 +8,10 @@
 			<trans-unit id="page.hide_breadcrumb" approved="yes">
 				<source><![CDATA[Hide Breadcrumb]]></source>
 				<target><![CDATA[Скрыть хлебные крошки]]></target>
+			</trans-unit>
+			<trans-unit id="page.hide_pagetitle" approved="yes">
+				<source><![CDATA[Hide Pagetitle]]></source>
+				<target><![CDATA[Скрыть автозаголовок в области контента]]></target>
 			</trans-unit>
 		</body>
 	</file>

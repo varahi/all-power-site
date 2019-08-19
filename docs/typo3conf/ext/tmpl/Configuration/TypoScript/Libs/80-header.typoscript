@@ -1,0 +1,5 @@
+lib.pagetitle = TEXT
+lib.pagetitle {
+    wrap = <div class="header-h1 header-h1-left"><h1>|</h1></div>
+    data = page : title
+}

@@ -4,6 +4,12 @@
 <section id="content" class="section">
     <div class="container inner-page">
         <f:render partial="Breadcrumb" arguments="{_all}" />
+        <f:if condition="{data.hide_pagetitle} == 1">
+            <f:then></f:then>
+            <f:else>
+                <f:cObject typoscriptObjectPath="lib.pagetitle" />
+            </f:else>
+        </f:if>
         <f:render section="content" />
     </div>
 </section>
