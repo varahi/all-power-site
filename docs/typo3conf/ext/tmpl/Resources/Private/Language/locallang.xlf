@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2019-08-18T14:32:50Z">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-08-19T15:39:56Z">
 		<header>
 			<generator>LFEditor</generator>
 		</header>
@@ -16,6 +16,9 @@
 			</trans-unit>
 			<trans-unit id="page.content.contacts">
 				<source><![CDATA[Contacts]]></source>
+			</trans-unit>
+			<trans-unit id="page.content.download">
+				<source><![CDATA[Download]]></source>
 			</trans-unit>
 			<trans-unit id="page.content.services">
 				<source><![CDATA[Services]]></source>
