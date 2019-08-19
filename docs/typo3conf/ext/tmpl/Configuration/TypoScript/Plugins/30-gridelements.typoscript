@@ -18,4 +18,13 @@ tt_content.gridelements_pi1.20.10.setup {
         }
     }
 
+    Grid_4Cols < lib.gridelements.defaultGridSetup
+    Grid_4Cols {
+        cObject = FLUIDTEMPLATE
+        cObject {
+            partialRootPath = EXT:tmpl/Resources/Private/Extensions/Gridelements/Partials/
+            file = EXT:tmpl/Resources/Private/Extensions/Gridelements/Templates/03_FourColumns.html
+        }
+    }
+
 }
