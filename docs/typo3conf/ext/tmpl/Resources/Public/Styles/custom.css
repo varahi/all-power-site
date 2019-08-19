@@ -434,7 +434,7 @@ table th {
     position: relative;
     padding: 10px 25px;
 
-    background-color: #333;
+    background-color: #00838f;
     color: white;
 
     font-family: sans-serif;
@@ -515,8 +515,7 @@ table th {
 }
 
 span.ce-uploads-fileName {
-    font-size: 18px;
-    text-transform: lowercase;
+    font-size: 17px;
     display: block;
     padding-bottom: 5px;
 }
