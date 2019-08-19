@@ -15,9 +15,14 @@ TCEFORM.tt_content.header_layout {
         5 = h5
     }
     addItems {
+        # H2 Headers
         10 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h2_left
         11 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h2_center
         12 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h2_right
-        20 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h2_left_white
+        15 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h2_left_white
+        # H3 headers
+        20 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h3_left
+        21 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h3_center
+        22 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h3_right
     }
 }

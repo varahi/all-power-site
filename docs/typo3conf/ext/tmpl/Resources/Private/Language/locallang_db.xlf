@@ -62,6 +62,17 @@
 			<trans-unit id="header.h2_right">
 				<source><![CDATA[h2 right with borders]]></source>
 			</trans-unit>
+
+			<trans-unit id="header.h3_center">
+				<source><![CDATA[h3 center with borders]]></source>
+			</trans-unit>
+			<trans-unit id="header.h3_left">
+				<source><![CDATA[h3 left with borders]]></source>
+			</trans-unit>
+			<trans-unit id="header.h3_right">
+				<source><![CDATA[h3 right with borders]]></source>
+			</trans-unit>
+
 			<trans-unit id="page.hide_breadcrumb">
 				<source><![CDATA[Hide Breadcrumb]]></source>
 			</trans-unit>

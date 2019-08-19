@@ -71,6 +71,68 @@ header .logo {
 
 
 /* Content */
+
+.header-h1 h1,
+.header-h1 h2,
+.header-h1 h3 {
+    position: relative;
+    padding-bottom: .5rem;
+    /*text-transform: uppercase;*/
+    text-align: center;
+    color: #00838f;
+}
+.header-h1 h1::before,
+.header-h1 h2::before,
+.header-h1 h3::before {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #00838f;
+    bottom: .25rem;
+    left: 50%;
+    width: 30%;
+    transform: translateX(-50%);
+}
+.header-h1 h1::after,
+.header-h1 h2::after,
+.header-h1 h3::after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #00838f;
+    bottom: 0;
+    left: 50%;
+    width: 15%;
+    transform: translateX(-50%);
+}
+.header-h1-left h1,
+.header-h1-left h2,
+.header-h1-left h3 {
+    text-align: left;
+}
+.header-h1-left h1::before,
+.header-h1-left h1::after,
+.header-h1-left h2::before,
+.header-h1-left h2::after,
+.header-h1-left h3::before,
+.header-h1-left h3::after{
+    left: 0;
+    transform: translateX(0);
+}
+.header-h1-right h1,
+.header-h1-right h2,
+.header-h1-right h3 {
+    text-align: right;
+}
+.header-h1-right h1::before,
+.header-h1-right h1::after,
+.header-h1-right h2::before,
+.header-h1-right h2::after,
+.header-h1-right h3::before,
+.header-h1-right h3::after {
+    left: unset;
+    right: 0;
+    transform: translateX(0);
+}
+
 .header-h1 h1 a,
 .header-h1 h2 a {
     color: #00838f;
@@ -86,61 +148,22 @@ header .logo {
     text-transform: uppercase;
 }
 .header-h1 h2 {
-     font-size: 1.7rem;
+    font-size: 1.7rem;
     /*font-size: 30px;*/
     margin-bottom: 1.0rem;
 }
-.header-h1 h2,
-.header-h1 h1{
-    position: relative;
-    padding-bottom: .5rem;
-    /*text-transform: uppercase;*/
-    text-align: center;
-    color: #00838f;
+
+.header-h1 h3 {
+    /*color: #694442;*/
+    color: #333;
 }
-.header-h1 h2::before,
-.header-h1 h1::before{
-    content: "";
-    position: absolute;
-    border-bottom: 2px solid #00838f;
-    bottom: .25rem;
-    left: 50%;
-    width: 30%;
-    transform: translateX(-50%);
+.header-h1 h3::after {
+    border-bottom: 2px solid #333;
 }
-.header-h1 h1::after,
-.header-h1 h2::after {
-    content: "";
-    position: absolute;
-    border-bottom: 2px solid #00838f;
-    bottom: 0;
-    left: 50%;
-    width: 15%;
-    transform: translateX(-50%);
+.header-h1 h3::before {
+    border-bottom: 2px solid #333;
 }
-.header-h1-left h1,
-.header-h1-left h2 {
-    text-align: left;
-}
-.header-h1-left h1::before,
-.header-h1-left h1::after,
-.header-h1-left h2::before,
-.header-h1-left h2::after {
-    left: 0;
-    transform: translateX(0);
-}
-.header-h1-right h1,
-.header-h1-right h2 {
-    text-align: right;
-}
-.header-h1-right h1::before,
-.header-h1-right h1::after,
-.header-h1-right h2::before,
-.header-h1-right h2::after {
-    left: unset;
-    right: 0;
-    transform: translateX(0);
-}
+
 
 .inner-page .header-h1 h2 {
     padding-bottom: 30px;
