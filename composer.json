@@ -66,7 +66,8 @@
 		"typo3/cms-tstemplate": "^9.5",
 		"typo3/cms-viewpage": "^9.5",
 		"typo3/cms-indexed-search": "^9.5",
-		"typo3/minimal": "^9.5"
+		"typo3/minimal": "^9.5",
+		"fluidtypo3/vhs": "^5.2"
 	},
 	"require-dev": {
 		"friendsofphp/php-cs-fixer": "2.14.0",
