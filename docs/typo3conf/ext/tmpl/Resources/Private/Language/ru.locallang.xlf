@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2019-08-19T15:39:56Z">
+	<file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2019-08-20T13:55:07Z">
 		<header>
 			<generator>LFEditor</generator>
 		</header>
@@ -17,6 +17,10 @@
 				<source><![CDATA[About company]]></source>
 				<target><![CDATA[О Компании]]></target>
 			</trans-unit>
+			<trans-unit id="page.content.close" approved="yes">
+				<source><![CDATA[Close]]></source>
+				<target><![CDATA[Закрыть]]></target>
+			</trans-unit>
 			<trans-unit id="page.content.contacts" approved="yes">
 				<source><![CDATA[Contacts]]></source>
 				<target><![CDATA[Контакты]]></target>
@@ -24,6 +28,10 @@
 			<trans-unit id="page.content.download" approved="yes">
 				<source><![CDATA[Download]]></source>
 				<target><![CDATA[Скачать]]></target>
+			</trans-unit>
+			<trans-unit id="page.content.sendMessage" approved="yes">
+				<source><![CDATA[Send Message]]></source>
+				<target><![CDATA[Отправить сообщение]]></target>
 			</trans-unit>
 			<trans-unit id="page.content.services" approved="yes">
 				<source><![CDATA[Services]]></source>

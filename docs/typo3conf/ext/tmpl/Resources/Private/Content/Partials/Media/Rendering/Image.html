@@ -1,3 +1,9 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-<f:media class="image-embed-item img-thumbnail img-fluid" file="{file}" width="{dimensions.width}" height="{dimensions.height}" alt="{file.alternative}" title="{file.title}" />
+
+<v:media.picture src="{file}" alt="{file.alternative}" class="image-embed-item img-thumbnail img-fluid">
+    <v:media.source media="(min-width: 992px)" maxW="700" />
+    <v:media.source media="(min-width: 768px)" maxW="600" />
+    <v:media.source maxW="480" />
+</v:media.picture>
+
 </html>

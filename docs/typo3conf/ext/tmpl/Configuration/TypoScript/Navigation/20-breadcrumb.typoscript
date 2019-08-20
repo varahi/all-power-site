@@ -9,7 +9,7 @@ lib.breadcrumb {
     10.includeNotInMenu = 0
     10 {
         special = rootline
-        special.range =  0 | -1
+        special.range = {$config.navigation.specialRange}
         1 = TMENU
         1 {
             noBlur = 1
@@ -33,7 +33,6 @@ lib.breadcrumb {
         }
     }
 }
-
 
 [globalVar = GP:tx_news_pi1|news > 0]
     #[globalVar = TSFE:id = 15]

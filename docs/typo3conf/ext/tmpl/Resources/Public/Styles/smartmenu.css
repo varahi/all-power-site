@@ -1,3 +1,6 @@
+.sm {
+    z-index: 999;
+}
 .main-nav {
     /*background: #3092c0;
     background-image: -webkit-gradient(linear, to bottom, to top, color-stop(0%, #3298c8), color-stop(100%, #2e8cb8));

@@ -13,3 +13,10 @@ lib.footerConsultation {
     tables = tt_content
     dontChekPid = 1
 }
+
+lib.modalForm = RECORDS
+lib.modalForm {
+    source = 10654
+    tables = tt_content
+    dontChekPid = 1
+}

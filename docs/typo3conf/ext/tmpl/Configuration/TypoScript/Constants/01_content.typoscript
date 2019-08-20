@@ -13,8 +13,8 @@ styles.content {
 # Overriding EXT:fluid_styled_content's constants for template paths
 styles {
     content {
-        textmedia.maxW = 480
-        textmedia.maxWInText = 480
+        textmedia.maxW = 700
+        textmedia.maxWInText = 700
         textmedia.linkWrap.lightboxEnabled = 1
     }
 

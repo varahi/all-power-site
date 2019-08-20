@@ -163,14 +163,17 @@ header .logo {
 .header-h1 h3::before {
     border-bottom: 2px solid #333;
 }
-
-
 .inner-page .header-h1 h2 {
     padding-bottom: 30px;
 }
 .inner-page {
     min-height: 300px;
     padding-bottom: 100px;
+}
+
+.ce-border img, .ce-border iframe {
+    padding: 0.25rem;
+    border: 1px solid #dee2e6;
 }
 
 /* Search */
@@ -186,11 +189,14 @@ header .logo {
     padding-bottom: 15px;
 }
 
+/*
 #certification img {
     overflow: hidden;
     width: 80%;
     height: auto;
 }
+*/
+
 .section {
     padding: 20px 0;
 }
@@ -205,6 +211,7 @@ h3 {
 }
 .breadcrumb {
     background: #fff;
+    padding-left: 0;
 }
 .breadcrumb a {
     color: #00838f;
@@ -271,6 +278,26 @@ h3 {
 .powermail_captcha {
     margin: 10px 0 0 -30px;
 }
+
+/* Powermail in modalbox */
+.modal-content .tx-powermail .col-md-6 {
+    max-width: 100%;
+    flex: 0 0 100%;
+}
+.modal-content label {
+    display: none;
+}
+.modal-content .powermail__form_submit {
+    position: relative;
+    top: 20px
+}
+.modal-content input[type="text"] {
+    margin-bottom: 20px;
+}
+.modal-body {
+    padding-top: 30px;
+}
+
 
 /* Footer */
 .footer__address {

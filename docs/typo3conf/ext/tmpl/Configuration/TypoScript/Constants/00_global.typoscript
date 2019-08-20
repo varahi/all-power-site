@@ -19,7 +19,9 @@ config {
             writeLetter = Написать письмо
             mailTo = mailto:info@all-power.ru - - "Сообщение с сайта all-power.ru"
         }
-        excludeUidList =
+        excludeUidList = 0 | -1
+        specialRange =
+
     }
 
     header {
@@ -45,6 +47,10 @@ config {
     }
 
 }
+
+[tree.level in [3]]
+config.navigation.specialRange = 1 | -1
+[end]
 
 # some options for the page object, meta data, etc.
 page {
