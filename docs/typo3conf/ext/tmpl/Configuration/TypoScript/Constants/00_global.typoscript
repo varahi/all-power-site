@@ -28,6 +28,8 @@ config {
         logoTitle = Гвардия
         logoSmallTitle = www.all-power.ru
         bannerTitle = Энергия солнца и ветра
+        phone = <a href="tel:+74959691730">(495) 969-17-30</a>
+        email = info@all-power.ru
     }
 
     footer {

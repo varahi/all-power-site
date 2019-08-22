@@ -38,7 +38,10 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+    .header__phone,
+    .header__email {
+        font-size: 20px;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -58,7 +61,10 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
-
+    .feedback-button {
+        text-align: left;
+        padding-bottom: 20px;
+    }
 	
 }
 @media only screen and (max-width : 600px) {
