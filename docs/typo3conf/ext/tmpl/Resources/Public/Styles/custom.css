@@ -32,6 +32,12 @@ b09398
     background-color: #2c6e49;
     border-color:  #2c6e49;
 }
+.card,
+.img-thumbnail {
+    /*border: 1px solid #fefee3;*/
+    border: 1px solid #ffc9b9;
+}
+
 /*  Body */
 
 body {
@@ -93,9 +99,9 @@ header .logo {
 .owl-carousel .owl-stage-outer {
     min-height: 200px;
     max-height: 500px;
-    border-right: 1px solid #e2e3e5;
-    border-bottom: 1px solid #e2e3e5;
-    border-left: 1px solid #e2e3e5;
+    border-right: 1px solid #ffc9b9;
+    border-bottom: 1px solid #ffc9b9;
+    border-left: 1px solid #ffc9b9;
     border-radius: 0.25rem;
 }
 .owl-nav {
@@ -303,7 +309,7 @@ h3 {
     padding: 20px;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.125);
+    border: 1px solid #ffc9b9;
     border-radius: 0.25rem;
 }
 .powermail__container textarea {
