@@ -40,6 +40,9 @@ body {
     body a:hover {
       text-decoration: none;
       color: #d68c45; }
+
+.section {
+  padding: 20px 0; }
 /* Smartmenu */
 .main-nav {
   -webkit-border-radius: 0px;
@@ -138,8 +141,31 @@ h2 {
   h2 a:hover {
     color: #d68c45; }
 
-.parallax-window h2 {
+.header-h1 h3 {
+  color: #444; }
+  .header-h1 h3:after, .header-h1 h3:before {
+    border-bottom: 2px solid #444; }
+
+h3 {
+  font-size: 1.4rem; }
+
+.white h2 {
   color: #fff; }
+
+.white h2::before {
+  border-bottom: 2px solid #fff; }
+
+.white h2::after {
+  border-bottom: 2px solid #fff; }
+/* Search */
+.search-form {
+  width: 50%; }
+
+.search-box {
+  padding-left: 0; }
+
+.tx-indexedsearch-res {
+  padding-bottom: 15px; }
 
 .padding-top-10 {
   padding-top: 30px; }
@@ -227,7 +253,7 @@ h2 {
   .powermail__container textarea {
     min-height: 120px; }
   .powermail__container input[type="text"] {
-    margin-bottom: 20px; }
+    margin-bottom: 30px; }
   .powermail__form_submit {
     position: absolute;
     right: 0;

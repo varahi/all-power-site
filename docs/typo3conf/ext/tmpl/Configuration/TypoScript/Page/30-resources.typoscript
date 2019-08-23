@@ -1,15 +1,16 @@
 # manually inserted CSS files
 page.includeCSS {
     10_bootstrap = EXT:tmpl/Resources/Public/Styles/bootstrap.css
-    20_fonts = https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+    #20_fonts = https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+    20_fonts  = EXT:tmpl/Resources/Public/Styles/font-awesome.min.css
     30_smcore = EXT:tmpl/Resources/Public/Styles/sm-core-css.css
     40_smblue = EXT:tmpl/Resources/Public/Styles/sm-blue/sm-blue.css
     50_smartmenu = EXT:tmpl/Resources/Public/Styles/smartmenu.css
     60_animate = EXT:tmpl/Resources/Public/Styles/animate.css
     70_carousel = EXT:tmpl/Resources/Public/Styles/carousel/owl.carousel.min.css
-    80_custom = EXT:tmpl/Resources/Public/Styles/custom.css
     90_media_queries = EXT:tmpl/Resources/Public/Styles/media_queries.css
 
+    # SCSS
     200_style = EXT:tmpl/Resources/Public/Scss/style.scss
     200_style.outputdir = EXT:tmpl/Resources/Public/CompiledCss/
 }
