@@ -9,6 +9,9 @@ page.includeCSS {
     70_carousel = EXT:tmpl/Resources/Public/Styles/carousel/owl.carousel.min.css
     80_custom = EXT:tmpl/Resources/Public/Styles/custom.css
     90_media_queries = EXT:tmpl/Resources/Public/Styles/media_queries.css
+
+    200_style = EXT:tmpl/Resources/Public/Scss/style.scss
+    200_style.outputdir = EXT:tmpl/Resources/Public/CompiledCss/
 }
 
 
