@@ -191,7 +191,6 @@ return [
                 $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
             ),
         ],
-
         'link' => [
             'label' => 'LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:tx_tmplcemainslider_item.link',
             'exclude' => 1,
