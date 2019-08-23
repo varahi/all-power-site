@@ -45,6 +45,7 @@ $menu_color_hover: #999;
 $header_border_color: #333;
 $border_color: #dee2e6;
 $orange_color: #d68c45;
+$orange_color2: #ffa319;
 $light_blue: #e8f2f3;
 $red_color: #8a150c;
 
@@ -107,7 +108,7 @@ body {
   }
   a {
     .sub-arrow {
-      border-color: $menu_color transparent transparent transparent;
+      border-color: $red_color transparent transparent transparent;
     }
   }
 
@@ -201,7 +202,6 @@ body {
   }
 }
 
-
 h1 {
   font-size: 36px;
   margin-bottom: 1.5rem;
@@ -235,9 +235,9 @@ h2 {
 .breadcrumb {
   background: #fff;
   padding-left: 0;
-}
-.breadcrumb a {
-  color: $orange_color;
+  a {
+    color: $orange_color2;
+  }
 }
 .breadcrumb-item.active {
   color: #000;
@@ -265,6 +265,11 @@ h2 {
 
   .header-h1 h2 {
     padding-bottom: 30px;
+  }
+  h2 {
+    a{
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -377,7 +382,7 @@ h2 {
     a {
       color: $menu_color;
       &:hover {
-        color: $menu_color_hover;
+        color: $orange_color;
         text-decoration: none;
       }
     }

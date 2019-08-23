@@ -68,7 +68,7 @@ body {
   .sm-blue a:hover {
     color: #999; }
   .sm-blue a .sub-arrow {
-    border-color: #444 transparent transparent transparent; }
+    border-color: #8a150c transparent transparent transparent; }
   .sm-blue ul a, .sm-blue ul a:focus, .sm-blue ul a:active, .sm-blue ul a.highlighted {
     border: 0 !important;
     padding: 9px 23px;
@@ -154,9 +154,8 @@ h2 {
 .breadcrumb {
   background: #fff;
   padding-left: 0; }
-
-.breadcrumb a {
-  color: #d68c45; }
+  .breadcrumb a {
+    color: #ffa319; }
 
 .breadcrumb-item.active {
   color: #000; }
@@ -178,6 +177,8 @@ h2 {
   padding-bottom: 100px; }
   .inner-page .header-h1 h2 {
     padding-bottom: 30px; }
+  .inner-page h2 a {
+    font-size: 1.5rem; }
 /* Carousel */
 .slider {
   margin-bottom: 20px; }
@@ -265,7 +266,7 @@ h2 {
   .header__phone a, .header__email a {
     color: #444; }
     .header__phone a:hover, .header__email a:hover {
-      color: #999;
+      color: #d68c45;
       text-decoration: none; }
 
 .footer {
