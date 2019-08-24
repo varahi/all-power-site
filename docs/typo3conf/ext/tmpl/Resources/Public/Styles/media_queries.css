@@ -17,7 +17,9 @@
 
     /* Small Devices, Tablets */
     @media only screen and (min-width : 768px) {
-
+        .nav-brand {
+            display: none;
+        }
     }
 
     /* Medium Devices, Desktops */
@@ -27,9 +29,7 @@
 
     /* Large Devices, Wide Screens */
     @media only screen and (min-width : 1200px) {
-		.nav-brand {
-			display: none;
-		}
+
     }
 
 
@@ -50,7 +50,20 @@
         display: block;
         width: 100%;
     }
-	
+    .teaser-card img {
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+    .slider__teaser {
+        display: none;
+    }
+    .owl-carousel .owl-item img {
+        width: auto;
+    }
+    .owl-carousel .owl-stage-outer {
+        border: none;
+    }
+
 }
 
 /* Small Devices, Tablets */
@@ -65,7 +78,10 @@
         text-align: left;
         padding-bottom: 20px;
     }
-	
+    .sm-blue a, .sm-blue a:focus, .sm-blue a:hover, .sm-blue a:active, .sm-blue a.highlighted {
+        padding: 13px 25px;
+    }
+
 }
 @media only screen and (max-width : 600px) {
     table {

@@ -2,8 +2,13 @@ $(document).ready(function() {
 	// Carousel
 	$('.owl-carousel').owlCarousel({
 		loop: true,
+		autoplay:false,
+		autoplayTimeout:1000,
+		autoplayHoverPause:true,
 		margin: 10,
-		nav:false,
+		nav: true,
+		dots: true,
+		dotsContainer: '.slider__teaser',
 		responsiveClass: true,
 		responsive: {
 			0: {

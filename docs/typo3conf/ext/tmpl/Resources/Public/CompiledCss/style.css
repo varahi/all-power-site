@@ -9,16 +9,6 @@
   background: linear-gradient(to bottom, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(209, 209, 209, 1) 51%, rgba(254, 254, 254, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0); }
 
-.header {
-  background: rgba(237, 237, 237, 1);
-  background: -moz-linear-gradient(top, rgba(237, 237, 237, 1) 0%, rgba(245, 245, 245, 1) 53%, rgba(255, 255, 255, 1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(237, 237, 237, 1)), color-stop(53%, rgba(245, 245, 245, 1)), color-stop(100%, rgba(255, 255, 255, 1)));
-  background: -webkit-linear-gradient(top, rgba(237, 237, 237, 1) 0%, rgba(245, 245, 245, 1) 53%, rgba(255, 255, 255, 1) 100%);
-  background: -o-linear-gradient(top, rgba(237, 237, 237, 1) 0%, rgba(245, 245, 245, 1) 53%, rgba(255, 255, 255, 1) 100%);
-  background: -ms-linear-gradient(top, rgba(237, 237, 237, 1) 0%, rgba(245, 245, 245, 1) 53%, rgba(255, 255, 255, 1) 100%);
-  background: linear-gradient(to bottom, rgba(237, 237, 237, 1) 0%, rgba(245, 245, 245, 1) 53%, rgba(255, 255, 255, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#ffffff', GradientType=0); }
-
 .btn-info {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#8a150c+0,92170f+14,93170d+18,ae1b13+50,b41c0f+57,b71d13+61,be1e12+68,c71f14+85,c71f14+100 */
   background: #8a150c;
@@ -196,7 +186,7 @@ h3 {
   margin-top: 20px; }
   .teaser-card img {
     padding-top: 20px;
-    padding-left: 20px; }
+    padding-left: 10px; }
 /* Inner pages */
 .inner-page {
   min-height: 300px;
@@ -225,10 +215,16 @@ h3 {
   height: 65px;
   margin-right: 10px;
   text-align: center; }
-
-.slider__teaser a:hover {
-  text-decoration: none;
-  color: #d68c45; }
+  .slider__teaser a.active {
+    color: #8a150c; }
+  .slider__teaser a:hover {
+    text-decoration: none;
+    color: #d68c45; }
+  .slider__teaser_num {
+    font-weight: bold;
+    margin-right: 10px;
+    /*position: absolute;
+     margin-top: 25px;*/ }
 
 .slide__description {
   position: absolute;
@@ -241,7 +237,7 @@ h3 {
   border-right: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;
   border-left: 1px solid #dee2e6;
-  border-radius: 0.25rem; }
+  border-radius: 0rem; }
 /* Powermail */
 .powermail__container {
   background: #fff;
@@ -282,6 +278,7 @@ h3 {
   padding-top: 30px; }
 
 .header {
+  /*@extend %gradient2;*/
   min-height: 100px; }
   .header .logo {
     padding-top: 30px; }
@@ -291,9 +288,9 @@ h3 {
     font-weight: bold; }
   .header__phone a, .header__email a {
     color: #444; }
-    .header__phone a:hover, .header__email a:hover {
-      color: #d68c45;
-      text-decoration: none; }
+  .header__phone a:hover, .header__email a:hover {
+    color: #d68c45;
+    text-decoration: none; }
 
 .footer {
   min-height: 300px;

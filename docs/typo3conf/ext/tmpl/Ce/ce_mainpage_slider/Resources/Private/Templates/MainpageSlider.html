@@ -3,7 +3,6 @@
 <div class="container slider-slides">
     <div class="owl-carousel owl-theme">
         <f:for each="{slides}" as="item" key="num">
-
             <div class="item" data-hash="slide-{num}">
                 <div class="slide__description">
                     <div class="card bg-light mb-3" style="max-width: 18rem;">
@@ -37,8 +36,11 @@
 </div>
 
 <div class="container slider__teaser">
-    <f:for each="{slides}" as="item" key="num">
-        <a class="button secondary url" href="#slide-{num}"><f:format.nl2br>{item.data.slide_teaser}</f:format.nl2br></a>
+    <f:for each="{slides}" as="item" key="num" iteration="iterator">
+        <a class="button secondary url" href="#slide-{num}">
+            <span class="slider__teaser_num">{iterator.cycle}</span>
+            <f:format.nl2br>{item.data.slide_teaser}</f:format.nl2br>
+        </a>
     </f:for>
 </div>
 

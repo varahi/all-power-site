@@ -290,7 +290,7 @@ h3 {
   margin-top: 20px;
   img {
     padding-top: 20px;
-    padding-left: 20px;
+    padding-left: 10px;
   }
 }
 
@@ -319,21 +319,38 @@ h3 {
 .owl-nav {
   display: none;
 }
-.slider__teaser a {
-  display: inline-block;
-  border-bottom: 1px solid $border_color;
-  color: $menu_color;
-  width: auto;
-  min-width: 170px;
-  padding: 5px 10px;
-  height: 65px;
-  margin-right: 10px;
-  text-align: center;
+
+.slider {
+  &__teaser {
+    a {
+      display: inline-block;
+      border-bottom: 1px solid $border_color;
+      color: $menu_color;
+      width: auto;
+      min-width: 170px;
+      padding: 5px 10px;
+      height: 65px;
+      margin-right: 10px;
+      text-align: center;
+
+      &.active {
+        color: $red_color;
+      }
+      &:hover {
+        text-decoration: none;
+        color: $orange_color;
+      }
+
+    }
+    &_num {
+      font-weight: bold;
+      margin-right: 10px;
+      /*position: absolute;
+      margin-top: 25px;*/
+    }
+  }
 }
-.slider__teaser a:hover {
-  text-decoration: none;
-  color: $orange_color;
-}
+
 .slide__description {
   position: absolute;
   top: 20%;
@@ -346,7 +363,7 @@ h3 {
     border-right: 1px solid $border_color;
     border-bottom: 1px solid $border_color;
     border-left: 1px solid $border_color;
-    border-radius: 0.25rem;
+    border-radius: 0rem;
   }
 }
 
@@ -405,7 +422,7 @@ h3 {
 }
 
 .header {
-  @extend %gradient2;
+  /*@extend %gradient2;*/
   min-height: 100px;
   .logo {
     padding-top: 30px;
