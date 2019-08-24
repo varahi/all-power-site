@@ -79,6 +79,9 @@
 			<trans-unit id="page.hide_pagetitle">
 				<source><![CDATA[Hide Pagetitle]]></source>
 			</trans-unit>
+			<trans-unit id="page.hide_container_class">
+				<source><![CDATA[Hide Container Class]]></source>
+			</trans-unit>
 			<trans-unit id="tca.tab.sliderElements">
 				<source><![CDATA[Slider Elements]]></source>
 			</trans-unit>

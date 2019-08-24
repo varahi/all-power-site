@@ -1,0 +1,16 @@
+<f:if condition="{data.flexform_hide_row} == 1">
+    <f:then>
+        <div class="section {data.flexform_additional_class}">
+            <div class="container">
+                {data.tx_gridelements_view_columns.0->f:format.raw()}
+            </div>
+        </div>
+    </f:then>
+    <f:else>
+        <div class="row {data.flexform_additional_class}">
+            <div class="container">
+                {data.tx_gridelements_view_columns.0->f:format.raw()}
+            </div>
+        </div>
+    </f:else>
+</f:if>

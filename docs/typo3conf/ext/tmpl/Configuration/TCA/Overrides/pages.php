@@ -26,6 +26,17 @@ $GLOBALS['TCA']['pages']['columns'] += array(
         )
     ),
 
+    'hide_container_class' => array(
+        'label' => 'LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:page.hide_container_class',
+        'exclude' => 1,
+        'config' => array (
+            'type' => 'check',
+            'items' => array(
+                array('', '')
+            )
+        )
+    ),
+
 );
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes (
@@ -33,4 +44,7 @@ $GLOBALS['TCA']['pages']['columns'] += array(
 );
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes (
     'pages', 'hide_pagetitle', '1', 'after:hide_breadcrumb'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes (
+    'pages', 'hide_container_class', '1', 'after:hide_pagetitle'
 );

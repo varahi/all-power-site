@@ -2,16 +2,20 @@
 <f:render partial="Navigation" arguments="{_all}" />
 
 <section id="content" class="section">
-    <div class="container inner-page">
-        <f:render partial="Breadcrumb" arguments="{_all}" />
-        <f:if condition="{data.hide_pagetitle} == 1">
-            <f:then></f:then>
-            <f:else>
-                <f:cObject typoscriptObjectPath="lib.pagetitle" />
-            </f:else>
-        </f:if>
-        <f:render section="content" />
-    </div>
+    <f:if condition="{data.hide_container_class} == 1">
+        <f:then>
+            <div class="container">
+                <f:render partial="Content" arguments="{_all}" />
+            </div>
+            <f:render section="content" />
+        </f:then>
+        <f:else>
+            <div class="container inner-page">
+                <f:render partial="Content" arguments="{_all}" />
+                <f:render section="content" />
+            </div>
+        </f:else>
+    </f:if>
 </section>
 
 <!-- Footer -->

@@ -24,7 +24,8 @@
 /* Body */
 body {
   color: #333;
-  font-size: 0.95rem; }
+  font-size: 0.95rem;
+  overflow-x: hidden; }
   body a {
     color: #8a150c; }
     body a:hover {
@@ -254,8 +255,10 @@ h3 {
     position: absolute;
     right: 0;
     bottom: 0; }
-  .powermail__container label {
+  .powermail__container label, .powermail label {
     display: none; }
+  .powermail input[type="text"] {
+    margin-bottom: 30px; }
 
 .powermail_fieldwrap_type_captcha label {
   display: block; }
@@ -276,6 +279,12 @@ h3 {
 
 .modal-body {
   padding-top: 30px; }
+
+.form-section {
+  background: #e8f2f3;
+  padding: 50px 0 0 0;
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6; }
 
 .header {
   /*@extend %gradient2;*/

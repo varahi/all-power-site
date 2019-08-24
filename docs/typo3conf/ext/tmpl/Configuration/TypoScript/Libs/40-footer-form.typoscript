@@ -13,3 +13,9 @@ lib.footerForm {
         dontChekPid = 1
     }
 }
+
+[getTSFE().id == 18]
+    lib.footerForm >
+    lib.footerForm = TEXT
+    lib.footerForm.value =
+[global]

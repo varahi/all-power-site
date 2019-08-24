@@ -61,6 +61,7 @@ body {
       color: $orange_color;
     }
   }
+  overflow-x: hidden;
 }
 .section {
   padding: 20px 0;
@@ -389,9 +390,15 @@ h3 {
     right: 0;
     bottom: 0;
   }
-  &__container label {
+
+  &__container label,
+  label {
     display: none;
   }
+  input[type="text"] {
+    margin-bottom: 30px;
+  }
+
 }
 .powermail_fieldwrap_type_captcha label {
   display: block;
@@ -420,6 +427,17 @@ h3 {
 .modal-body {
   padding-top: 30px;
 }
+
+.form-section {
+  background: #e8f2f3;
+  padding: 50px 0 0 0;
+  border-top: 1px solid $border_color;
+  border-bottom: 1px solid $border_color;
+}
+
+
+
+
 
 .header {
   /*@extend %gradient2;*/
