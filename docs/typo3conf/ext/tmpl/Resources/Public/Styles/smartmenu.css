@@ -62,7 +62,7 @@
     box-shadow: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     #main-menu {
         /*float: right;*/
         float: left;
@@ -82,7 +82,7 @@
     background: #2e8cb8;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     #main-menu:before {
         display: none;
     }
@@ -182,7 +182,7 @@
     display: block;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     /* hide the button in desktop view */
     .main-menu-btn {
         position: absolute;

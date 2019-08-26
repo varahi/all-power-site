@@ -42,12 +42,13 @@
 $sm_background: transparent;
 $menu_color: #444;
 $menu_color_hover: #999;
-$header_border_color: #333;
+$header_border_color: #666;
 $border_color: #dee2e6;
 $orange_color: #d68c45;
 $orange_color2: #ffa319;
 $light_blue: #e8f2f3;
 $red_color: #8a150c;
+$black_color: #000000;
 
 
 /* Body */
@@ -55,10 +56,11 @@ body {
   color: rgb(51, 51, 51);
   font-size: 0.95rem;
   a {
-    color: $red_color;
+    color: $black_color;
+    text-decoration: underline;
     &:hover {
       text-decoration: none;
-      color: $orange_color;
+      color: $menu_color_hover;
     }
   }
   overflow-x: hidden;
@@ -92,7 +94,7 @@ body {
 }
 
 .sm-blue a, .sm-blue a:focus, .sm-blue a:active, .sm-blue a.highlighted {
-  padding: 13px 45px;
+  padding: 13px 20px;
   color: #fff;
   @extend %gradient1;
 }
@@ -103,7 +105,7 @@ body {
   a:hover,
   a:active,
   a.highlighted {
-    padding: 13px 45px;
+    padding: 13px 20px;
     color: $menu_color;
     background: transparent;
   }
@@ -216,9 +218,10 @@ h2 {
   a {
     /*color: #B07239;
     color: #ffa319;*/
-    color: $red_color;
+    color: $black_color;
+    text-decoration: none;
     &:hover {
-      color: #d68c45;
+      color: $menu_color_hover;
     }
   }
 }
@@ -333,6 +336,7 @@ h3 {
       height: 65px;
       margin-right: 10px;
       text-align: center;
+      text-decoration: none;
 
       &.active {
         color: $red_color;
@@ -452,8 +456,9 @@ h3 {
     font-weight: bold;
     a {
       color: $menu_color;
+      text-decoration: none;
       &:hover {
-        color: $orange_color;
+        color: $menu_color_hover;
         text-decoration: none;
       }
     }

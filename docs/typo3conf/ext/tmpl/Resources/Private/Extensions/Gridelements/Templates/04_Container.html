@@ -7,9 +7,11 @@
         </div>
     </f:then>
     <f:else>
-        <div class="row {data.flexform_additional_class}">
+        <div class="section {data.flexform_additional_class}">
             <div class="container">
-                {data.tx_gridelements_view_columns.0->f:format.raw()}
+                <div class="row">
+                    {data.tx_gridelements_view_columns.0->f:format.raw()}
+                </div>
             </div>
         </div>
     </f:else>

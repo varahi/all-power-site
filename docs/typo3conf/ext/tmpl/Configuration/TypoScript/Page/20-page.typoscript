@@ -16,7 +16,7 @@ page {
         10 = TEXT
         10 {
             data = TSFE:id
-            noTrimWrap = | id="p|"|
+            noTrimWrap = | id="page-|"|
         }
 
         # ...and some helpful classes
@@ -24,11 +24,6 @@ page {
         20.stdWrap.noTrimWrap = | class="|"|
 
     }
-
-    bodyTag >
-    bodyTagCObject = TEXT
-    bodyTagCObject.field = uid
-    bodyTagCObject.wrap = <body id="pageid-|">
 
     # ********************************************************************************************
     # Layout

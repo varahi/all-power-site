@@ -27,10 +27,11 @@ body {
   font-size: 0.95rem;
   overflow-x: hidden; }
   body a {
-    color: #8a150c; }
+    color: #000;
+    text-decoration: underline; }
     body a:hover {
       text-decoration: none;
-      color: #d68c45; }
+      color: #999; }
 
 .section {
   padding: 20px 0; }
@@ -52,11 +53,11 @@ body {
   border-radius: 0 !important; }
 
 .sm-blue a, .sm-blue a:focus, .sm-blue a:active, .sm-blue a.highlighted {
-  padding: 13px 45px;
+  padding: 13px 20px;
   color: #fff; }
 
 .sm-blue a, .sm-blue a:focus, .sm-blue a:hover, .sm-blue a:active, .sm-blue a.highlighted {
-  padding: 13px 45px;
+  padding: 13px 20px;
   color: #444;
   background: transparent; }
   .sm-blue a:hover {
@@ -82,11 +83,11 @@ body {
   position: relative;
   padding-bottom: 0.5rem;
   text-align: center;
-  color: #333; }
+  color: #666; }
   .header-h1 h1:before, .header-h1 h2:before, .header-h1 h3:before {
     content: "";
     position: absolute;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #666;
     bottom: 0.25rem;
     left: 50%;
     width: 30%;
@@ -94,7 +95,7 @@ body {
   .header-h1 h1:after, .header-h1 h2:after, .header-h1 h3:after {
     content: "";
     position: absolute;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #666;
     bottom: 0;
     left: 50%;
     width: 15%;
@@ -128,9 +129,10 @@ h2 {
   h2 a {
     /*color: #B07239;
      color: #ffa319;*/
-    color: #8a150c; }
+    color: #000;
+    text-decoration: none; }
   h2 a:hover {
-    color: #d68c45; }
+    color: #999; }
 
 .header-h1 h3 {
   color: #444; }
@@ -215,7 +217,8 @@ h3 {
   padding: 5px 10px;
   height: 65px;
   margin-right: 10px;
-  text-align: center; }
+  text-align: center;
+  text-decoration: none; }
   .slider__teaser a.active {
     color: #8a150c; }
   .slider__teaser a:hover {
@@ -296,9 +299,10 @@ h3 {
     font-size: 26px;
     font-weight: bold; }
   .header__phone a, .header__email a {
-    color: #444; }
+    color: #444;
+    text-decoration: none; }
   .header__phone a:hover, .header__email a:hover {
-    color: #d68c45;
+    color: #999;
     text-decoration: none; }
 
 .footer {

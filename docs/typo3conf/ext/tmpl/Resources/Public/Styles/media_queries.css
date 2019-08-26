@@ -17,9 +17,7 @@
 
     /* Small Devices, Tablets */
     @media only screen and (min-width : 768px) {
-        .nav-brand {
-            display: none;
-        }
+
     }
 
     /* Medium Devices, Desktops */
@@ -29,7 +27,9 @@
 
     /* Large Devices, Wide Screens */
     @media only screen and (min-width : 1200px) {
-
+        .nav-brand {
+            display: none;
+        }
     }
 
 
