@@ -4,7 +4,6 @@ styles.content {
         linkWrap.lightboxCssClass = fancybox
         linkWrap.lightboxRelAttribute = fancybox[{field:uid}]
     }
-    defaultHeaderType = 3
 }
 
 # Including EXT:fluid_styled_content's default constants
@@ -16,6 +15,7 @@ styles {
         textmedia.maxW = 700
         textmedia.maxWInText = 700
         textmedia.linkWrap.lightboxEnabled = 1
+        defaultHeaderType = 3
     }
 
     templates {

@@ -141,6 +141,8 @@ h2 {
 
 h3 {
   font-size: 1.4rem; }
+  h3 a {
+    text-decoration: none; }
 
 .white h2 {
   color: #fff; }
