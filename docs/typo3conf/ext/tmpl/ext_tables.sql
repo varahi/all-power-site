@@ -14,6 +14,7 @@ CREATE TABLE pages (
 CREATE TABLE tt_content (
 	tx_slider_item int(11) unsigned DEFAULT '0' NOT NULL,
 	teaser_link varchar(255) DEFAULT '' NOT NULL,
+	slider_data_speed int(11) DEFAULT '0' NOT NULL,
 );
 
 #

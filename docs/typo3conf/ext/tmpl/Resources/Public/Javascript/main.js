@@ -1,33 +1,4 @@
 $(document).ready(function() {
-	// Carousel
-	$('.owl-carousel').owlCarousel({
-		loop: true,
-		animateOut: 'fadeOut',
-		autoplay:true,
-		autoplayTimeout:3000,
-		autoplayHoverPause:true,
-		margin: 10,
-		nav: true,
-		dots: true,
-		dotsContainer: '.slider__teaser',
-		responsiveClass: true,
-		responsive: {
-			0: {
-				items: 1,
-				nav: true
-			},
-			600: {
-				items: 1,
-				nav: false
-			},
-			1000: {
-				items: 1,
-				nav: true,
-				loop: false,
-				margin: 20
-			}
-		}
-	});
 
 	// Parallax
 	$('section[data-type="background"]').each(function(){

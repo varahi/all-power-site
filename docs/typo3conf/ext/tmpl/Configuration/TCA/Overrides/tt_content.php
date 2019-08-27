@@ -13,6 +13,16 @@ defined('TYPO3_MODE') or die();
             ],
         ],
 
+        'slider_data_speed' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:tt_content.slider_data_speed',
+            'config' => [
+                'type' => 'input',
+                'size' => 4,
+                'eval' => 'int'
+            ]
+        ],
+
     ]
 );
 
