@@ -253,13 +253,14 @@ h3 {
   border: 2px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem; }
   .powermail__container textarea {
-    min-height: 120px; }
+    min-height: 175px; }
   .powermail__container input[type="text"] {
     margin-bottom: 30px; }
   .powermail__form_submit {
-    position: absolute;
-    right: 0;
-    bottom: 0; }
+    /*position: absolute;
+     right: 0;
+     bottom: 0;*/
+    margin-top: 10px; }
   .powermail__container label, .powermail label {
     display: none; }
   .powermail input[type="text"] {
@@ -270,6 +271,13 @@ h3 {
 
 .powermail_captcha {
   margin: 10px 0 0 -30px; }
+
+.powermail_fieldset_4 {
+  width: 100% !important; }
+  .powermail_fieldset_4 .col-md-6 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    padding-left: 0 !important; }
 /* Powermail in modalbox */
 .modal-content .tx-powermail .col-md-6 {
   max-width: 100%;
@@ -400,7 +408,9 @@ table th {
   text-transform: uppercase; }
 /* Override bootstrap */
 .container {
-  max-width: 1400px; }
+  max-width: 1400px;
+  padding-right: 40px;
+  padding-left: 40px; }
 
 .btn-info {
   color: #fff;
