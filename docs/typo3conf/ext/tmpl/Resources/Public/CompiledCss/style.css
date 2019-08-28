@@ -27,11 +27,13 @@ body {
   font-size: 0.95rem;
   overflow-x: hidden; }
   body a {
-    color: #000;
+    /*color: $black_color;*/
+    color: #00f;
     text-decoration: underline; }
     body a:hover {
       text-decoration: none;
-      color: #999; }
+      /*color: $menu_color_hover;*/
+      color: #000; }
 
 .section {
   padding: 20px 0; }
@@ -129,7 +131,6 @@ h2 {
   h2 a {
     /*color: #B07239;
      color: #ffa319;*/
-    color: #000;
     text-decoration: none; }
   h2 a:hover {
     color: #999; }
@@ -150,13 +151,16 @@ h3 {
     padding: 5px 0px 8px 20px;
     margin: 15px 0; }
   h3.default-inner a {
-    color: #000;
+    color: #00f;
     text-decoration: underline; }
     h3.default-inner a:hover {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #000; }
+    h3.default-inner a:visited {
+      color: #800080; }
 
-h1.default-inner-header {
-  text-transform: capitalize; }
+h1.default-inner-header::first-letter {
+  text-transform: uppercase; }
   h1.default-inner-header::before {
     background: #d68c45;
     padding: 1px 2px;

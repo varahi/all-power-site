@@ -50,17 +50,24 @@ $light_blue: #e8f2f3;
 $red_color: #8a150c;
 $black_color: #000000;
 
+$link_color: #0000ff;
+$link_color_hover: #000;
+$link_color_focus: #ff0000;
+$link_color_vlink: #800080;
+
 
 /* Body */
 body {
   color: rgb(51, 51, 51);
   font-size: 0.95rem;
   a {
-    color: $black_color;
+    /*color: $black_color;*/
+    color: $link_color;
     text-decoration: underline;
     &:hover {
       text-decoration: none;
-      color: $menu_color_hover;
+      /*color: $menu_color_hover;*/
+      color: $link_color_hover;
     }
   }
   overflow-x: hidden;
@@ -218,7 +225,6 @@ h2 {
   a {
     /*color: #B07239;
     color: #ffa319;*/
-    color: $black_color;
     text-decoration: none;
     &:hover {
       color: $menu_color_hover;
@@ -248,10 +254,14 @@ h3 {
     margin: 15px 0;
 
     a {
-      color: $black_color;
+      color: $link_color;
       text-decoration:underline;
       &:hover {
         text-decoration: none;
+        color: $link_color_hover
+      }
+      &:visited {
+        color: $link_color_vlink;
       }
     }
   }
@@ -259,8 +269,9 @@ h3 {
 
 h1 {
   &.default-inner-header {
-    text-transform: capitalize;
-
+    &::first-letter {
+      text-transform: uppercase;
+    }
     &::before {
       background: $orange_color;
       padding: 1px 2px;

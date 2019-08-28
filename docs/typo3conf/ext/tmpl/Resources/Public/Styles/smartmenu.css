@@ -62,11 +62,18 @@
     box-shadow: none;
 }
 
+.main-nav {
+    position: relative;
+}
+ul.sm {
+    width: 1220px;
+    margin: 0 auto;
+}
+
 @media (min-width: 1200px) {
     #main-menu {
-        /*float: right;*/
-        float: left;
-        clear: none;
+        /*float: left;
+        clear: none;*/
     }
 }
 
