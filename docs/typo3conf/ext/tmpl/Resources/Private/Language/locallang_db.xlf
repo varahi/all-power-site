@@ -72,7 +72,9 @@
 			<trans-unit id="header.h3_right">
 				<source><![CDATA[h3 right with borders]]></source>
 			</trans-unit>
-
+			<trans-unit id="header.default_inner_header">
+				<source><![CDATA[Default inner header]]></source>
+			</trans-unit>
 			<trans-unit id="page.hide_breadcrumb">
 				<source><![CDATA[Hide Breadcrumb]]></source>
 			</trans-unit>

@@ -24,5 +24,6 @@ TCEFORM.tt_content.header_layout {
         20 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h3_left
         21 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h3_center
         22 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h3_right
+        30 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.default_inner_header
     }
 }
