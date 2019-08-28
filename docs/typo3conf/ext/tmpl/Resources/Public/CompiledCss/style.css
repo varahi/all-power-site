@@ -242,6 +242,7 @@ h1.default-inner-header::first-letter {
   display: inline-block;
   border-bottom: 1px solid #dee2e6;
   color: #444;
+  color: #00f;
   width: auto;
   min-width: 170px;
   padding: 5px 10px;
@@ -250,10 +251,12 @@ h1.default-inner-header::first-letter {
   text-align: center;
   text-decoration: none; }
   .slider__teaser a.active {
-    color: #8a150c; }
+    color: #8a150c;
+    color: #f00; }
   .slider__teaser a:hover {
     text-decoration: none;
-    color: #d68c45; }
+    color: #d68c45;
+    color: #000; }
   .slider__teaser_num {
     font-weight: bold;
     margin-right: 10px;
@@ -265,13 +268,14 @@ h1.default-inner-header::first-letter {
   top: 20%;
   left: 30px; }
 
-.owl-carousel .owl-stage-outer {
-  min-height: 200px;
-  max-height: 500px;
-  border-right: 1px solid #dee2e6;
-  border-bottom: 1px solid #dee2e6;
-  border-left: 1px solid #dee2e6;
-  border-radius: 0rem; }
+.owl-carousel {
+  /*min-height: 200px;
+   max-height: 500px;*/ }
+  .owl-carousel .owl-stage-outer {
+    border-right: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    border-left: 1px solid #dee2e6;
+    border-radius: 0rem; }
 /* Powermail */
 .powermail__container {
   background: #fff;

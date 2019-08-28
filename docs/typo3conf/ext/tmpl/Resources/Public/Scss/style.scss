@@ -377,6 +377,7 @@ h1 {
       display: inline-block;
       border-bottom: 1px solid $border_color;
       color: $menu_color;
+      color: $link_color;
       width: auto;
       min-width: 170px;
       padding: 5px 10px;
@@ -387,10 +388,12 @@ h1 {
 
       &.active {
         color: $red_color;
+        color: $link_color_focus;
       }
       &:hover {
         text-decoration: none;
         color: $orange_color;
+        color: $link_color_hover;
       }
 
     }
@@ -410,8 +413,8 @@ h1 {
 }
 .owl-carousel {
   .owl-stage-outer {
-    min-height: 200px;
-    max-height: 500px;
+    /*min-height: 200px;
+    max-height: 500px;*/
     border-right: 1px solid $border_color;
     border-bottom: 1px solid $border_color;
     border-left: 1px solid $border_color;
