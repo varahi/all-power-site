@@ -50,10 +50,17 @@ $light_blue: #e8f2f3;
 $red_color: #8a150c;
 $black_color: #000000;
 
+/*
 $link_color: #0000ff;
 $link_color_hover: #000;
 $link_color_focus: #ff0000;
 $link_color_vlink: #800080;
+*/
+
+$link_color: #000;
+$link_color_hover: #999;
+$link_color_focus: #444;
+$link_color_vlink: #444;
 
 
 /* Body */
@@ -101,7 +108,10 @@ body {
 }
 
 .sm-blue a, .sm-blue a:focus, .sm-blue a:active, .sm-blue a.highlighted {
+  /*
   padding: 13px 20px;
+   */
+  padding: 13px 13px;
   color: #fff;
   @extend %gradient1;
 }
@@ -112,7 +122,7 @@ body {
   a:hover,
   a:active,
   a.highlighted {
-    padding: 13px 20px;
+    padding: 13px 13px;
     color: $menu_color;
     background: transparent;
   }

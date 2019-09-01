@@ -22,6 +22,7 @@
 		"sort-packages": true
 	},
 	"require": {
+		"clickstorm/cs_seo": "^4.1",
 		"consolidation/robo": "^1",
 		"cweagans/composer-patches": "^1.6",
 		"deployer/deployer": "^6",
@@ -53,6 +54,7 @@
 		"typo3/cms-form": "^9.5",
 		"typo3/cms-frontend": "^9.5",
 		"typo3/cms-impexp": "^9.5",
+		"typo3/cms-indexed-search": "^9.5",
 		"typo3/cms-info": "^9.5",
 		"typo3/cms-install": "^9.5",
 		"typo3/cms-linkvalidator": "^9.5",

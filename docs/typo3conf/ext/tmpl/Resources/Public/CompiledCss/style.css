@@ -21,6 +21,12 @@
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8a150c', endColorstr='#c71f14',GradientType=0);
   /* IE6-9 */ }
+/*
+ $link_color: #0000ff;
+ $link_color_hover: #000;
+ $link_color_focus: #ff0000;
+ $link_color_vlink: #800080;
+ */
 /* Body */
 body {
   color: #333;
@@ -28,12 +34,12 @@ body {
   overflow-x: hidden; }
   body a {
     /*color: $black_color;*/
-    color: #00f;
+    color: #000;
     text-decoration: underline; }
     body a:hover {
       text-decoration: none;
       /*color: $menu_color_hover;*/
-      color: #000; }
+      color: #999; }
 
 .section {
   padding: 20px 0; }
@@ -55,11 +61,14 @@ body {
   border-radius: 0 !important; }
 
 .sm-blue a, .sm-blue a:focus, .sm-blue a:active, .sm-blue a.highlighted {
-  padding: 13px 20px;
+  /*
+   padding: 13px 20px;
+   */
+  padding: 13px 13px;
   color: #fff; }
 
 .sm-blue a, .sm-blue a:focus, .sm-blue a:hover, .sm-blue a:active, .sm-blue a.highlighted {
-  padding: 13px 20px;
+  padding: 13px 13px;
   color: #444;
   background: transparent; }
   .sm-blue a:hover {
@@ -151,13 +160,13 @@ h3 {
     padding: 5px 0px 8px 20px;
     margin: 15px 0; }
   h3.default-inner a {
-    color: #00f;
+    color: #000;
     text-decoration: underline; }
     h3.default-inner a:hover {
       text-decoration: none;
-      color: #000; }
+      color: #999; }
     h3.default-inner a:visited {
-      color: #800080; }
+      color: #444; }
 
 h1.default-inner-header::first-letter {
   text-transform: uppercase; }
@@ -242,7 +251,7 @@ h1.default-inner-header::first-letter {
   display: inline-block;
   border-bottom: 1px solid #dee2e6;
   color: #444;
-  color: #00f;
+  color: #000;
   width: auto;
   min-width: 170px;
   padding: 5px 10px;
@@ -252,11 +261,11 @@ h1.default-inner-header::first-letter {
   text-decoration: none; }
   .slider__teaser a.active {
     color: #8a150c;
-    color: #f00; }
+    color: #444; }
   .slider__teaser a:hover {
     text-decoration: none;
     color: #d68c45;
-    color: #000; }
+    color: #999; }
   .slider__teaser_num {
     font-weight: bold;
     margin-right: 10px;

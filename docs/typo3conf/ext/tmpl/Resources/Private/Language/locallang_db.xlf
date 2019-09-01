@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2019-08-19T14:48:39Z">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-09-01T11:26:12Z">
 		<header>
 			<generator>LFEditor</generator>
 		</header>
@@ -50,6 +50,9 @@
 			<trans-unit id="flexform.ce_slider_speed">
 				<source><![CDATA[Speed of Transition]]></source>
 			</trans-unit>
+			<trans-unit id="header.default_inner_header">
+				<source><![CDATA[Default inner header]]></source>
+			</trans-unit>
 			<trans-unit id="header.h2_center">
 				<source><![CDATA[h2 center with borders]]></source>
 			</trans-unit>
@@ -62,7 +65,6 @@
 			<trans-unit id="header.h2_right">
 				<source><![CDATA[h2 right with borders]]></source>
 			</trans-unit>
-
 			<trans-unit id="header.h3_center">
 				<source><![CDATA[h3 center with borders]]></source>
 			</trans-unit>
@@ -72,17 +74,14 @@
 			<trans-unit id="header.h3_right">
 				<source><![CDATA[h3 right with borders]]></source>
 			</trans-unit>
-			<trans-unit id="header.default_inner_header">
-				<source><![CDATA[Default inner header]]></source>
-			</trans-unit>
 			<trans-unit id="page.hide_breadcrumb">
 				<source><![CDATA[Hide Breadcrumb]]></source>
 			</trans-unit>
-			<trans-unit id="page.hide_pagetitle">
-				<source><![CDATA[Hide Pagetitle]]></source>
-			</trans-unit>
 			<trans-unit id="page.hide_container_class">
 				<source><![CDATA[Hide Container Class]]></source>
+			</trans-unit>
+			<trans-unit id="page.hide_pagetitle">
+				<source><![CDATA[Hide Pagetitle]]></source>
 			</trans-unit>
 			<trans-unit id="tca.tab.sliderElements">
 				<source><![CDATA[Slider Elements]]></source>

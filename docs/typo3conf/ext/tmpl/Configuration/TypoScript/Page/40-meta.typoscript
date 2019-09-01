@@ -3,10 +3,11 @@ page.meta {
     revisit-after       = 7 days
     imagetoolbar        = no
 
-    #keywords.field      = keywords
-    #keywords.ifEmpty    = {$page.meta.keywords}
-    #description.field   = description
-    #description.ifEmpty = {$page.meta.description}
+    keywords.field      = keywords
+    keywords.ifEmpty    = {$config.meta.keywords}
+    description.field   = description
+    description.ifEmpty = {$config.meta.description}
+
     #abstract.field      = abstract
     #abstract.ifEmpty    = {$page.meta.abstract}
     #page-topic.field    = title
@@ -30,9 +31,14 @@ page.meta {
     X-UA-Compatible = IE=edge
     X-UA-Compatible.attribute = http-equiv
 
-    # OpenGraph tags
-    /*
+    # OpenGraph tags if empty
+    og:description.ifEmpty = {$config.meta.og_description}
+    twitter:description.ifEmpty = {$config.meta.twitter_description}
     og:title {
+        attribute = property
+        field = title
+    }
+    twitter:title {
         attribute = property
         field = title
     }
@@ -45,24 +51,8 @@ page.meta {
         attribute = property
         field = description
     }
-    */
 
 }
-
-temp.paginateTitle = COA
-temp.paginateTitle {
-    if.isTrue.data = GP:tx_news_pi1|@widget_0|currentPage
-    10 = TEXT
-    10 {
-        data = GP:tx_news_pi1|@widget_0|currentPage
-        intval = 1
-        htmlSpecialChars = 1
-    }
-    wrap = &nbsp;- Seite &nbsp;|
-}
-
-temp.pageTitle = TEXT
-temp.pageTitle.field=title
 
 /*
 page.headerData {
@@ -75,6 +65,8 @@ page.headerData {
             insertData = 1
             dataWrap = <meta property="og:title" content="|">
         }
+        10 >
+
         20 = TEXT
         20 {
             value = article
@@ -106,6 +98,7 @@ page.headerData {
             stripHtml = 1
             wrap = <meta property="og:description" content="|">
         }
+        50 >
         60 = FILES
         60 {
             #gets image form media tab of page
@@ -136,19 +129,13 @@ page.headerData {
             }
         }
 
+        60 >
+
         100 = TEXT
         100 {
             value = {$config.page.siteTitle} : {TSFE:page|title}
             insertData = 1
             dataWrap = <meta property="title" content="|">
-        }
-
-        110 = TEXT
-        110 {
-            data = page:description
-            required = 1
-            stripHtml = 1
-            wrap = <meta property="description" content="|">
         }
 
     }

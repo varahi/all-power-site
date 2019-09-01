@@ -31,7 +31,7 @@ $(document).ready(function() {
 	});
 
 	// Animate
-	jQuery('.ce-textpic, .tx-escortcities, .model-detail__img-wrap, .animate').addClass("visible").viewportChecker ({
+	jQuery('._ce-textpic, .ce-bodytext, .animate').addClass("visible").viewportChecker ({
 		classToAdd: 'visible animated zoomIn',
 		offset: 250
 	});
