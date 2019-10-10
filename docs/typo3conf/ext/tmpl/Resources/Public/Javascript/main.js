@@ -31,7 +31,7 @@ $(document).ready(function() {
 	});
 
 	// Animate
-	jQuery('._ce-textpic, .ce-bodytext, .animate').addClass("visible").viewportChecker ({
+	jQuery('._ce-textpic, ._ce-bodytext, .animate').addClass("visible").viewportChecker ({
 		classToAdd: 'visible animated zoomIn',
 		offset: 250
 	});

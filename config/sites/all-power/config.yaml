@@ -1,6 +1,9 @@
 rootPageId: 1
-base: 'http://all-power.ru/'
+base: 'http://all-power.ru'
 baseVariants:
+  -
+    base: 'http://all-power.ru'
+    condition: 'getenv("HOST_ENV") == "serverlive"'
   -
     base: 'http://all-power.localhost'
     condition: 'getenv("HOST_ENV") == "localdev"'
@@ -16,7 +19,7 @@ languages:
     base: /
     typo3Language: ru
     locale: ru_RU.UTF-8
-    iso-639-1: de
+    iso-639-1: ru
     navigationTitle: Russian
     hreflang: ru-Ru
     direction: ltr
