@@ -30,10 +30,4 @@ $(document).ready(function() {
 		$('body,html').animate({scrollTop:0},800);
 	});
 
-	// Animate
-	jQuery('._ce-textpic, ._ce-bodytext, .animate').addClass("visible").viewportChecker ({
-		classToAdd: 'visible animated zoomIn',
-		offset: 250
-	});
-
 });

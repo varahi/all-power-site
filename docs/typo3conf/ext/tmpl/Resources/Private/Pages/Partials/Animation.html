@@ -1,0 +1,11 @@
+<f:if condition="{data.show_animation} == 1">
+<script>
+    $(document).ready(function() {
+        // Animate
+        jQuery('.ce-textpic, .ce-bodytext, .animate').addClass("visible").viewportChecker ({
+            classToAdd: 'visible animated zoomIn',
+            offset: 250
+        });
+    });
+</script>
+</f:if>

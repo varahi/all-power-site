@@ -539,3 +539,6 @@ span.ce-uploads-fileName {
   font-size: 17px;
   display: block;
   padding-bottom: 5px; }
+
+.animated {
+  -webkit-animation-fill-mode: none; }

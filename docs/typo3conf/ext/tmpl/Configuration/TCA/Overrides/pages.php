@@ -37,6 +37,17 @@ $GLOBALS['TCA']['pages']['columns'] += array(
         )
     ),
 
+    'show_animation' => array(
+        'label' => 'LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:page.show_animation',
+        'exclude' => 1,
+        'config' => array (
+            'type' => 'check',
+            'items' => array(
+                array('', '')
+            )
+        )
+    ),
+
 );
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes (
@@ -47,4 +58,7 @@ $GLOBALS['TCA']['pages']['columns'] += array(
 );
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes (
     'pages', 'hide_container_class', '1', 'after:hide_pagetitle'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes (
+    'pages', 'show_animation', '1', 'after:hide_container_class'
 );
