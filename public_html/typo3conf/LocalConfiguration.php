@@ -1,7 +1,7 @@
 <?php
 return [
     'BE' => [
-        'debug' => false,
+        'debug' => true,
         'explicitADmode' => 'explicitAllow',
         'installToolPassword' => '$argon2i$v=19$m=16384,t=16,p=2$WnZaQ2FRMXZGcWdpWUUzTQ$ak2boiVRPlNo0F0jPeVctZxJik0zOQX/eQLKArTtMzk',
         'loginSecurityLevel' => 'normal',
@@ -96,7 +96,7 @@ return [
         ],
     ],
     'FE' => [
-        'debug' => false,
+        'debug' => true,
         'loginSecurityLevel' => 'normal',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\BcryptPasswordHash',
@@ -114,26 +114,26 @@ return [
         'processor_path_lzw' => '/usr/bin/',
     ],
     'MAIL' => [
-        'transport' => 'smtp',
-        'transport_sendmail_command' => '/usr/sbin/sendmail -t -i ',
+        'transport' => '[Set via env file]',
+        'transport_sendmail_command' => '/usr/sbin/sendmail -t -i',
         'transport_smtp_encrypt' => '',
-        'transport_smtp_password' => '7D49e40f',
-        'transport_smtp_server' => 'mail.nic.ru:25',
-        'transport_smtp_username' => 'noreply@all-power.ru',
+        'transport_smtp_password' => '',
+        'transport_smtp_server' => '',
+        'transport_smtp_username' => '',
     ],
     'SYS' => [
-        'devIPmask' => '',
-        'displayErrors' => 0,
+        'devIPmask' => '*',
+        'displayErrors' => 1,
         'encryptionKey' => 'ff9104697bb178c7e8a4ffc97b79d259fafbf96b32b4a9b4d8fb8a67824d1568c81dee48bd7ad89c8a5da2967454a80d',
-        'exceptionalErrors' => 4096,
+        'exceptionalErrors' => 12290,
         'features' => [
             'unifiedPageTranslationHandling' => true,
         ],
         'sitename' => 'All Power',
-        'systemLogLevel' => 2,
+        'systemLogLevel' => 0,
         'systemMaintainers' => [
             1,
         ],
-        'trustedHostsPattern' => '.*',
+        'trustedHostsPattern' => '.*\\.ru|.*\\.localhost',
     ],
 ];

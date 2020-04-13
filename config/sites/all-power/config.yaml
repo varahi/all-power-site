@@ -1,5 +1,5 @@
 rootPageId: 1
-base: 'http://all-power.ru'
+base: 'http://all-power.ru/'
 baseVariants:
   -
     base: 'http://all-power.ru'
@@ -8,7 +8,7 @@ baseVariants:
     base: 'http://all-power.localhost'
     condition: 'getenv("HOST_ENV") == "localdev"'
   -
-    base: 'http://dev.all-power.ru'
+    base: 'http://cj24618.tmweb.ru/'
     condition: 'getenv("HOST_ENV") == "serverdev"'
 
 languages:
