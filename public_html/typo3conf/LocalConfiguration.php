@@ -4,6 +4,7 @@ return [
         'debug' => true,
         'explicitADmode' => 'explicitAllow',
         'installToolPassword' => '$argon2i$v=19$m=16384,t=16,p=2$WnZaQ2FRMXZGcWdpWUUzTQ$ak2boiVRPlNo0F0jPeVctZxJik0zOQX/eQLKArTtMzk',
+	'interfaces' => 'backend, frontend',
         'loginSecurityLevel' => 'normal',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\BcryptPasswordHash',
@@ -144,6 +145,7 @@ return [
         'systemMaintainers' => [
             1,
         ],
-        'trustedHostsPattern' => '.*\\.ru|.*\\.localhost',
+        //'trustedHostsPattern' => '.*\\.ru|.*\\.localhost',
+	'trustedHostsPattern' => '.*',
     ],
 ];
