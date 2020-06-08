@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9de07468de63d02e8fa96b9ceb8f2943",
+    "content-hash": "778ff9dbfdac50a35cf985367a177d52",
     "packages": [
         {
             "name": "cogpowered/finediff",
@@ -1301,6 +1301,66 @@
                 "viewhelper"
             ],
             "time": "2019-04-01T12:17:09+00:00"
+        },
+        {
+            "name": "friendsoftypo3/frontend-editing",
+            "version": "v1.9.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfTYPO3/frontend_editing.git",
+                "reference": "3e7ff16784f14b01513cfd13308e25d4cefdeb3f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfTYPO3/frontend_editing/zipball/3e7ff16784f14b01513cfd13308e25d4cefdeb3f",
+                "reference": "3e7ff16784f14b01513cfd13308e25d4cefdeb3f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0",
+                "typo3/cms-core": "^8.7|| ^9.1 || ^10.0"
+            },
+            "conflict": {
+                "typo3/cms-feedit": "*"
+            },
+            "replace": {
+                "typo3-ter/frontend-editing": "self.version"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.15",
+                "nimut/testing-framework": "^2.0",
+                "phpunit/phpunit": "^5.4",
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "suggest": {
+                "clickstorm/cs_seo": "~2.1.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.0.x-dev"
+                },
+                "typo3/cms": {
+                    "extension-key": "frontend_editing",
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "web-dir": ".Build/Web"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\FrontendEditing\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Enable editors to work with the content in the most intuitive way possible",
+            "keywords": [
+                "TYPO3 CMS",
+                "frontend editing"
+            ],
+            "time": "2020-05-15T13:44:53+00:00"
         },
         {
             "name": "grasmash/expander",
@@ -6130,6 +6190,11 @@
         {
             "name": "typo3/minimal",
             "version": "v9.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3/minimal.git",
+                "reference": "6ca773e3a90f193ef6cbac7be810d2e8eb6d06fc"
+            },
             "require": {
                 "typo3/cms-backend": "9.5.*@dev",
                 "typo3/cms-core": "9.5.*@dev",

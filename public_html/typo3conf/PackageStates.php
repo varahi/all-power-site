@@ -107,6 +107,9 @@ return [
         'fancybox' => [
             'packagePath' => 'typo3conf/ext/fancybox/',
         ],
+        'frontend_editing' => [
+            'packagePath' => 'typo3conf/ext/frontend_editing/',
+        ],
         'gridelements' => [
             'packagePath' => 'typo3conf/ext/gridelements/',
         ],
@@ -116,8 +119,8 @@ return [
         'powermail' => [
             'packagePath' => 'typo3conf/ext/powermail/',
         ],
-        'staticfilecache' => [
-            'packagePath' => 'typo3conf/ext/staticfilecache/',
+        'sourceopt' => [
+            'packagePath' => 'typo3conf/ext/sourceopt/',
         ],
         'tmpl' => [
             'packagePath' => 'typo3conf/ext/tmpl/',

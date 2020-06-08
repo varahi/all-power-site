@@ -29,6 +29,9 @@ config {
     # URL setup
     absRefPrefix = auto
 
+    # Enable fornend editing, EXT: friendsoftypo3/frontend-editing
+    frontend_editing = 1
+
     # some css and js cleanups
     removeDefaultJS = external
     inlineStyle2TempFile = 1

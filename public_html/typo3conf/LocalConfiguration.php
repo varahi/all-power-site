@@ -30,7 +30,9 @@ return [
     'EXT' => [
         'extConf' => [
             'backend' => 'a:6:{s:14:"backendFavicon";s:0:"";s:11:"backendLogo";s:0:"";s:20:"loginBackgroundImage";s:0:"";s:13:"loginFootnote";s:0:"";s:19:"loginHighlightColor";s:0:"";s:9:"loginLogo";s:0:"";}',
+            'dpn_glossary' => 'a:1:{s:18:"termSlugEvaluation";s:6:"unique";}',
             'extensionmanager' => 'a:2:{s:21:"automaticInstallation";s:1:"1";s:11:"offlineMode";s:1:"0";}',
+            'frontend_editing' => 'a:3:{s:11:"seoProvider";s:4:"none";s:29:"contentEditableWrapperTagName";s:3:"div";s:18:"enablePlaceholders";s:1:"0";}',
             'gridelements' => 'a:6:{s:20:"additionalStylesheet";s:0:"";s:38:"disableAutomaticUnusedColumnCorrection";s:1:"0";s:25:"disableCopyFromPageButton";s:1:"0";s:19:"disableDragInWizard";s:1:"0";s:19:"nestingInListModule";s:1:"0";s:26:"overlayShortcutTranslation";s:1:"0";}',
             'lfeditor' => 'a:9:{s:16:"beMainModuleName";s:4:"user";s:13:"changeXlfDate";s:1:"1";s:15:"defaultLanguage";s:0:"";s:17:"editModeExtension";s:1:"1";s:9:"extIgnore";s:23:"/^(CVS|.svn|.git|csh_)/";s:12:"extWhitelist";s:0:"";s:27:"pathAdditionalConfiguration";s:37:"typo3conf/AdditionalConfiguration.php";s:11:"searchRegex";s:60:"/^([a-z0-9_]*locallang[a-z0-9_-]*\\.(php|xml)|[^\\.]*\\.xlf)$/i";s:13:"viewLanguages";s:0:"";}',
             'powermail' => 'a:8:{s:20:"disableBackendModule";s:1:"0";s:12:"disableIpLog";s:1:"1";s:27:"disableMarketingInformation";s:1:"0";s:24:"disablePluginInformation";s:1:"0";s:35:"disablePluginInformationMailPreview";s:1:"0";s:13:"enableCaching";s:1:"0";s:15:"l10n_mode_merge";s:1:"0";s:29:"replaceIrreWithElementBrowser";s:1:"0";}',
@@ -54,9 +56,17 @@ return [
             'loginHighlightColor' => '',
             'loginLogo' => '',
         ],
+        'dpn_glossary' => [
+            'termSlugEvaluation' => 'unique',
+        ],
         'extensionmanager' => [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
+        ],
+        'frontend_editing' => [
+            'contentEditableWrapperTagName' => 'div',
+            'enablePlaceholders' => '0',
+            'seoProvider' => 'none',
         ],
         'gridelements' => [
             'additionalStylesheet' => '',
