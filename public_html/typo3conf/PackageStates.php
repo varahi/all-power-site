@@ -116,8 +116,8 @@ return [
         'powermail' => [
             'packagePath' => 'typo3conf/ext/powermail/',
         ],
-        'sourceopt' => [
-            'packagePath' => 'typo3conf/ext/sourceopt/',
+        'staticfilecache' => [
+            'packagePath' => 'typo3conf/ext/staticfilecache/',
         ],
         'tmpl' => [
             'packagePath' => 'typo3conf/ext/tmpl/',

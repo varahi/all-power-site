@@ -206,8 +206,9 @@ h1.default-inner-header::first-letter {
   text-align: right; }
 
 .ce-border img, .ce-border iframe {
-  /* padding: 0.25rem;
-   border: 1px solid #dee2e6;*/ }
+  /*padding: 0.25rem;*/
+  padding: 0;
+  border: 1px solid #dee2e6; }
 
 .breadcrumb {
   background: #fff;
