@@ -34,7 +34,11 @@ lib.breadcrumb {
     }
 }
 
-[globalVar = GP:tx_news_pi1|news > 0]
+// Old TypoScript syntax
+//[globalVar = GP:tx_news_pi1|news > 0]
+
+// New TypoScript syntax
+[request.getQueryParams()['tx_news_pi1']['news'] > 0] || [request.getParsedBody()['tx_news_pi1']['news'] > 0]
     #[globalVar = TSFE:id = 15]
     lib.breadcrumb >
     lib.breadcrumb = COA
