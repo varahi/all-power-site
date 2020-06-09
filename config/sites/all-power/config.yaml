@@ -1,9 +1,9 @@
 rootPageId: 1
-base: 'http://all-power.ru/'
+base: '/'
 baseVariants:
-  -
-    base: 'http://all-power.ru'
-    condition: 'getenv("HOST_ENV") == "serverlive"'
+#  -
+#    base: 'http://all-power.ru'
+#    condition: 'getenv("HOST_ENV") == "serverlive"'
   -
     base: 'http://all-power.localhost'
     condition: 'getenv("HOST_ENV") == "localdev"'
