@@ -1,12 +1,12 @@
 /* Variables */
 .main-nav, .sm-blue ul a:hover, .sm-blue ul a:focus, .sm-blue ul a:active, .sm-blue ul a.highlighted, .sm-blue a, .sm-blue a:focus, .sm-blue a:active, .sm-blue a.highlighted {
-  background: rgba(226, 226, 226, 1);
-  background: -moz-linear-gradient(top, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(209, 209, 209, 1) 51%, rgba(254, 254, 254, 1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(226, 226, 226, 1)), color-stop(50%, rgba(219, 219, 219, 1)), color-stop(51%, rgba(209, 209, 209, 1)), color-stop(100%, rgba(254, 254, 254, 1)));
-  background: -webkit-linear-gradient(top, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(209, 209, 209, 1) 51%, rgba(254, 254, 254, 1) 100%);
-  background: -o-linear-gradient(top, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(209, 209, 209, 1) 51%, rgba(254, 254, 254, 1) 100%);
-  background: -ms-linear-gradient(top, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(209, 209, 209, 1) 51%, rgba(254, 254, 254, 1) 100%);
-  background: linear-gradient(to bottom, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 50%, rgba(209, 209, 209, 1) 51%, rgba(254, 254, 254, 1) 100%);
+  background: #e2e2e2;
+  background: -moz-linear-gradient(top, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #e2e2e2), color-stop(50%, #dbdbdb), color-stop(51%, #d1d1d1), color-stop(100%, #fefefe));
+  background: -webkit-linear-gradient(top, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%);
+  background: -o-linear-gradient(top, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%);
+  background: -ms-linear-gradient(top, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%);
+  background: linear-gradient(to bottom, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0); }
 
 .btn-info {
@@ -21,6 +21,7 @@
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8a150c', endColorstr='#c71f14',GradientType=0);
   /* IE6-9 */ }
+
 /*
  $link_color: #0000ff;
  $link_color_hover: #000;
@@ -43,6 +44,7 @@ body {
 
 .section {
   padding: 20px 0; }
+
 /* Smartmenu */
 .main-nav {
   -webkit-border-radius: 0px;
@@ -71,24 +73,24 @@ body {
   padding: 13px 13px;
   color: #444;
   background: transparent; }
-  .sm-blue a:hover {
-    color: #999; }
+.sm-blue a:hover {
+  color: #999; }
   .sm-blue a .sub-arrow {
     border-color: #8a150c transparent transparent transparent; }
-  .sm-blue ul a, .sm-blue ul a:focus, .sm-blue ul a:active, .sm-blue ul a.highlighted {
-    border: 0 !important;
-    padding: 9px 23px;
-    background: transparent;
-    color: #444;
-    border-radius: 0 !important; }
+.sm-blue ul a, .sm-blue ul a:focus, .sm-blue ul a:active, .sm-blue ul a.highlighted {
+  border: 0 !important;
+  padding: 9px 23px;
+  background: transparent;
+  color: #444;
+  border-radius: 0 !important; }
 
 @media (min-width: 768px) {
   #main-menu:before {
     display: none; }
-
   .sm-blue {
     background: transparent;
     border-radius: 0px; } }
+
 /* Content */
 .header-h1 h1, .header-h1 h2, .header-h1 h3 {
   position: relative;
@@ -111,11 +113,11 @@ body {
     left: 50%;
     width: 15%;
     transform: translateX(-50%); }
-  .header-h1 h1 a, .header-h1 h2 a {
-    color: #2c6e49;
-    text-decoration: none; }
-    .header-h1 h1 a:hover, .header-h1 h2 a:hover {
-      color: #694442; }
+.header-h1 h1 a, .header-h1 h2 a {
+  color: #2c6e49;
+  text-decoration: none; }
+  .header-h1 h1 a:hover, .header-h1 h2 a:hover {
+    color: #694442; }
 
 .header-h1-left h1, .header-h1-left h2, .header-h1-left h3 {
   text-align: left; }
@@ -141,8 +143,8 @@ h2 {
     /*color: #B07239;
      color: #ffa319;*/
     text-decoration: none; }
-  h2 a:hover {
-    color: #999; }
+    h2 a:hover {
+      color: #999; }
 
 .header-h1 h3 {
   color: #444; }
@@ -159,22 +161,22 @@ h3 {
     background-repeat: no-repeat;
     padding: 5px 0px 8px 20px;
     margin: 15px 0; }
-  h3.default-inner a {
-    color: #000;
-    text-decoration: underline; }
-    h3.default-inner a:hover {
-      text-decoration: none;
-      color: #999; }
-    h3.default-inner a:visited {
-      color: #444; }
+    h3.default-inner a {
+      color: #000;
+      text-decoration: underline; }
+      h3.default-inner a:hover {
+        text-decoration: none;
+        color: #999; }
+      h3.default-inner a:visited {
+        color: #444; }
 
 h1.default-inner-header::first-letter {
   text-transform: uppercase; }
-  h1.default-inner-header::before {
-    background: #d68c45;
-    padding: 1px 2px;
-    margin-right: 15px;
-    content: " "; }
+h1.default-inner-header::before {
+  background: #d68c45;
+  padding: 1px 2px;
+  margin-right: 15px;
+  content: " "; }
 
 .white h2 {
   color: #fff; }
@@ -184,6 +186,7 @@ h1.default-inner-header::first-letter {
 
 .white h2::after {
   border-bottom: 2px solid #fff; }
+
 /*
  .frame-type-textpic {
  border-bottom: 1px solid $border_color;
@@ -230,14 +233,16 @@ h1.default-inner-header::first-letter {
   .teaser-card img {
     padding-top: 20px;
     padding-left: 10px; }
+
 /* Inner pages */
 .inner-page {
   min-height: 300px;
   padding-bottom: 100px; }
   .inner-page .header-h1 h2 {
     padding-bottom: 30px; }
-  .inner-page h2 a {
-    font-size: 1.5rem; }
+    .inner-page h2 a {
+      font-size: 1.5rem; }
+
 /* Carousel */
 .slider {
   margin-bottom: 20px; }
@@ -267,25 +272,25 @@ h1.default-inner-header::first-letter {
     text-decoration: none;
     color: #d68c45;
     color: #999; }
-  .slider__teaser_num {
-    font-weight: bold;
-    margin-right: 10px;
-    /*position: absolute;
-     margin-top: 25px;*/ }
+.slider__teaser_num {
+  font-weight: bold;
+  margin-right: 10px;
+  /*position: absolute;
+   margin-top: 25px;*/ }
 
 .slide__description {
   position: absolute;
   top: 20%;
   left: 30px; }
 
-.owl-carousel {
+.owl-carousel .owl-stage-outer {
   /*min-height: 200px;
-   max-height: 500px;*/ }
-  .owl-carousel .owl-stage-outer {
-    border-right: 1px solid #dee2e6;
-    border-bottom: 1px solid #dee2e6;
-    border-left: 1px solid #dee2e6;
-    border-radius: 0rem; }
+   max-height: 500px;*/
+  border-right: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  border-left: 1px solid #dee2e6;
+  border-radius: 0rem; }
+
 /* Powermail */
 .powermail__container {
   background: #fff;
@@ -298,15 +303,15 @@ h1.default-inner-header::first-letter {
     min-height: 175px; }
   .powermail__container input[type="text"] {
     margin-bottom: 30px; }
-  .powermail__form_submit {
-    /*position: absolute;
-     right: 0;
-     bottom: 0;*/
-    margin-top: 10px; }
-  .powermail__container label, .powermail label {
-    display: none; }
-  .powermail input[type="text"] {
-    margin-bottom: 30px; }
+.powermail__form_submit {
+  /*position: absolute;
+   right: 0;
+   bottom: 0;*/
+  margin-top: 10px; }
+.powermail__container label, .powermail label {
+  display: none; }
+.powermail input[type="text"] {
+  margin-bottom: 30px; }
 
 .powermail_fieldwrap_type_captcha label {
   display: block; }
@@ -320,17 +325,18 @@ h1.default-inner-header::first-letter {
     flex: 0 0 100% !important;
     max-width: 100% !important;
     padding-left: 0 !important; }
+
 /* Powermail in modalbox */
 .modal-content .tx-powermail .col-md-6 {
   max-width: 100%;
   flex: 0 0 100%; }
-  .modal-content label {
-    display: none; }
-  .modal-content .powermail__form_submit {
-    position: relative;
-    top: 20px; }
-  .modal-content input[type="text"] {
-    margin-bottom: 20px; }
+.modal-content label {
+  display: none; }
+.modal-content .powermail__form_submit {
+  position: relative;
+  top: 20px; }
+.modal-content input[type="text"] {
+  margin-bottom: 20px; }
 
 .modal-body {
   padding-top: 30px; }
@@ -350,12 +356,12 @@ h1.default-inner-header::first-letter {
     padding-top: 30px;
     font-size: 26px;
     font-weight: bold; }
-  .header__phone a, .header__email a {
-    color: #444;
-    text-decoration: none; }
-  .header__phone a:hover, .header__email a:hover {
-    color: #999;
-    text-decoration: none; }
+    .header__phone a, .header__email a {
+      color: #444;
+      text-decoration: none; }
+      .header__phone a:hover, .header__email a:hover {
+        color: #999;
+        text-decoration: none; }
 
 .footer {
   min-height: 300px;
@@ -370,6 +376,7 @@ h1.default-inner-header::first-letter {
 
 .font-big p {
   font-size: 18px; }
+
 /* Parallax */
 .parallax-window {
   padding-top: 30px;
@@ -382,6 +389,7 @@ h1.default-inner-header::first-letter {
     border-bottom: 2px solid #fff; }
   .parallax-window .header-h1 h2::after {
     border-bottom: 2px solid #fff; }
+
 /* Pace */
 .pace {
   -webkit-pointer-events: none;
@@ -419,6 +427,7 @@ h1.default-inner-header::first-letter {
 
 #un-footer {
   background: #e8f2f3; }
+
 /* Table */
 table {
   border: 1px solid #ccc;
@@ -448,6 +457,7 @@ table th {
   font-size: 0.85em;
   letter-spacing: 0.1em;
   text-transform: uppercase; }
+
 /* Override bootstrap */
 .container {
   max-width: 1400px;
@@ -469,6 +479,7 @@ table th {
 
 .card-img {
   height: auto; }
+
 /* buttonDownload */
 .buttonDownload {
   display: inline-block;
@@ -493,12 +504,14 @@ table th {
   position: absolute;
   left: 15px;
   top: 52%; }
+
 /* Download box shape  */
 .buttonDownload:before {
   width: 10px;
   height: 2px;
   border-style: solid;
   border-width: 0 2px 2px; }
+
 /* Download arrow shape */
 .buttonDownload:after {
   width: 0;
@@ -518,20 +531,18 @@ table th {
 .buttonDownload:hover:after {
   border-top-color: #fff;
   animation-play-state: running; }
+
 /* keyframes for the download icon anim */
 @keyframes downloadArrow {
   /* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
   0% {
     margin-top: -7px;
     opacity: 1; }
-
   0.001% {
     margin-top: -15px;
     opacity: 0; }
-
   50% {
     opacity: 1; }
-
   100% {
     margin-top: 0;
     opacity: 0; } }

@@ -1,5 +1,5 @@
 <?php
-namespace JUBU\Tmpl\Hooks;
+namespace T3Dev\Tmpl\Hooks;
 
 /*
  * This file is part of the TYPO3 CMS extension fluid_styled_content.

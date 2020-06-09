@@ -1,0 +1,27 @@
+[getTSFE().beUserLogin]
+    page.includeJS {
+        feeditext = EXT:tmpl/Resources/Public/Javascript/FeeditExtend.js
+    }
+
+
+    lib.gridelements.defaultGridSetup {
+        stdWrap {
+            editIcons = tt_content:header, tx_gridelements_children
+        }
+    }
+
+    lib.emptyColDropzone = TEXT
+    lib.emptyColDropzone {
+        current = 1
+        wrap = <!--###DATA_EMPTY_GRID_DROPZONE_|###-->
+    }
+
+    config.sourceopt {
+        removeGenerator = {$sourceopt.removeGenerator}
+        removeBlurScript = {$sourceopt.removeBlurScript}
+        removeComments = {$sourceopt.removeComments}
+        removeComments.keep {
+            3001 = /###DATA_EMPTY_GRID_DROPZONE_/usi
+        }
+    }
+[END]
