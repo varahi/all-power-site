@@ -1,16 +1,16 @@
-rootPageId: 1
-base: '/'
+base: /
 baseVariants:
-#  -
-#    base: 'http://all-power.ru'
-#    condition: 'getenv("HOST_ENV") == "serverlive"'
   -
     base: 'http://all-power.localhost'
     condition: 'getenv("HOST_ENV") == "localdev"'
   -
     base: 'http://cj24618.tmweb.ru/'
     condition: 'getenv("HOST_ENV") == "serverdev"'
-
+errorHandling:
+  -
+    errorCode: '404'
+    errorHandler: Page
+    errorContentSource: 't3://page?uid=12'
 languages:
   -
     title: Russian
@@ -26,5 +26,13 @@ languages:
     fallbackType: fallback
     fallbacks: '0'
     flag: ru
-
-routes: {  }
+rootPageId: 1
+routes:
+  -
+    route: sitemap.xml
+    type: uri
+    source: 't3://page?uid=1&type=1533906435'
+  -
+    route: robots.txt
+    type: staticText
+    content: "User-agent: Yandex\r\nDisallow: /fileadmin/\r\nDisallow: /typo3/\r\nDisallow: /typo3conf/\r\nDisallow: /typo3temp/\r\nDisallow: /*?id=*\r\nHost: all-power.ru\r\n\r\nUser-Agent: *\r\nDisallow: /fileadmin/\r\nDisallow: /t3lib/\r\nDisallow: /typo3/\r\nDisallow: /typo3conf/\r\nDisallow: /typo3temp/\r\nDisallow: /*?id=*\r\nSitemap: http://all-power.ru/sitemap.xml\r\n"

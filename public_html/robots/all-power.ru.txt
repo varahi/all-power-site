@@ -1,0 +1,16 @@
+User-agent: Yandex
+Disallow: /fileadmin/
+Disallow: /typo3/
+Disallow: /typo3conf/
+Disallow: /typo3temp/
+Disallow: /*?id=*
+Host: all-power.ru
+
+User-Agent: *
+Disallow: /fileadmin/
+Disallow: /t3lib/
+Disallow: /typo3/
+Disallow: /typo3conf/
+Disallow: /typo3temp/
+Disallow: /*?id=*
+Sitemap: http://all-power.ru/sitemap.xml

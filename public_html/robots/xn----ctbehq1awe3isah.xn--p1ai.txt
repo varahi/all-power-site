@@ -1,0 +1,16 @@
+User-agent: Yandex
+Disallow: /fileadmin/
+Disallow: /typo3/
+Disallow: /typo3conf/
+Disallow: /typo3temp/
+Disallow: /*?id=*
+Host: xn----ctbehq1awe3isah.xn--p1ai
+
+User-Agent: *
+Disallow: /fileadmin/
+Disallow: /t3lib/
+Disallow: /typo3/
+Disallow: /typo3conf/
+Disallow: /typo3temp/
+Disallow: /*?id=*
+Sitemap: http://xn----ctbehq1awe3isah.xn--p1ai/sitemap.xml
