@@ -101,9 +101,6 @@ return [
         'rte_ckeditor_image' => [
             'packagePath' => 'typo3conf/ext/rte_ckeditor_image/',
         ],
-        'dpn_glossary' => [
-            'packagePath' => 'typo3conf/ext/dpn_glossary/',
-        ],
         'fancybox' => [
             'packagePath' => 'typo3conf/ext/fancybox/',
         ],
