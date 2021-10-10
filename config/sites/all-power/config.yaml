@@ -23,16 +23,14 @@ languages:
     navigationTitle: Russian
     hreflang: ru-Ru
     direction: ltr
-    fallbackType: fallback
-    fallbacks: '0'
     flag: ru
 rootPageId: 1
 routes:
-  -
-    route: sitemap.xml
-    type: uri
-    source: 't3://page?uid=1&type=1533906435'
+#  -
+#    route: sitemap.xml
+#    type: uri
+#    source: 't3://page?uid=1&type=1533906435'
   -
     route: robots.txt
     type: staticText
-    content: "User-agent: Yandex\r\nDisallow: /fileadmin/\r\nDisallow: /typo3/\r\nDisallow: /typo3conf/\r\nDisallow: /typo3temp/\r\nDisallow: /*?id=*\r\nHost: all-power.ru\r\n\r\nUser-Agent: *\r\nDisallow: /fileadmin/\r\nDisallow: /t3lib/\r\nDisallow: /typo3/\r\nDisallow: /typo3conf/\r\nDisallow: /typo3temp/\r\nDisallow: /*?id=*\r\nSitemap: http://all-power.ru/sitemap.xml\r\n"
+    content: "User-agent: Yandex\r\nDisallow: /design/\r\nDisallow: /cgi-bin/\r\nDisallow: /fileadmin/\r\nDisallow: /typo3/\r\nDisallow: /typo3conf/\r\nDisallow: /typo3temp/\r\nDisallow: /*?id=*\r\nHost: all-power.ru\r\n\r\nUser-Agent: *\r\nDisallow: /design/\r\nDisallow: /cgi-bin/\r\nDisallow: /fileadmin/\r\nDisallow: /t3lib/\r\nDisallow: /typo3/\r\nDisallow: /typo3conf/\r\nDisallow: /typo3temp/\r\nDisallow: /*?id=*\r\nSitemap: http://all-power.ru/index.php?id=1&type=1533906435\r\n"

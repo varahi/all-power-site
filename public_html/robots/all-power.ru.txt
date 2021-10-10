@@ -13,4 +13,5 @@ Disallow: /typo3/
 Disallow: /typo3conf/
 Disallow: /typo3temp/
 Disallow: /*?id=*
-Sitemap: http://all-power.ru/sitemap.xml
+Sitemap: http://all-power.ru/index.php?id=1&type=1533906435
+#Sitemap: http://all-power.ru/sitemap.xml

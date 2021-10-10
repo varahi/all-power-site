@@ -13,4 +13,5 @@ Disallow: /typo3/
 Disallow: /typo3conf/
 Disallow: /typo3temp/
 Disallow: /*?id=*
-Sitemap: http://xn----ctbehq1awe3isah.xn--p1ai/sitemap.xml
+Sitemap: http://xn----ctbehq1awe3isah.xn--p1ai/index.php?id=1&type=1533906435
+#Sitemap: http://xn----ctbehq1awe3isah.xn--p1ai/sitemap.xml

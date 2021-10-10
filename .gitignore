@@ -1,0 +1,14 @@
+.env
+backup/
+composer.phar
+public_html/design/
+public_html/fileadmin/
+public_html/index.php
+public_html/robots.txt
+public_html/typo3/
+public_html/typo3conf/ENABLE_INSTALL_TOOL
+public_html/typo3conf/ext/
+public_html/typo3temp/
+public_html/uploads/
+var/
+vendor/
