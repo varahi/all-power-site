@@ -3,6 +3,6 @@
 #
 
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Configuration/TypoScript/Constants/" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Configuration/TypoScript/Constants/Plugins/powermail/" extensions="typoscript">
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Configuration/TypoScript/Constants/Plugins/" extensions="typoscript">
-
 
